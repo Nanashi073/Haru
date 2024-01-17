@@ -1,6 +1,6 @@
 ---
-title: Example Category
-description: A description of this category
+title: Weekly
+description: A weekly summary
 image:
 
 # Badge style
