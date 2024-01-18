@@ -1,57 +1,186 @@
-<img align="right" width="150" alt="logo" src="https://user-images.githubusercontent.com/5889006/190859553-5b229b4f-c476-4cbd-928f-890f5265ca4c.png">
+Github仓库地址：[Mantyke](https://github.com/Mantyke)/[stack-theme-mod](https://github.com/Mantyke/Hugo-stack-theme-mod)
 
-# Hugo Theme Stack Starter Template
+本主题由[CaiJimmy](https://github.com/CaiJimmy)制作并[发布](https://github.com/CaiJimmy/hugo-theme-stack)，这个仓库是由[Mantyke](https://mantyke.icu/)修改的魔改版本
 
-This is a quick start template for [Hugo theme Stack](https://github.com/CaiJimmy/hugo-theme-stack). It uses [Hugo modules](https://gohugo.io/hugo-modules/) feature to load the theme.
+预览：[Demo站](https://stack-theme-mod.vercel.app/)
 
-It comes with a basic theme structure and configuration. GitHub action has been set up to deploy the theme to a public GitHub page automatically. Also, there's a cron job to update the theme automatically everyday.
+<br>
 
-## Get started
+## 使用方式
 
-1. Click *Use this template*, and create your repository on GitHub.
-![Step 1](https://user-images.githubusercontent.com/5889006/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f.png)
+**从零建立博客**：Fork仓库到自己账号下，用Github 注册 Vercel，依次点击Overview → New Project → import刚刚Fork的仓库，设置`FRAMEWORK PRESET`为Hugo → 点击`Environment Variables`，设置`NAME`为`HUGO_VERSION`，`Value`为`Hugo版本号（如0.89.0）` → 点击Add → 点击Deploy，稍等十来秒即可部署完成。下载仓库到本地后使用Github Desktop更新文章。（注，本地预览需安装Hugo，具体请参照[Hugo | 一起动手搭建个人博客吧](https://mantyke.icu/2021/hugo-build-blog/)相关内容）
 
-2. Once the repository is created, create a GitHub codespace asociated with it.
-![Create codespace](https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png)
+**旧博客更换主题**：不同主题方式不同，推荐只保留原博客的content文件夹，迁移到本仓库content文件夹后再按情况调整。
 
-3. And voila! You're ready to go. The codespace has been configured with the latest version of Hugo extended, just run `hugo server` in the terminal and see your new site in action.
 
-4. Check `config` folder for the configuration files. You can edit them to suit your needs. Make sure to update the `baseurl` property in `config/_default/config.toml` to your site's URL.
 
-5. Once you're done editing the site, just commit it and push it. GitHub action will deploy the site automatically to GitHub page asociated with the repository.
-![GitHub action](https://user-images.githubusercontent.com/5889006/156916881-90b8bb9b-1925-4e60-9d7a-8026cda729bf.png)
+<br>
 
+## 魔改内容
+
+- 调整文章页面为三栏显示（代码来自[ShadowySpirits](https://github.com/ShadowySpirits/hugo-theme-stack)）
+- 文章按年份分类
+- 增加文章字数统计与站点总字数、总篇数显示
+- 修改全站字体为思源宋体
+- 增加一个引用短代码（短代码来自[荷戟独彷徨](https://guanqr.com/)）
+- 添加一个友情链接页面并设置为双栏（友情链接代码来自[Bore](https://bore.vip/archives/3bf3725e/#%E6%B7%BB%E5%8A%A0%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5-shortcodes)，双栏代码来自[BB_Roin](https://tech.randomwaves.space/posts/21-12-08-make-hugo-stack-theme-links-display-in-two-columns/)）
+- 一系列基于个人美观喜好的CSS修改
+- 右侧栏增加Categories小部件
+
+<br>
+
+## 部分使用说明
+
+### 引用样式短代码
+
+```fallback
+{{< quote >}}
+三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云气自山中来，如群马奔突而至车座左右，苏轼一时好奇心起，开笼收云归家，作《攓云篇》。
+{{< /quote >}}
+```
+
+<br>
+
+### 友情链接使用方式
+
+友链头像放在`/assets/link-img`，友链数据放在`/data/links.json`
+
+```
+[
+    {
+        "title": "小球飞鱼",
+        "website": "https://mantyke.icu/",
+        "image": "mantyke.png",
+     "description": "我们会一起遇见鲸鱼吗？"
+    },
+	{
+        "title": "友情链接2",
+        "website": "",
+        "image": "",
+     "description": ""
+    }
+]
+```
+
+<br>
+
+### 修改页尾信息
+
+站点名称及建站时间请修改以下代码
+
+站点名称及链接：
+
+```
+#位置：layout/partials/footer/footer.html
+
+    <section class="copyright">
+        &copy; 
+        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
+            {{ .Site.Params.footer.since }} - 
+        {{ end }}
+        {{ now.Format "2006" }} <a href="https://stack-theme-mod.vercel.app/">Example Site</a>·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>
+      {{$var :=  $scratch.Get "total"}}{{$var = div $var 100.0}}{{$var = math.Ceil $var}}{{$var = div $var 10.0}}共书写了{{$var}}k字·共 {{ len (where .Site.RegularPages "Section" "post") }}篇文章</br><span><p>
+    </section>
+```
+
+```
+#位置：layout/partials/footer/footer.html
+
+var s1 = '2022-02-13';//设置为建站时间
+s1 = new Date(s1.replace(/-/g, "/"));
+s2 = new Date();
+var days = s2.getTime() - s1.getTime();
+var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+document.getElementById('days').innerHTML = number_of_days;
+```
+
+<br>
+
+## 其他常见修改
+
+### 设置博客头像
+
+位置：`/assets/img`，请将头像命名为`avatar.png`，替换原头像文件
+
+### 删除博客头像
+
+位置：`/layouts/partials/sidebar/left.html`，注释或删去以下部分：
+
+```
+        {{ with .Site.Params.sidebar.avatar }}
+            {{ if (default true .enabled) }}
+            <figure class="site-avatar">
+                <a href="{{ .Site.BaseURL | relLangURL }}">
+                {{ if not .local }}
+                    <img src="{{ .src }}" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                {{ else }}
+                    {{ $avatar := resources.Get (.src) }}
+                    
+                    {{ if $avatar }}
+                        {{ $avatarResized := $avatar.Resize "300x" }}
+                        <img src="{{ $avatarResized.RelPermalink }}" width="{{ $avatarResized.Width }}"
+                            height="{{ $avatarResized.Height }}" class="site-logo" loading="lazy" alt="Avatar">
+                    {{ else }}
+                        {{ errorf "Failed loading avatar from %q" . }}
+                    {{ end }}
+                {{ end }}
+                </a>
+                {{ with $.Site.Params.sidebar.emoji }}
+                    <span class="emoji">{{ . }}</span>
+                {{ end }}
+            </figure>
+            {{ end }}
+        {{ end }}
+```
+
+### 修改博客背景颜色
+
+位置：`assets\scss\variables.scss`
+
+```
+--body-background: #f6f6f6;
+```
+
+### 指定首页分类标签颜色
+
+位置：`content\categories`，创建分类同名文件夹后，在文件夹内创建`_index.md`文件，写入frontmatter
+
+```
+title: "做猫贵在折腾" //分类名称
+description: "简介 Blablabla" //不需要可以删了
+image: "ffxiv_20210830_230509_817.png" //分类题图，不需要也可以删了
+style:
+    background: "#80aba9" //分类标签底色
+    color: "#fff"
 ---
-
-In case you don't want to use GitHub codespace, you can also run this template in your local machine. **You need to install Git, Go and Hugo extended locally.**
-
-## Update theme manually
-
-Run:
-
-```bash
-hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
-hugo mod tidy
 ```
 
-> This starter template has been configured with `v3` version of theme. Due to the limitation of Go module, once the `v4` or up version of theme is released, you need to update the theme manually. (Modifying `config/module.toml` file)
+### 配置各类图标
 
-## Deploy to another static page hostings
+图标放在：`/assets/icons`，svg格式，配置方式参考[文档](https://docs.stack.jimmycai.com/zh/configuration/custom-menu)
 
-If you want to build this site using another static page hosting, you need to make sure they have Go installed in the machine. 
+<br>
 
-<details>
-  <summary>Vercel</summary>
-  
-You need to overwrite build command to install manually Go:
+### 其他参考
 
-```
-amazon-linux-extras install golang1.11 && hugo --gc --minify
-```
+其他我站修改及Hugo博客搭建教程可参见以下文章，作者代码水平为0，写作时间跨度较大，参考时务必注意：
 
-![](https://user-images.githubusercontent.com/5889006/156917172-01e4d418-3469-4ffb-97e4-a905d28b8424.png)
+[Hugo | 一起动手搭建个人博客吧](https://mantyke.icu/2021/hugo-build-blog/)
 
-Make sure also to specify Hugo version in the environment variable `HUGO_VERSION` (Use the latest version of Hugo extended):
+[Hugo | 看中 Stack 主题的归档功能，搬家并做修改](https://mantyke.icu/2021/f9f0ec87/)
 
-![Environment variable](https://user-images.githubusercontent.com/5889006/156917212-afb7c70d-ab85-480f-8288-b15781a462c0.png)
-</details>
+[Hugo | 另一篇 Stack 主题装修记录](https://mantyke.icu/2021/a08f1963/)
+
+[Hugo | 为 Blog 增加评论区](https://mantyke.icu/2021/comment/)
+
+[Hugo | 以正确姿势自动添加文章最后更新时间](https://mantyke.icu/2021/47a5331b/)
+
+[Hugo | 在文章中插入轮播图片](https://mantyke.icu/2021/cf2cf0fb/)
+
+[Hugo | 第三篇 Stack 主题装修记录，堂堂再临！](https://mantyke.icu/2022/stack-theme-furnish03/)
+
+<br>
+
+如果您喜欢或使用这个魔改版主题成功搭建了自己的个人博客，欢迎到我的[个人博客](https://mantyke.icu/2022/stack-theme-mod/)中留言告诉我，我会很开心的！
+
+<br>
