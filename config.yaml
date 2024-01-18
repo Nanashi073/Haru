@@ -1,5 +1,5 @@
-baseurl: https://example.com
-languageCode: en-us
+baseurl: https://haru-5qmd.vercel.app/
+languageCode: zh-cn
 theme: stack
 paginate: 5
 title: 春天与阿修罗 
@@ -38,7 +38,7 @@ params:
         lastUpdated: Jan 17, 2024 15:04 MST
 
     sidebar:
-        emoji: 
+        emoji: 🤣
         subtitle: 食宇宙尘埃 或吐纳着空气与盐水 
         avatar:
             enabled: true
@@ -195,7 +195,7 @@ menu:
               icon: brand-github
 
         - identifier: twitter
-          name: Twitter
+          name: mastodon
           url: https://twitter.com
           params:
               icon: brand-twitter
