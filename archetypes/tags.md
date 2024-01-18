@@ -5,7 +5,7 @@ image:
 ---
 
 ---
-title: "{{ Weekly "-" " " | weekly }}"
+title: "{{Weekly "-" " " | weekly}}"
 description: 
 image: 
 ---

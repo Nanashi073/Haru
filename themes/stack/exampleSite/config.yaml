@@ -2,7 +2,7 @@ baseurl: https://example.com
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
-title: Example Site
+title: 春天与阿修罗 
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -38,8 +38,8 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        emoji: 
+        subtitle: 食宇宙尘埃 或吐纳着空气与盐水
         avatar:
             enabled: true
             local: true

@@ -2,7 +2,7 @@ baseurl: https://example.com
 languageCode: en-us
 theme: stack
 paginate: 5
-title: 春天与阿修罗
+title: 春天与阿修罗 
 
 # Change it to your Disqus shortname before using
 disqusShortname: stack
@@ -39,7 +39,7 @@ params:
 
     sidebar:
         emoji: 
-        subtitle: わたくしといふ現象は 仮定された有機交流電燈の ひとつの青い照明です
+        subtitle: 食宇宙尘埃 或吐纳着空气与盐水 
         avatar:
             enabled: true
             local: true
