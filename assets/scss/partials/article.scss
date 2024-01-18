@@ -120,8 +120,8 @@
 .article-category,
 .article-tags {
     a {
-        color: var(--accent-color-text);
-        background-color: var(--accent-color);
+        color: #6a0c0c;
+        background-color: #e4dddd;
         padding: 8px 16px;
         border-radius: var(--tag-border-radius);
         display: inline-block;
@@ -131,8 +131,8 @@
         transition: background-color 0.5s ease;
 
         &:hover {
-            color: var(--accent-color-text);
-            background-color: var(--accent-color-darker);
+            color: #1f0404;
+            background-color: #a08e8e;
         }
     }
 }
