@@ -28,7 +28,7 @@ icon = "Notion"
 [[social]]
 identifier = "RSS"
 name = "RSS"
-url = "https://www.notion.so/f6c5ecd3439941c29f3e6a12f36e7c50?pvs=4"
+url = "/index.xml"
 
 [social.params]
 icon = "rss"
