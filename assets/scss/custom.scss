@@ -182,3 +182,21 @@ blockquote.quote {
 	.db-card-comment{display: none;}
 }
 /* db-card -------- end */
+
+//重点标记
+mark{
+    background: hsla(0, 65%, 50%, 0.696);
+}
+
+// 卡片样式
+.mycard {
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    word-break: break-all;
+    background: #cdccc678;
+    box-shadow: 0 6px 10px 0 #00000033;
+    .content {
+      line-height: 30px;
+    }
+}

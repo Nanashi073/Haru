@@ -1,7 +1,7 @@
 ---
-title: "review"
+title: "Review"
 description: "一些感想和测评"
-slug: "评论"
+slug: "review"
 image: 
 style:
     background: "#cdb7a7"

@@ -1,6 +1,6 @@
 # Configure main menu and social menu
 #[[main]]
-#identifier = "home"
+#identifier = "Home"
 #name = "Home"
 #url = "/"
 #[main.params]

@@ -1,5 +1,5 @@
 ---
-title: About
+title: About｜我是谁
 description: 关于我
 date: '2024-04-29'
 aliases:
