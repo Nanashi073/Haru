@@ -10,7 +10,7 @@ tags:
 - 日常
 categories:
 - archive
-image: 
+image: /img/dali.JPEG
 slug: 一个月竟旅游了两次
 ---
 
