@@ -55,14 +55,9 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: Waline
 
-        disqusjs:
-            shortname:
-            apiUrl:
-            apiKey:
-            admin:
-            adminLabel:
+       
 
         utterances:
             repo:
@@ -84,7 +79,7 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
-            serverURL:
+            serverURL: 
             lang:
             visitor:
             avatar:
@@ -179,7 +174,7 @@ params:
 menu:
     main:
         - identifier: home
-          name: Home
+          name: Home|主页
           url: /
           weight: -100
           params:
@@ -229,3 +224,4 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+
