@@ -104,13 +104,13 @@ clientSecret = ""
 autoCreateIssue = false
 
 [comments.waline]
-serverURL = "https://harushuurawaline-r2dfzahrf-nanashis-projects-d1bc1aaf.vercel.app/"
-lang = ""
+serverURL = "www.harushuura.vip"
+lang = "zh-CN"
 visitor = ""
 avatar = ""
 emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
 requiredMeta = ["name", "email", "url"]
-placeholder = ""
+placeholder = "少女祈祷中……"
 
 [comments.waline.locale]
 admin = "Admin"
