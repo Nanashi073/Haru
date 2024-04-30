@@ -11,7 +11,7 @@ menu:
         name: Friends｜友链
         weight: -90
         params:
-            icon: home
+            icon: friends
         
 ---
 <style>

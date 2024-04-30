@@ -12,7 +12,7 @@ menu:
         name: Now｜当下
         weight: -90
         params:
-            icon: home
+            icon: infinity
         
 ---
 <style>
@@ -25,4 +25,14 @@ menu:
 
 </style>
 
-写点什么吧！这个界面还在装修中
+## 2024 Reading Challenge
+{{<bar 41>}}
+
+## 2024 100 Sketches
+{{<bar 7>}}
+
+## OC游戏进度
+{{<bar 2>}}
+### 立绘
+### 背景
+### CG
