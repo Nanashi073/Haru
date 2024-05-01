@@ -11,7 +11,7 @@ tags:
 categories:
   - archive
 image: 
-slug: weekly Review
+slug: 2024-weekly-01
 ---
 
 真没想到我能写每周总结！！可能因为早上起来自觉精力充沛，总之在等泡面泡好的时间打开文档开写了，因为还要写月记，周记里就写点不记下月底会忘的东西。

@@ -10,7 +10,7 @@ tags:
 categories:
 - archive
 image: 
-slug: 晚安
+slug: 2024-monthly-review-02
 ---
 真是不知道该写什么！！这个月的周记全都放弃了，可能因为事儿太多了，就没什么想写的，没有倾诉欲，只想默默的画画……
 # 继续和驾校搏斗

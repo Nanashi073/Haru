@@ -12,7 +12,7 @@ tags:
 categories:
 - archive
 image: 
-slug: 第二周就开始摸了
+slug: 2024-weekly-02
 
 ---
 

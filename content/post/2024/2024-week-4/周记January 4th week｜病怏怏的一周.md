@@ -10,7 +10,7 @@ tags:
 categories:
 - archive
 image: 
-slug: 痛苦
+slug: 2024-weekly-04
 ---
 
 上周日去考科二，没考过不说，还在没什么暖气的考场冻了五个小时，喜提重感冒，这一周就在养病里度过了……
