@@ -8,7 +8,7 @@ tags:
 categories:
 - others
 image: 
-slug: xiaopoispig
+slug: others-note-taking-update
 ---
 
 
