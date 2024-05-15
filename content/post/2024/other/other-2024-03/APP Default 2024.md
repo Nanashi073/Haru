@@ -80,17 +80,21 @@ Slidebox是拿来整理相册的，上滑删除很方便，我过去居然都是
 **Shopping Lists** ：一般不需要，需要的话应该是Things3，放进Inbox里。
 
 **Budgeting and Personal Finance** ：钱迹
+
 话虽如此我很久没打开了。
 
 **News**：长毛象算吗？
 
 **Music** ：Apple Music
+
 想念更新前的网易云。
 
 **Movies&Animations**：VidHub
+
 不出意料的开始收钱了，不过还是买断的，幸好！很好用，类似Infuse，不过更便宜，而且对中文的支持好，还能找在线字幕。
 
 **Podcasts** ：Castro
+
 很好用，虽然订阅但是不贵，其实也没什么非要订阅用的功能。小组件可以看Queued Episode和统计时常，唯一的缺点是没有小宇宙那个好看的历史统计。在此点名批评Apple Podcast。
 
 **Password Management**：苹果自带的密码记录。偶尔会写在我的hobo weeks上。
