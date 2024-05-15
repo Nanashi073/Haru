@@ -141,7 +141,7 @@ params:
 
 
         archives:
-            limit: 5
+            limit: 7
 
         tagCloud:
             limit: 10

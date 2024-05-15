@@ -30,3 +30,10 @@ menu:
 - [ ]加入相册功能
 - [ ]跑团界面（遥遥无期）
 - [ ]介绍游戏和OC的子博客（遥遥无期）
+
+## 博客时间线
+
+ {{< timeline date="31/03/2024" title="正式上线" description="" tags=""  >}}
+ {{< timeline date="01/04/2024" title="第一次更新" description="RSS，域名，友链" tags=""  >}}
+ {{< timeline date="30/04/2024" title="第二次更新" description="一堆短代码，About，Now，评论区" tags=""  >}}
+ {{< timeline date="15/05/2024" title="Memos功能上线" description="powered by Artitalks" tags=""  >}}
