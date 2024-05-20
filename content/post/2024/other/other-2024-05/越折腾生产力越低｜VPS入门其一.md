@@ -48,11 +48,19 @@ slug: others-my-vps-01
 ## 作业合集
 
 [ 2024年国外高性价比便宜 VPS 推荐(稳定、好用、免费体验)](https://p3terx.com/archives/cheap-and-costeffective-vps-recommended.html)
+
 [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
+
 [除了博客，当你有一台云服务器时还可以自部署哪些免费、开源的项目？](https://sspai.com/post/78424)
+
 [鸭子都能看懂的 VPS 离线下载 & 云服务搭建新手教程](https://sspai.com/post/54672)
+
 [VPS能做什么（总结几个我正在用的服务配置](https://chengpengzhao.com/2020-08-03-vps-neng-yong-lai-zuo-shi-me/)
+
 [Docker 的入门「指北」](https://sspai.com/post/56893)
+
 [家庭服务器Home Server实践](https://sspai.com/post/82512)
+
 [用树莓派搭建私有云吧｜明明白白玩 Pi系列之四](https://sspai.com/post/39264)
+
 [【无敌小白版】阿里云服务器+Calibre在线图书馆搭建](https://blog.seanzou.com/archives/-wu-di-xiao-bai-ban-calibre-si-ren-zai-xian-tu-shu-guan-da-jian#toc-head-9)
