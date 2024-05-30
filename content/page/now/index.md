@@ -2,7 +2,6 @@
 ---
 title: "Now"
 date: 2019-05-28
-description: 
 slug: "now"
 layout: now
 comments: false
@@ -26,10 +25,10 @@ menu:
 </style>
 
 ## 2024 Reading Challenge
-{{<bar 41>}}
+{{<bar 47>}}
 
 ## 2024 100 Sketches
-{{<bar 10>}}
+{{<bar 12>}}
 
 ## OC游戏进度
 {{<bar 2>}}

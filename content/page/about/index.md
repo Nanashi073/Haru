@@ -1,13 +1,11 @@
 ---
 title: About｜我是谁
-description: 关于我
-date: '2024-01-18'
+description: 
 aliases:
   - about-us
   - about-hugo
   - contact
-license: CC BY-NC-ND
-lastmod: '2024-01-18'
+
 menu:
     main: 
         weight: -90
