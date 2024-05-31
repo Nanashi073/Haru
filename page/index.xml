@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on 春天与阿修罗</title><link>https://haru-5qmd.vercel.app/page/</link><description>Recent content in Pages on 春天与阿修罗</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://haru-5qmd.vercel.app/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives｜档案</title><link>https://haru-5qmd.vercel.app/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://haru-5qmd.vercel.app/archives/</guid><description/></item><item><title>Friends</title><link>https://haru-5qmd.vercel.app/links/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://haru-5qmd.vercel.app/links/</guid><description>&lt;style>
+.article-header {
+display: none;
+}
+.article-footer {
+display: none;
+}
+&lt;/style>
+&lt;p>每当日出，航行底格里斯河的船载着我们一些尸体。
+每天，公墓增加五十个梦想。&lt;/p></description></item><item><title>Now</title><link>https://haru-5qmd.vercel.app/now/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://haru-5qmd.vercel.app/now/</guid><description>&lt;style>
+.article-header {
+display: none;
+}
+.article-footer {
+display: none;
+}
+&lt;/style>
+&lt;div id="heatmap" style="
+max-width: 700px;
+height: 180px;
+padding: 2px;
+text-align: center;
+"
+>&lt;/div>
+&lt;script src="https://cdn.jsdelivr.net/npm/echarts@5.3.0/dist/echarts.min.js">&lt;/script>
+&lt;script type="text/javascript">
+var chartDom = document.getElementById('heatmap');
+var myChart = echarts.init(chartDom);
+window.onresize = function() {
+myChart.resize();
+};
+var option;
+var dataMap = new Map();
+var key = "2024-05-31";
+var value = dataMap.get(key);
+var wordCount = 3388 ;
+var link = "/p/2024-monthly-review-05/";
+var title = "March｜研究表明电子玩具比手游好玩";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-05-24";
+var value = dataMap.get(key);
+var wordCount = 1078 ;
+var link = "/p/others-my-vps-02/";
+var title = " 越折腾生产力越低｜VPS入门其二";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-05-21";
+var value = dataMap.get(key);
+var wordCount = 3332 ;
+var link = "/p/2024-tour-review-dali/";
+var title = "游记｜大理-昆明";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-05-20";
+var value = dataMap.get(key);
+var wordCount = 529 ;
+var link = "/p/others-my-vps-01/";
+var title = "越折腾生产力越低｜VPS入门其一 ";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-05-15";
+var value = dataMap.get(key);
+var wordCount = 1170 ;
+var link = "/p/other-obsidian-note-1/";
+var title = "越折腾生产力越低｜Obsidian其一";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-05-12";
+var value = dataMap.get(key);
+var wordCount = 2293 ;
+var link = "/p/others-app-default-2024/";
+var title = "越折腾生产力越低｜APP DEFAULT 2024";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-05-01";
+var value = dataMap.get(key);
+var wordCount = 1514 ;
+var link = "/p/blog-decorate-01/";
+var title = "博客装修01｜2024 ONLINE（终于！）";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-05-01";
+var value = dataMap.get(key);
+var wordCount = 15425 ;
+var link = "/p/book-review-2024-spring/";
+var title = "阅读报告｜2024·春";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-04-30";
+var value = dataMap.get(key);
+var wordCount = 3155 ;
+var link = "/p/2024-monthly-review-04/";
+var title = "April｜到处逛逛";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-04-30";
+var value = dataMap.get(key);
+var wordCount = 904 ;
+var link = "/p/others-note-taking-update/";
+var title = "越折腾生产力越低｜笔记体系更新";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-03-31";
+var value = dataMap.get(key);
+var wordCount = 994 ;
+var link = "/p/2024-monthly-review-03/";
+var title = "March｜三月只读书";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-02-29";
+var value = dataMap.get(key);
+var wordCount = 1659 ;
+var link = "/p/2024-monthly-review-02/";
+var title = "February｜颓废的二月";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-01-31";
+var value = dataMap.get(key);
+var wordCount = 1353 ;
+var link = "/p/2024-monthly-review01/";
+var title = "January月记| 三九四九冰上走";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-01-28";
+var value = dataMap.get(key);
+var wordCount = 529 ;
+var link = "/p/2024-weekly-04/";
+var title = "January 4th week｜病怏怏的一周";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-01-21";
+var value = dataMap.get(key);
+var wordCount = 568 ;
+var link = "/p/2024-weekly-03/";
+var title = "January 3rd week｜搭博客真的有这么好玩";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-01-14";
+var value = dataMap.get(key);
+var wordCount = 1059 ;
+var link = "/p/2024-weekly-02/";
+var title = "January 2nd week｜新年第二周";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2024-01-08";
+var value = dataMap.get(key);
+var wordCount = 771 ;
+var link = "/p/2024-weekly-01/";
+var title = "January 1st week| 新年新气象 一月第一周";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}
+var key = "2023-12-31";
+var value = dataMap.get(key);
+var wordCount = 5520 ;
+var link = "/p/2023-yearly-review/";
+var title = "Yearly | 我的2023年度报告";
+if (value == null) {
+dataMap.set(key, [{wordCount, link, title}]);
+} else {
+value.push({wordCount, link, title});
+}var data = [];
+for (const [key, value] of dataMap.entries()) {
+var sum = 0;
+for (const v of value) {
+sum += v.wordCount;
+}
+data.push([key, (sum / 1000).toFixed(1)]);
+}
+var startDate = new Date();
+var year_Mill = startDate.setFullYear((startDate.getFullYear() - 1));
+var startDate = +new Date(year_Mill);
+var endDate = +new Date();
+var dayTime = 3600 * 24 * 1000;
+startDate = echarts.format.formatTime('yyyy-MM-dd', startDate);
+endDate = echarts.format.formatTime('yyyy-MM-dd', endDate);
+function heatmap_width(months){
+var startDate = new Date();
+var mill = startDate.setMonth((startDate.getMonth() - months));
+var endDate = +new Date();
+startDate = +new Date(mill);
+endDate = echarts.format.formatTime('yyyy-MM-dd', endDate);
+startDate = echarts.format.formatTime('yyyy-MM-dd', startDate);
+var showmonth = [];
+showmonth.push([
+startDate,
+endDate
+]);
+return showmonth
+};
+function getRangeArr() {
+const windowWidth = window.innerWidth;
+if (windowWidth >= 600) {
+return heatmap_width(12);
+} else if (windowWidth >= 400) {
+return heatmap_width(9);
+} else {
+return heatmap_width(6);
+}
+}
+option = {
+title: {
+top: 0,
+left: 'center',
+text: '我的热力图'
+},
+tooltip: {
+hideDelay: 1000,
+enterable: true,
+formatter: function (p) {
+const date = p.data[0];
+const posts = dataMap.get(date);
+var content = `${date}`;
+for (const [i, post] of posts.entries()) {
+content += "&lt;br>";
+var link = post.link;
+var title = post.title;
+var wordCount = (post.wordCount / 1000).toFixed(1);
+content += `&lt;a href="${link}" target="_blank">${title} | ${wordCount} k&lt;/a>`
+}
+return content;
+}
+},
+visualMap: {
+min: 0,
+max: 10,
+type: 'piecewise',
+orient: 'horizontal',
+left: 'center',
+top: 30,
+inRange: {
+color: ['#7aa8744c', '#7AA874' ]
+},
+splitNumber: 4,
+text: ['千字', ''],
+showLabel: true,
+itemGap: 20,
+},
+calendar: {
+top: 80,
+left: 20,
+right: 4,
+cellSize: ['auto', 13],
+range: getRangeArr(),
+itemStyle: {
+color: '#F1F1F1',
+borderWidth: 1.5,
+borderColor: '#fff',
+},
+yearLabel: { show: false },
+splitLine: {
+lineStyle: {
+color: 'rgba(0, 0, 0, 0.0)',
+}
+}
+},
+series: {
+type: 'heatmap',
+coordinateSystem: 'calendar',
+data: data,
+}
+};
+myChart.setOption(option);
+myChart.on('click', function(params) {
+if (params.componentType === 'series') {
+const post = dataMap.get(params.data[0])[0];
+const link = window.location.origin + post.link;
+window.open(link, '_blank').focus();
+}
+});
+&lt;/script>
+&lt;h2 id="2024-reading-challenge">2024 Reading Challenge
+&lt;/h2>&lt;div class="progress">
+&lt;div class="dynamic progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+&lt;span class="current-progress">47&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="2024-100-sketches">2024 100 Sketches
+&lt;/h2>&lt;div class="progress">
+&lt;div class="dynamic progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+&lt;span class="current-progress">12&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="oc游戏进度">OC游戏进度
+&lt;/h2>&lt;div class="progress">
+&lt;div class="dynamic progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+&lt;span class="current-progress">2&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="立绘">立绘
+&lt;/h3>&lt;h3 id="背景">背景
+&lt;/h3>&lt;h3 id="cg">CG
+&lt;/h3></description></item><item><title>About｜我是谁</title><link>https://haru-5qmd.vercel.app/about%E6%88%91%E6%98%AF%E8%B0%81/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haru-5qmd.vercel.app/about%E6%88%91%E6%98%AF%E8%B0%81/</guid><description>&lt;h2 id="我是">我是
+&lt;/h2>&lt;p>可以叫我梨。
+头像下面是我的长毛象，欢迎来找我玩，也可以用RSS订阅本博客！&lt;/p>
+&lt;h2 id="我在干什么">我在干什么
+&lt;/h2>&lt;p>在画画。
+如果没在画画，请叫我去画画。&lt;/p>
+&lt;h2 id="关于这个博客">关于这个博客
+&lt;/h2>&lt;p>里面会写一些本人的日常，对一些书影音游和APP的测评，希望未来会有游戏进度更新和教程。&lt;/p>
+&lt;h2 id="一个长期的博客todo">一个长期的博客todo
+&lt;/h2>&lt;p>&lt;del>- 加入相册功能（没加入，但是有了图床）&lt;/del>&lt;/p>
+&lt;ul>
+&lt;li>跑团界面（遥遥无期）&lt;/li>
+&lt;li>介绍游戏和OC的子博客（遥遥无期）&lt;/li>
+&lt;/ul>
+&lt;h2 id="博客时间线">博客时间线
+&lt;/h2>&lt;p>&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">31/03/2024&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;div class="timeline__title">正式上线&lt;/div>
+&lt;div class="timeline__description">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #7d0505c8;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #680b0b;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #990f0f;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">01/04/2024&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;div class="timeline__title">第一次更新&lt;/div>
+&lt;div class="timeline__description">
+RSS，域名，友链
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #7d0505c8;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #680b0b;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #990f0f;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">30/04/2024&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;div class="timeline__title">第二次更新&lt;/div>
+&lt;div class="timeline__description">
+一堆短代码，About，Now，评论区
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #7d0505c8;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #680b0b;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #990f0f;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">15/05/2024&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;div class="timeline__title">Memos功能上线&lt;/div>
+&lt;div class="timeline__description">
+powered by Artitalks
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #7d0505c8;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #680b0b;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #990f0f;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">30/05/2024&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;div class="timeline__title">在Now界面加入了热力图&lt;/div>
+&lt;div class="timeline__description">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #7d0505c8;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #680b0b;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #990f0f;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;/p></description></item><item><title>Memos｜说说</title><link>https://haru-5qmd.vercel.app/memos%E8%AF%B4%E8%AF%B4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haru-5qmd.vercel.app/memos%E8%AF%B4%E8%AF%B4/</guid><description/></item><item><title>Search｜找找</title><link>https://haru-5qmd.vercel.app/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haru-5qmd.vercel.app/search/</guid><description/></item></channel></rss>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>差生文具多 on 春天与阿修罗</title><link>https://haru-5qmd.vercel.app/tags/%E5%B7%AE%E7%94%9F%E6%96%87%E5%85%B7%E5%A4%9A/</link><description>Recent content in 差生文具多 on 春天与阿修罗</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 15 May 2024 20:10:48 +0800</lastBuildDate><atom:link href="https://haru-5qmd.vercel.app/tags/%E5%B7%AE%E7%94%9F%E6%96%87%E5%85%B7%E5%A4%9A/index.xml" rel="self" type="application/rss+xml"/><item><title>越折腾生产力越低｜Obsidian其一</title><link>https://haru-5qmd.vercel.app/p/other-obsidian-note-1/</link><pubDate>Wed, 15 May 2024 20:10:48 +0800</pubDate><guid>https://haru-5qmd.vercel.app/p/other-obsidian-note-1/</guid><description>&lt;h2 id="我再也不要按年付费订阅了">我再也不要按年付费订阅了
+&lt;/h2>&lt;p>谁能想到距上次更新笔记博客还不到一周……我就又优化了！
+这次是把熊掌记优化掉了。起因非常复杂。我在象狂嘟博客装修，有一位香油回了我，于是我忍不住去看了香油的主页，翻到了香油的博客，并把香油的博客翻了个底朝天。其中看见一篇说&lt;a class="link" href="https://zhen-shi.github.io/p/%e6%96%bd%e5%b7%a5-%e8%bd%af%e8%a3%85%e8%ae%b0%e5%bd%95%e4%b8%8e%e5%a4%9a%e7%ab%af%e5%86%99%e4%bd%9c%e5%b7%a5%e5%85%b7%e6%b5%81/" target="_blank" rel="noopener"
+>obsidian可以直接靠命令推送到GitHub&lt;/a>。这不就是我一直心心念念的all in one吗！于是我兴冲冲地下了obsidian，发现他长得挺好看的，和我印象里不一样，且完全免费（同步功能要钱，但是我有iCloud，可以通过这个丝滑同步）。&lt;/p>
+&lt;p>我试验了一下，批量导出熊掌记里的md文件，然后拽进obsidian的文件夹，三分钟就搬家完成了。我的天，回想上次，我可是手动挨个复制的备忘录里的东西……这也太舒服了。而且如果不行，我还能一键导回熊掌记。毕竟，请看小标题，我的熊掌记会员还有半年到期……&lt;/p>
+&lt;h2 id="看看毛胚房">看看毛胚房
+&lt;/h2>&lt;p>我先直奔preference界面，换成了中文，然后仔细看了一下设定，把大部分核心插件都关了。我只想轻量地用一个笔记软件写点东西，不需要那么多花里胡哨的双链、白板、关系图谱，我在notion里已经吃过一次苦头了。我也不打算看教程，再搭一个又fan又cy的书影音库出来。总之我试了几个主题之后选了minimal，然后关了一串功能，又改了一下手机编辑器。目前是把H2和H3放到前面了，感觉这个比熊掌记的markdown键盘方便，那个还要额外呼出，其实很不舒服。&lt;/p>
+&lt;p>然后我发现，熊掌记要钱还是有原因的。obsidian有时候（经常的）会莫名卡一下，侧边栏的呼出也不是很顺滑，而且不支持那种滑动看所有笔记标题+预览的页面。这点和notion一样。所以我还是需要一个dashboard。&lt;/p>
+&lt;h2 id="我搭我搭">我搭我搭
+&lt;/h2>&lt;p>谷歌了一下&lt;em>obsidian dashboard&lt;/em>之后，随便选了一个长得顺眼的介绍页面，是&lt;a class="link" href="https://obsidianninja.com/new-obsidian-showcases-dashboards-movie-library-menu-bar-more/" target="_blank" rel="noopener"
+>这个&lt;/a>里面的Minimal Homepage Dashboard。按文档说明下了插件，存了css，然后自己自定义了一下。我不想每次都要展开，就改了一下格式。&lt;/p>
+&lt;p>目前觉得最好的插件是Pomodoro，应该是下载量最高的那一个。省的我开网页了，不想再下一个番茄钟软件。&lt;/p>
+&lt;p>顺便整理了一下笔记，把用不上的手动存档起来，又备份了一下博客。以及我发现了，清单这些东西应该放进Things，不然我这辈子都未必会看存的影单……&lt;/p>
+&lt;h2 id="买椟还珠">买椟还珠
+&lt;/h2>&lt;p>我在研究了如何用Git插件之后发现……要用这个我就不能用icloud在手机和电脑之间同步…………而且我怀疑这个东西不是很稳，万一丢件就GG了。所以我折腾到obsidian，最后还是要手动开github啊！！！&lt;/p>
+&lt;p>好消息是obsidian很好玩，而且其实更省心。熊掌记的导出会自动把标题带进md文件里，搞得我每次都要手动删。而且obsidian的模版自带时间戳，让写博客的过程轻松了那么一点（意思是不需要我自己改了）。&lt;/p>
+&lt;p>等我考完试再好好研究一下，散会！&lt;/p></description></item><item><title>越折腾生产力越低｜APP DEFAULT 2024</title><link>https://haru-5qmd.vercel.app/p/others-app-default-2024/</link><pubDate>Sun, 12 May 2024 13:20:52 +0800</pubDate><guid>https://haru-5qmd.vercel.app/p/others-app-default-2024/</guid><description>&lt;h3 id="deafult-apps">Deafult APPs
+&lt;/h3>&lt;p>&lt;strong>Mail Client&lt;/strong> ：Outlook&lt;/p>
+&lt;p>苹果的邮箱不太好用，没办法。其实手机里还有QQ邮箱，一直想把两个QQ邮箱账号也扔进Outlook，但是一直搞不懂怎么设置，一直失败，我觉得这是腾讯的阴谋。&lt;/p>
+&lt;p>&lt;strong>Notes&lt;/strong> ：Bear 2+FLOMO&lt;/p>
+&lt;p>之前有说过，把备忘录和Notion里的东西（其实还有好多年前用的Zine和Evernote）全都扔进熊掌记了，界面好看，最重要的是有markdown和export md。&lt;/p>
+&lt;p>FLOMO是专门拿来存教程了，我意识到堆在相册里根本不会看，需要用的时候也很难找出来，放进FLOMO之后果然利用率大增。其实教程相册还没整理完，东西实在太多了……提上日程！&lt;/p>
+&lt;p>&lt;strong>Diary&lt;/strong> ：Daymore&lt;/p>
+&lt;p>你们都不写日记的吗……？&lt;/p>
+&lt;p>过去是手写的，太累了，写不动，试过卡片日记和dayone，最后选了这个。界面好看，订阅制但是便宜，我需要的功能都有。之前也看上过几款极简设计的日记，评价里都提到过丢数据，太吓人了，小开发商就是容易这样。但是day one设计的比滴答清单还臃肿，很烦人，我不需要。&lt;/p>
+&lt;p>用Daymore已经一年多了，很不错。&lt;/p>
+&lt;p>&lt;strong>To-Do&lt;/strong> ：Things 3+hobo weeks&lt;/p>
+&lt;p>Things3 从滴答清单迁移过来的，很舒服，就是不知道为什么他们不用icloud而是自己的云服务器，还是买断制，我略微有点担心。不过好用，最重要的是界面特别好看。
+hobo weeks用了好几年了，拿来安排每天、每周，每个月要干的事，更长期的计划还是电子版比较好，纸质版我算不准日子，容易晕。&lt;/p>
+&lt;p>&lt;strong>iPhone Photo Shooting&lt;/strong> ：Old Roll+Camera&lt;/p>
+&lt;p>出去拍小清新照片的时候下的Old Roll，本来用过NOMO，但是一年228，太恐怖了，我宁愿买个真的相机。Old Roll是买断制，比较友好，功能也够，里面还有详细的相机介绍页和样图。我一般用的都是CCD。&lt;/p>
+&lt;p>PS，最近下了一个叫Film Frame的APP，这个可以给照片加各种相框和滤镜，目前还是免费的，我拿来给画好的画二次加工……&lt;/p>
+&lt;p>&lt;strong>Photo Management&lt;/strong> ：Slidebox+Photo&lt;/p>
+&lt;p>我很好奇那些相册APP都是拿来干嘛的……反正我不愿意把照片传给不知道是谁的服务商。&lt;/p>
+&lt;p>Slidebox是拿来整理相册的，上滑删除很方便，我过去居然都是手动整理，难以想象。&lt;/p>
+&lt;p>&lt;strong>Calendar&lt;/strong> ：IOS Calendar+Across+时光似金&lt;/p>
+&lt;p>准确来说我的日程是放进苹果日历里面的，时光似金是拿来记录时间轴然后同步进日历。Across（还有Timeview）是拿来看时间统计和一周时间轴的。不过我最近在考虑把Across删了，反正电脑也能看一周的时间轴。&lt;/p>
+&lt;p>&lt;strong>Cloud File Storage&lt;/strong>：iCloud+百度网盘+阿里云&lt;/p>
+&lt;p>放弃摆脱百度网盘了，但是九月之前真的要想办法摆脱阿里云。我用阿里云是为了存资源）对不起）然后在VidHub看，但是好像国外没法用阿里云。我列了一个清单，准备慢慢转移。&lt;/p>
+&lt;p>&lt;strong>RSS+Read it Later&lt;/strong>：Reeder5&lt;/p>
+&lt;p>很省心的网络街溜子阅读器，最好的是买断制。页面配色看着很舒服，就是最近不知道为什么，iCloud的源都刷新的很慢。&lt;/p>
+&lt;p>&lt;strong>Reader&lt;/strong>：山丘阅读+Kindle&lt;/p>
+&lt;p>山丘阅读，阅读器中的阅读器，据说下次更新会支持chm和html格式，神。Kindle在想起来要保护眼睛的时候用。
+偶尔会用Calibre整理一下元数据，看完的也会扔进去，然后把手机里的删掉。手机上偶尔会用Apple Book看外文书。Apple Book的阅读页面排版确实很好看。&lt;/p>
+&lt;p>&lt;strong>Browser&amp;amp;Book Mark&lt;/strong> ：Safari+Arc&lt;/p>
+&lt;p>电脑用Arc，感觉有很多人安利介绍过了。手机上其实不怎么打开浏览器，用的是苹果自带的Safari。
+书签用的是Arc，这个垂直栏放书签很舒服，而且我的书签基本都是各种参考，都是需要随时拿出来用的……对Cubox心动过，但是看了眼订阅价格，还是算了。&lt;/p>
+&lt;p>&lt;strong>Blog Writing&lt;/strong>：Hugo+Bear2+Visual Code Studio&lt;/p>
+&lt;p>基本上是在Bear2里写，因为有markdown可视化，写完了导md进文件夹，然后用VCS检查一下格式，最后还要打开GitHub桌面端publish，有点麻烦我好想搞一个自动化。&lt;/p>
+&lt;p>&lt;strong>Spreadsheets&amp;amp;Presentations&lt;/strong>：Microsoft全家桶。&lt;/p>
+&lt;p>&lt;strong>Shopping Lists&lt;/strong> ：一般不需要，需要的话应该是Things3，放进Inbox里。&lt;/p>
+&lt;p>&lt;strong>Budgeting and Personal Finance&lt;/strong> ：钱迹&lt;/p>
+&lt;p>话虽如此我很久没打开了。&lt;/p>
+&lt;p>&lt;strong>News&lt;/strong>：长毛象算吗？&lt;/p>
+&lt;p>&lt;strong>Music&lt;/strong> ：Apple Music&lt;/p>
+&lt;p>想念更新前的网易云。&lt;/p>
+&lt;p>&lt;strong>Movies&amp;amp;Animations&lt;/strong>：VidHub&lt;/p>
+&lt;p>不出意料的开始收钱了，不过还是买断的，幸好！很好用，类似Infuse，不过更便宜，而且对中文的支持好，还能找在线字幕。&lt;/p>
+&lt;p>&lt;strong>Podcasts&lt;/strong> ：Castro&lt;/p>
+&lt;p>很好用，虽然订阅但是不贵，其实也没什么非要订阅用的功能。小组件可以看Queued Episode和统计时常，唯一的缺点是没有小宇宙那个好看的历史统计。在此点名批评Apple Podcast。&lt;/p>
+&lt;p>&lt;strong>Password Management&lt;/strong>：苹果自带的密码记录。偶尔会写在我的hobo weeks上。&lt;/p>
+&lt;h3 id="画画用的">画画用的
+&lt;/h3>&lt;p>&lt;strong>CSP&lt;/strong>&lt;/p>
+&lt;p>主力软件，目前用的是大陆版，国际版试了一下，也没什么特别需要的功能，还是月供，太讨厌了。&lt;/p>
+&lt;p>&lt;strong>Photoshop&lt;/strong>&lt;/p>
+&lt;p>想离婚但是偶尔还是得用一下。&lt;/p>
+&lt;p>&lt;strong>tourbox&lt;/strong>&lt;/p>
+&lt;p>神。&lt;/p>
+&lt;p>&lt;strong>Wacom&lt;/strong>&lt;/p>
+&lt;p>想离婚，感觉两看两相厌。但是目前没找到能把他替下来的。而且客户端做的好烂。&lt;/p>
+&lt;p>&lt;strong>Eagle&lt;/strong>&lt;/p>
+&lt;p>内存占的有点太多了吧！但是挺好用的（而且迁移成本太高了……），幸好你是买断制。&lt;/p>
+&lt;p>&lt;strong>PureRef&lt;/strong>&lt;/p>
+&lt;p>自从发现Eagle能悬浮窗固定之后就很少打开了。&lt;/p>
+&lt;h3 id="extra">Extra！
+&lt;/h3>&lt;p>&lt;strong>PopClip&lt;/strong>&lt;/p>
+&lt;p>很好用的扩展，谁用谁知道。&lt;/p>
+&lt;p>&lt;strong>PDF Expert&lt;/strong>&lt;/p>
+&lt;p>看PDF用的，其实没怎么打开过，特别是下了Docs Viewer这个Chrome扩展之后……
+但是偶尔应该还是会用上的吧。&lt;/p>
+&lt;p>&lt;strong>Omni Converter&lt;/strong>&lt;/p>
+&lt;p>拿来把下载下来的术曲视频转换成Mp3的，可以批量转换，坏消息是要会员。&lt;/p>
+&lt;p>&lt;strong>Stretchly&lt;/strong>&lt;/p>
+&lt;p>天使一样的电脑软件，每30分钟遮挡全屏提醒你休息，可自定义时间，而且免费。&lt;/p>
+&lt;p>&lt;strong>Rectangle&lt;/strong>&lt;/p>
+&lt;p>类似windows上power toy里那个屏幕分区，但是自定义度低一些，好处是免费。&lt;/p></description></item><item><title>博客装修01｜2024 ONLINE（终于！）</title><link>https://haru-5qmd.vercel.app/p/blog-decorate-01/</link><pubDate>Wed, 01 May 2024 12:02:52 +0800</pubDate><guid>https://haru-5qmd.vercel.app/p/blog-decorate-01/</guid><description>&lt;h2 id="正式上线3103">正式上线！｜31/03
+&lt;/h2>&lt;p>其实站子早就搭好了，大约是年初的时候。但是一直都只有一篇博文，也就是我的年终总结。现在回去看，格式做的也不太好，有空我会回去把这些乱七八糟的小格式都给大一统了的。这个时候的我还不知道slug究竟是干什么的，都用的和description一句话……&lt;/p>
+&lt;p>主题用的是塔塔的&lt;a class="link" href="https://mantyke.icu/posts/2022/stack-theme-mod/" target="_blank" rel="noopener"
+>魔改版stack模版&lt;/a>，进行了一些个人魔改……其实什么也没动，只是调整了一下配色，而且dark mode并没做好适配，搞得怪难看的。&lt;/p>
+&lt;h2 id="第一次update01042024">第一次update｜01/04/2024
+&lt;/h2>&lt;h3 id="rss">RSS
+&lt;/h3>&lt;p>折腾了好久，本来以为我要自学代码了，然后发现原来hugo自带这个功能！不需要很麻烦的手动配置，只需要把/index.xml放进menu.toml里RSS的链接那一行就行了。不放心可以扔进自己的RSS阅读器里试验一下（我就是这么干的）。&lt;/p>
+&lt;h3 id="域名">域名
+&lt;/h3>&lt;p>用的&lt;a class="link" href="https://mantyke.icu/posts/2021/7e64c334/" target="_blank" rel="noopener"
+>塔塔的教程&lt;/a>，中间还琢磨了半天Dynadot的官方文档，还挺傻瓜的，跟着一步步走就好了。唯一需要注意的就是DNS传播有可能花上四五十分钟，我当时眼巴巴地等着，半个小时一到就去看，结果没好，又过了一会儿才正式上线。不知道是不是因为我在墙内？有关系吗？&lt;/p>
+&lt;p>域名在Dynadot挑最便宜的后缀买的，第一年还特别便宜，我不想换（因为懒），之后会一直续费这一个吧。&lt;/p>
+&lt;h3 id="友链">友链
+&lt;/h3>&lt;p>模版里已经自带了配置好的格式了，非常傻瓜，之前没搞只是因为懒。&lt;/p>
+&lt;h2 id="第二次update30042024">第二次update｜30/04/2024
+&lt;/h2>&lt;h3 id="short-code">short code
+&lt;/h3>&lt;p>目前博客里的短代码有这些：&lt;/p>
+&lt;ul>
+&lt;li>Bilibili&lt;/li>
+&lt;li>油管&lt;/li>
+&lt;li>网易云音乐&lt;/li>
+&lt;li>文本黑幕和模糊&lt;/li>
+&lt;li>卡片模式&lt;/li>
+&lt;li>折叠&lt;/li>
+&lt;li>星星评级&lt;/li>
+&lt;li>时间线&lt;/li>
+&lt;li>视频播放&lt;/li>
+&lt;li>NeoDB卡片&lt;/li>
+&lt;li>&lt;a class="link" href="https://4xu.xyz/p/progressbar/" target="_blank" rel="noopener"
+>进度条&lt;/a>&lt;/li>
+&lt;li>插入嘟嘟（目前不好使）&lt;/li>
+&lt;/ul>
+&lt;p>除了进度条，作业基本上都是在这里抄的：&lt;strong>&lt;a class="link" href="https://www.sleepymoon.cyou/2023/hugo-shortcodes/" target="_blank" rel="noopener"
+>Hugo | 在 Stack 主题上可行的短代码们&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>顺便，本来想用豆瓣卡片，但是死活不行，应该是API挂了，我看见了还有有效的API，但可惜我不会代码，没法手动改，NeoDB也够用了，库还更全一些，只是缺些评分。&lt;/p>
+&lt;h3 id="about和now">About和Now
+&lt;/h3>&lt;p>About上写了些自我介绍，Now上放了目前在做的事情的进度条，预计还会慢慢的再多加一些内容进去。&lt;/p>
+&lt;p>一直想把About上的字数统计去了，但是没搞懂该怎么办（。&lt;/p>
+&lt;h3 id="侧边栏">侧边栏
+&lt;/h3>&lt;p>给侧边栏改了一下格式，统一了一些。就在每个页面文件夹里的index.md里面改，只有主页要到config.yaml里换。&lt;/p>
+&lt;p>以及在这时，我手贱把archives的首字母大写了，结果整个archives界面就消失了，改回来才好……原来在代码的世界，有时候也是要区分大小写的……&lt;/p>
+&lt;h3 id="接入waline评论">接入Waline评论
+&lt;/h3>&lt;p>作业用的是谷歌到的，不知道怎么搞找不到了，内容和官方文档差不多。&lt;/p>
+&lt;p>Waline的官方文档已经非常傻瓜了，但我还是在Server URL上卡住了，翻了半天才意识到原来url不是那个长长一串的东西。&lt;/p>
+&lt;p>有些想改一下评论区的样式，但是暂时懒得动了，先这样吧。&lt;/p>
+&lt;h2 id="关于写博客的思考">关于写博客的思考
+&lt;/h2>&lt;p>今天翻阅rss列表，看见了一篇相当有意思的博文，我正好在飞机上闲的没事干，就去翻了翻其他博文，笑得连刚刚洒了一杯星巴克都忘了。乐完了飞机也起飞了，我开始反思，为什么我的博客就干巴巴的。可能是因为我本质是把博客当工作日志来写，虽然我也没工作，我的月记只是起到一个复盘的作用。日常的事都扔进日记里了，也不会特地在工作日志里再写一次。而如果默认写给某个读者看，写出来的东西就难免有矫饰，我打算今后尽量诚实一些，毕竟本质还是给自己看的（我也怀疑真的有那几个朋友之外的人看吗，如果装上访客统计一看都是自己也太尴尬了）。但是让文字有趣一点还是有必要的，纯看日志我完全可以去看Things3的log。&lt;/p>
+&lt;p>以及，我还是觉得会有人看，难免装模作样一下。比如我就不好意思写和饺子去奇米蛋咖啡&lt;span class="blur">操了穿着情趣女仆装的奇米蛋。&lt;/span> 今后我会把这里当成长毛象，抛弃羞耻心，想操就操，不过我会记得给NSFW内容打上模糊的！&lt;/p></description></item><item><title>越折腾生产力越低｜笔记体系更新</title><link>https://haru-5qmd.vercel.app/p/others-note-taking-update/</link><pubDate>Tue, 30 Apr 2024 03:02:52 +0800</pubDate><guid>https://haru-5qmd.vercel.app/p/others-note-taking-update/</guid><description>&lt;h2 id="之前在用什么">之前在用什么
+&lt;/h2>&lt;p>过去我的体系相当复杂，懒得重新写（也快忘记了），正好把过去的嘟嘟搬过来一下。&lt;/p>
+&lt;div class="mycard">
+&lt;div class="content"> 主力是滴答清单，学习相关在flomo，日常相关在备忘录，日记本来是用纸质本写的，现在换到了daymore，还在犹豫要不要回去继续手写
+&lt;br>
+拆分一下是这样的：
+&lt;br>
+日记/日常记录：daymore
+&lt;br>
+画画相关的教程/笔记：需要 markdown的用滴答清单的笔记，需要自己跟着画的在ps，最终都图片导入flomo
+&lt;br>
+碎片化的各种笔记：也在flomo
+&lt;br>
+学习笔记：随机一个幸运纸质本，日后看情况整理导入备忘录或flomo
+&lt;br>
+课表和临时日程安排：ios日历
+&lt;br>
+灵感记录+读书/各种笔记：随机一个平台发完后，整合进ios备忘录
+&lt;br>
+proj+自学课程安排+tbr+打卡：滴答清单
+&lt;br>
+书影游播客记录：二酋
+&lt;br>
+需要仪式感的时候：tn+bujo
+&lt;br>
+目前没用上的：打折时候没忍住买的magrin note，或许明年写论文的时候会用上 &lt;/div>
+&lt;/div>
+&lt;h2 id="优化掉了什么">优化掉了什么
+&lt;/h2>&lt;ul>
+&lt;li>滴答清单：太笨重了，功能实在太多，最重要的是ui有种微妙的丑，而且我只需要一半不到的功能，却还是要一年交168。&lt;/li>
+&lt;li>Notion：因为导出麻烦+没有本地化，个人的东西就不放在上面了。可能做学校的project时还需要它出来撑一下场面，因为我们老师想看gantt chart。&lt;/li>
+&lt;li>Bujo：真的不需要。&lt;/li>
+&lt;li>ios日历：换成了Across。&lt;/li>
+&lt;li>ios备忘录：合并进了熊掌记。&lt;/li>
+&lt;/ul>
+&lt;h2 id="现在的体系">现在的体系
+&lt;/h2>&lt;ul>
+&lt;li>Daymore：日记&lt;/li>
+&lt;li>熊掌记：all-in-one笔记，包括课堂笔记、博客写作、书影单、大同人写作、灵感笔记。&lt;/li>
+&lt;li>FLOMO：书摘（没几个）、教程和参考，预定把书摘也合并进熊掌记。全是大图片遂开了会员。&lt;/li>
+&lt;li>二酉：记录书影游和有声书，播客先放到博客里做回顾了，在里面记很麻烦。&lt;/li>
+&lt;li>Things3: 替换了滴答清单拿来做GTD，界面清爽很多。滴答清单太笨重了，对着界面经常就什么都不想干了，相比之下Things3就像家攻一样小而美，而且project功能深得我心。&lt;/li>
+&lt;/ul>
+&lt;h2 id="一直在用的生产力">一直在用的…生产力…？
+&lt;/h2>&lt;ul>
+&lt;li>Reeder5: RSS+稍后读，买断制，界面简洁优美，一直在用。（悄悄地说一下偶尔还能绕过付费墙）&lt;/li>
+&lt;li>Slidebox：整理照片用的，买断制。&lt;/li>
+&lt;li>山丘阅读：all-in-one阅读软件，非常好用。唯一的缺点是笔记划线不太舒服……不过无所谓我也不怎么做笔记。&lt;/li>
+&lt;/ul></description></item></channel></rss>

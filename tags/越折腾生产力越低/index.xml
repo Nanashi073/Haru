@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>越折腾生产力越低 on 春天与阿修罗</title><link>https://haru-5qmd.vercel.app/tags/%E8%B6%8A%E6%8A%98%E8%85%BE%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%B6%8A%E4%BD%8E/</link><description>Recent content in 越折腾生产力越低 on 春天与阿修罗</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 24 May 2024 19:39:15 +0800</lastBuildDate><atom:link href="https://haru-5qmd.vercel.app/tags/%E8%B6%8A%E6%8A%98%E8%85%BE%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%B6%8A%E4%BD%8E/index.xml" rel="self" type="application/rss+xml"/><item><title> 越折腾生产力越低｜VPS入门其二</title><link>https://haru-5qmd.vercel.app/p/others-my-vps-02/</link><pubDate>Fri, 24 May 2024 19:39:15 +0800</pubDate><guid>https://haru-5qmd.vercel.app/p/others-my-vps-02/</guid><description>&lt;h2 id="给自建服务分发子域名">给自建服务分发子域名
+&lt;/h2>&lt;p>原本以为会很麻烦，没想到还挺简单的……对不起我能这么说是因为问了CHATGPT，并且要求它像对待小学生一样给我一步步地保姆级解释。以防万一（主要是防止我哪天忘了）把流程记下来。&lt;/p>
+&lt;h3 id="1配置dns">1，配置DNS
+&lt;/h3>&lt;p>我用的Dynadot（考虑到价格大概也不会换了），因此就是去Manage Domain里，在DNS设置的地方，加上一个子域名。类型选A，主机名是你想要挂在自己主域名前面的东西，值是你VPS的IP地址，TTL默认就好。&lt;/p>
+&lt;h3 id="2-配置nginx">2， 配置NGINX
+&lt;/h3>&lt;p>在/etc/nginx/sites-available/目录下创建配置文件，以我的MEMOS举例，就是memos_harushuura_vip。记住用下划线而不是点点来分割（哽住）。
+文件里复制粘贴过去这样的东西&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">server {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> listen 80;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> server_name blog.example.com; #这里也要改！
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> location / {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> proxy_pass http://127.0.0.1:8080; # 将IP和端口换成自己的
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> proxy_set_header Host $host;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> proxy_set_header X-Real-IP $remote_addr;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> proxy_set_header X-Forwarded-Proto $scheme;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="3创建符号连接">3，创建符号连接
+&lt;/h3>&lt;p>在终端里输入下面这些东西，记得把网址改掉：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo ln -s /etc/nginx/sites-available/blog_example_com /etc/nginx/sites-enabled/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="4-打发一下nginx">4， 打发一下NGINX
+&lt;/h3>&lt;p>看看配置是否正确，不正确应该是前面的哪一步出错了：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo nginx -t
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>验证通过了就让他重新读一下数据：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">sudo&lt;/span> &lt;span class="n">systemctl&lt;/span> &lt;span class="n">reload&lt;/span> &lt;span class="n">nginx&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="5ssl如果你安了certbot">5，SSL（如果你安了Certbot）
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo certbot --nginx -d blog.example.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="memos">MEMOS
+&lt;/h2>&lt;p>好吧我还没把它放进博客页面里！但是我成功地给他发了一个子域名。并且惊喜地发现有一个插件能一键把FLOMO导出放进MEMOS，但是我正式转移到MEMOS大概要等MOEMEMO支持最新版了，现在的最新版因为API大更新不能用，遗憾。&lt;/p>
+&lt;h2 id="dashboard">Dashboard
+&lt;/h2>&lt;p>在Slash、OneNav、Dashy货比三家之后选择了最后那个。Slash要钱，OneNav丑，Dashy只能说还好但是可自定义程度最高。部署很简单，按照官网说明来就好。我在一通折腾之后，搞出来一个还比较满意的界面，预计要再把别的一些（主要是画画参考用的）网址整合进去。
+&lt;figure
+>
+&lt;a href="https://haru-5qmd.vercel.app/img/dashyscreenshot.jpg" >
+&lt;img src="https://haru-5qmd.vercel.app/img/dashyscreenshot.jpg"
+loading="lazy"
+alt="简约色彩">
+&lt;/a>
+&lt;figcaption>简约色彩&lt;/figcaption>
+&lt;/figure>
+有点麻烦的事这个东西……他好像没有账号，导致随便什么人都可以改数据，不像SLASH能放出来。但是SLASH长得也报看，就算了。&lt;/p>
+&lt;h2 id="骰子">骰子！！！！
+&lt;/h2>&lt;p>折腾了俩小时成功部署上了，我是电脑高手！&lt;/p>
+&lt;p>因为海豹的文档写的很全面了，我就不当搬运工了，而且想来也没什么需求……&lt;/p>
+&lt;p>其实唯一遇上的BUG就是在docker-compose.yml里，文档里给出来的代码，需要把第一行的name:sealdice删掉。我也不知道为啥一直报错，删了之后就好使了。
+然后登陆比较麻烦的是，每次登陆都要重启lagrange的容器，然后迅速地点进他的目录，把那张二维码找出来扫码登陆。现在只能祈祷腾讯别又风控了。&lt;/p>
+&lt;p>目前没什么别的需求，可以安心写博客画画了。希望Moe Memos能早点更新。&lt;/p></description></item><item><title>越折腾生产力越低｜VPS入门其一</title><link>https://haru-5qmd.vercel.app/p/others-my-vps-01/</link><pubDate>Mon, 20 May 2024 11:54:18 +0800</pubDate><guid>https://haru-5qmd.vercel.app/p/others-my-vps-01/</guid><description>&lt;h2 id="why-vps">Why VPS?
+&lt;/h2>&lt;p>因为吃太饱了（确信）。&lt;/p>
+&lt;p>折腾不了NAS，就买了个VPS。起因是在批阅每日RSS的时候，刷到少数派对自建服务的征文。我看了一下，就被狠狠种草了。然后我谷歌了一下价格，打开&lt;a class="link" href="https://p3terx.com/archives/cheap-and-costeffective-vps-recommended.html" target="_blank" rel="noopener"
+>搜索结果里前三冒出来的&lt;/a>，没想到这么便宜！我选了CloudCone的那个大甩卖，4核160G，一年55刀，腾讯阿里一样的配置，价格要四五倍。&lt;/p>
+&lt;h2 id="现状">现状
+&lt;/h2>&lt;p>按照教程把该配置的都配置上了（大概吧），其实只是部署了docker，然后把Memos和Calibre- Web设置了个大概。就是这两项，其实也有没搞好的地方。因为我目前还没搞懂该怎么设子域名，又该怎么把我的子域名分发给这几个容器，也就没法用域名访问。目测这个大玩具还够我玩上很长一段时间……&lt;/p>
+&lt;h2 id="to-do">TO-DO
+&lt;/h2>&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Memos&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 骰子&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Calibre-Web&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> NextCloud&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 同步moon fm&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 图床&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> EMail&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 给博客搬家&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 整理域名&lt;/li>
+&lt;/ul>
+&lt;h2 id="简装">简装
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://p3terx.com/archives/configure-ssh-keyfree-login-for-vps.html" target="_blank" rel="noopener"
+>SSH&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://p3terx.com/archives/installing-and-configuring-ufw-in-debian.html" target="_blank" rel="noopener"
+> 一点简单的安全措施&lt;/a>&lt;/li>
+&lt;li>Docker！&lt;/li>
+&lt;li>&lt;a class="link" href="[https://homarr.dev]%28https://homarr.dev/%29" >Homepage&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="作业合集">作业合集
+&lt;/h2>&lt;p>&lt;a class="link" href="https://p3terx.com/archives/cheap-and-costeffective-vps-recommended.html" target="_blank" rel="noopener"
+> 2024年国外高性价比便宜 VPS 推荐(稳定、好用、免费体验)&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank" rel="noopener"
+>Awesome Selfhosted&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://sspai.com/post/78424" target="_blank" rel="noopener"
+>除了博客，当你有一台云服务器时还可以自部署哪些免费、开源的项目？&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://sspai.com/post/54672" target="_blank" rel="noopener"
+>鸭子都能看懂的 VPS 离线下载 &amp;amp; 云服务搭建新手教程&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://chengpengzhao.com/2020-08-03-vps-neng-yong-lai-zuo-shi-me/" target="_blank" rel="noopener"
+>VPS能做什么（总结几个我正在用的服务配置&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://sspai.com/post/56893" target="_blank" rel="noopener"
+>Docker 的入门「指北」&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://sspai.com/post/82512" target="_blank" rel="noopener"
+>家庭服务器Home Server实践&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://sspai.com/post/39264" target="_blank" rel="noopener"
+>用树莓派搭建私有云吧｜明明白白玩 Pi系列之四&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.seanzou.com/archives/-wu-di-xiao-bai-ban-calibre-si-ren-zai-xian-tu-shu-guan-da-jian#toc-head-9" target="_blank" rel="noopener"
+>【无敌小白版】阿里云服务器+Calibre在线图书馆搭建&lt;/a>&lt;/p></description></item><item><title>越折腾生产力越低｜Obsidian其一</title><link>https://haru-5qmd.vercel.app/p/other-obsidian-note-1/</link><pubDate>Wed, 15 May 2024 20:10:48 +0800</pubDate><guid>https://haru-5qmd.vercel.app/p/other-obsidian-note-1/</guid><description>&lt;h2 id="我再也不要按年付费订阅了">我再也不要按年付费订阅了
+&lt;/h2>&lt;p>谁能想到距上次更新笔记博客还不到一周……我就又优化了！
+这次是把熊掌记优化掉了。起因非常复杂。我在象狂嘟博客装修，有一位香油回了我，于是我忍不住去看了香油的主页，翻到了香油的博客，并把香油的博客翻了个底朝天。其中看见一篇说&lt;a class="link" href="https://zhen-shi.github.io/p/%e6%96%bd%e5%b7%a5-%e8%bd%af%e8%a3%85%e8%ae%b0%e5%bd%95%e4%b8%8e%e5%a4%9a%e7%ab%af%e5%86%99%e4%bd%9c%e5%b7%a5%e5%85%b7%e6%b5%81/" target="_blank" rel="noopener"
+>obsidian可以直接靠命令推送到GitHub&lt;/a>。这不就是我一直心心念念的all in one吗！于是我兴冲冲地下了obsidian，发现他长得挺好看的，和我印象里不一样，且完全免费（同步功能要钱，但是我有iCloud，可以通过这个丝滑同步）。&lt;/p>
+&lt;p>我试验了一下，批量导出熊掌记里的md文件，然后拽进obsidian的文件夹，三分钟就搬家完成了。我的天，回想上次，我可是手动挨个复制的备忘录里的东西……这也太舒服了。而且如果不行，我还能一键导回熊掌记。毕竟，请看小标题，我的熊掌记会员还有半年到期……&lt;/p>
+&lt;h2 id="看看毛胚房">看看毛胚房
+&lt;/h2>&lt;p>我先直奔preference界面，换成了中文，然后仔细看了一下设定，把大部分核心插件都关了。我只想轻量地用一个笔记软件写点东西，不需要那么多花里胡哨的双链、白板、关系图谱，我在notion里已经吃过一次苦头了。我也不打算看教程，再搭一个又fan又cy的书影音库出来。总之我试了几个主题之后选了minimal，然后关了一串功能，又改了一下手机编辑器。目前是把H2和H3放到前面了，感觉这个比熊掌记的markdown键盘方便，那个还要额外呼出，其实很不舒服。&lt;/p>
+&lt;p>然后我发现，熊掌记要钱还是有原因的。obsidian有时候（经常的）会莫名卡一下，侧边栏的呼出也不是很顺滑，而且不支持那种滑动看所有笔记标题+预览的页面。这点和notion一样。所以我还是需要一个dashboard。&lt;/p>
+&lt;h2 id="我搭我搭">我搭我搭
+&lt;/h2>&lt;p>谷歌了一下&lt;em>obsidian dashboard&lt;/em>之后，随便选了一个长得顺眼的介绍页面，是&lt;a class="link" href="https://obsidianninja.com/new-obsidian-showcases-dashboards-movie-library-menu-bar-more/" target="_blank" rel="noopener"
+>这个&lt;/a>里面的Minimal Homepage Dashboard。按文档说明下了插件，存了css，然后自己自定义了一下。我不想每次都要展开，就改了一下格式。&lt;/p>
+&lt;p>目前觉得最好的插件是Pomodoro，应该是下载量最高的那一个。省的我开网页了，不想再下一个番茄钟软件。&lt;/p>
+&lt;p>顺便整理了一下笔记，把用不上的手动存档起来，又备份了一下博客。以及我发现了，清单这些东西应该放进Things，不然我这辈子都未必会看存的影单……&lt;/p>
+&lt;h2 id="买椟还珠">买椟还珠
+&lt;/h2>&lt;p>我在研究了如何用Git插件之后发现……要用这个我就不能用icloud在手机和电脑之间同步…………而且我怀疑这个东西不是很稳，万一丢件就GG了。所以我折腾到obsidian，最后还是要手动开github啊！！！&lt;/p>
+&lt;p>好消息是obsidian很好玩，而且其实更省心。熊掌记的导出会自动把标题带进md文件里，搞得我每次都要手动删。而且obsidian的模版自带时间戳，让写博客的过程轻松了那么一点（意思是不需要我自己改了）。&lt;/p>
+&lt;p>等我考完试再好好研究一下，散会！&lt;/p></description></item></channel></rss>

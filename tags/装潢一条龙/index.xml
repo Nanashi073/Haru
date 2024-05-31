@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>装潢一条龙 on 春天与阿修罗</title><link>https://haru-5qmd.vercel.app/tags/%E8%A3%85%E6%BD%A2%E4%B8%80%E6%9D%A1%E9%BE%99/</link><description>Recent content in 装潢一条龙 on 春天与阿修罗</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 01 May 2024 12:02:52 +0800</lastBuildDate><atom:link href="https://haru-5qmd.vercel.app/tags/%E8%A3%85%E6%BD%A2%E4%B8%80%E6%9D%A1%E9%BE%99/index.xml" rel="self" type="application/rss+xml"/><item><title>博客装修01｜2024 ONLINE（终于！）</title><link>https://haru-5qmd.vercel.app/p/blog-decorate-01/</link><pubDate>Wed, 01 May 2024 12:02:52 +0800</pubDate><guid>https://haru-5qmd.vercel.app/p/blog-decorate-01/</guid><description>&lt;h2 id="正式上线3103">正式上线！｜31/03
+&lt;/h2>&lt;p>其实站子早就搭好了，大约是年初的时候。但是一直都只有一篇博文，也就是我的年终总结。现在回去看，格式做的也不太好，有空我会回去把这些乱七八糟的小格式都给大一统了的。这个时候的我还不知道slug究竟是干什么的，都用的和description一句话……&lt;/p>
+&lt;p>主题用的是塔塔的&lt;a class="link" href="https://mantyke.icu/posts/2022/stack-theme-mod/" target="_blank" rel="noopener"
+>魔改版stack模版&lt;/a>，进行了一些个人魔改……其实什么也没动，只是调整了一下配色，而且dark mode并没做好适配，搞得怪难看的。&lt;/p>
+&lt;h2 id="第一次update01042024">第一次update｜01/04/2024
+&lt;/h2>&lt;h3 id="rss">RSS
+&lt;/h3>&lt;p>折腾了好久，本来以为我要自学代码了，然后发现原来hugo自带这个功能！不需要很麻烦的手动配置，只需要把/index.xml放进menu.toml里RSS的链接那一行就行了。不放心可以扔进自己的RSS阅读器里试验一下（我就是这么干的）。&lt;/p>
+&lt;h3 id="域名">域名
+&lt;/h3>&lt;p>用的&lt;a class="link" href="https://mantyke.icu/posts/2021/7e64c334/" target="_blank" rel="noopener"
+>塔塔的教程&lt;/a>，中间还琢磨了半天Dynadot的官方文档，还挺傻瓜的，跟着一步步走就好了。唯一需要注意的就是DNS传播有可能花上四五十分钟，我当时眼巴巴地等着，半个小时一到就去看，结果没好，又过了一会儿才正式上线。不知道是不是因为我在墙内？有关系吗？&lt;/p>
+&lt;p>域名在Dynadot挑最便宜的后缀买的，第一年还特别便宜，我不想换（因为懒），之后会一直续费这一个吧。&lt;/p>
+&lt;h3 id="友链">友链
+&lt;/h3>&lt;p>模版里已经自带了配置好的格式了，非常傻瓜，之前没搞只是因为懒。&lt;/p>
+&lt;h2 id="第二次update30042024">第二次update｜30/04/2024
+&lt;/h2>&lt;h3 id="short-code">short code
+&lt;/h3>&lt;p>目前博客里的短代码有这些：&lt;/p>
+&lt;ul>
+&lt;li>Bilibili&lt;/li>
+&lt;li>油管&lt;/li>
+&lt;li>网易云音乐&lt;/li>
+&lt;li>文本黑幕和模糊&lt;/li>
+&lt;li>卡片模式&lt;/li>
+&lt;li>折叠&lt;/li>
+&lt;li>星星评级&lt;/li>
+&lt;li>时间线&lt;/li>
+&lt;li>视频播放&lt;/li>
+&lt;li>NeoDB卡片&lt;/li>
+&lt;li>&lt;a class="link" href="https://4xu.xyz/p/progressbar/" target="_blank" rel="noopener"
+>进度条&lt;/a>&lt;/li>
+&lt;li>插入嘟嘟（目前不好使）&lt;/li>
+&lt;/ul>
+&lt;p>除了进度条，作业基本上都是在这里抄的：&lt;strong>&lt;a class="link" href="https://www.sleepymoon.cyou/2023/hugo-shortcodes/" target="_blank" rel="noopener"
+>Hugo | 在 Stack 主题上可行的短代码们&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>顺便，本来想用豆瓣卡片，但是死活不行，应该是API挂了，我看见了还有有效的API，但可惜我不会代码，没法手动改，NeoDB也够用了，库还更全一些，只是缺些评分。&lt;/p>
+&lt;h3 id="about和now">About和Now
+&lt;/h3>&lt;p>About上写了些自我介绍，Now上放了目前在做的事情的进度条，预计还会慢慢的再多加一些内容进去。&lt;/p>
+&lt;p>一直想把About上的字数统计去了，但是没搞懂该怎么办（。&lt;/p>
+&lt;h3 id="侧边栏">侧边栏
+&lt;/h3>&lt;p>给侧边栏改了一下格式，统一了一些。就在每个页面文件夹里的index.md里面改，只有主页要到config.yaml里换。&lt;/p>
+&lt;p>以及在这时，我手贱把archives的首字母大写了，结果整个archives界面就消失了，改回来才好……原来在代码的世界，有时候也是要区分大小写的……&lt;/p>
+&lt;h3 id="接入waline评论">接入Waline评论
+&lt;/h3>&lt;p>作业用的是谷歌到的，不知道怎么搞找不到了，内容和官方文档差不多。&lt;/p>
+&lt;p>Waline的官方文档已经非常傻瓜了，但我还是在Server URL上卡住了，翻了半天才意识到原来url不是那个长长一串的东西。&lt;/p>
+&lt;p>有些想改一下评论区的样式，但是暂时懒得动了，先这样吧。&lt;/p>
+&lt;h2 id="关于写博客的思考">关于写博客的思考
+&lt;/h2>&lt;p>今天翻阅rss列表，看见了一篇相当有意思的博文，我正好在飞机上闲的没事干，就去翻了翻其他博文，笑得连刚刚洒了一杯星巴克都忘了。乐完了飞机也起飞了，我开始反思，为什么我的博客就干巴巴的。可能是因为我本质是把博客当工作日志来写，虽然我也没工作，我的月记只是起到一个复盘的作用。日常的事都扔进日记里了，也不会特地在工作日志里再写一次。而如果默认写给某个读者看，写出来的东西就难免有矫饰，我打算今后尽量诚实一些，毕竟本质还是给自己看的（我也怀疑真的有那几个朋友之外的人看吗，如果装上访客统计一看都是自己也太尴尬了）。但是让文字有趣一点还是有必要的，纯看日志我完全可以去看Things3的log。&lt;/p>
+&lt;p>以及，我还是觉得会有人看，难免装模作样一下。比如我就不好意思写和饺子去奇米蛋咖啡&lt;span class="blur">操了穿着情趣女仆装的奇米蛋。&lt;/span> 今后我会把这里当成长毛象，抛弃羞耻心，想操就操，不过我会记得给NSFW内容打上模糊的！&lt;/p></description></item></channel></rss>
