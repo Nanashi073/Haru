@@ -1,8 +1,9 @@
 <div id="heatmap" style="
-  max-width: 600px;
+  max-width: 700px;
   height: 180px;
   padding: 2px;
-  text-align: center;"
+  text-align: center;
+  "
 ></div>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.0/dist/echarts.min.js"></script>
 <script type="text/javascript">
@@ -87,7 +88,7 @@
     title: {
         top: 0,
         left: 'center',
-        text: 'HEATMAP'
+        text: '我的热力图'
     },
     tooltip: {
       hideDelay: 1000,
@@ -101,7 +102,7 @@
             var link = post.link;
             var title = post.title;
             var wordCount = (post.wordCount / 1000).toFixed(1);
-            content += `<a href="${link}" target="_blank">${title} | ${wordCount} 千字</a>`
+            content += `<a href="${link}" target="_blank">${title} | ${wordCount} k</a>`
         }
         return content;
       }
@@ -127,11 +128,11 @@
         top: 80,
         left: 20,
         right: 4,
-        cellSize: ['auto', 12],
+        cellSize: ['auto', 13],
         range: getRangeArr(),
         itemStyle: {
             color: '#F1F1F1',
-            borderWidth: 2.5,
+            borderWidth: 1.5,
             borderColor: '#fff',
         },
         yearLabel: { show: false },
