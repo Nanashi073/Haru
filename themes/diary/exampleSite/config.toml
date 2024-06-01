@@ -1,4 +1,4 @@
-baseURL = "http://harushuura.vip/"
+baseURL = "http://example.org/"
 DefaultContentLanguage = "en" # Theme's display language, supports: en, fr, zh, zh-hant
 languageCode = "en-us"
 title = "A Hugo Site"
