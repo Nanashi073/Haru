@@ -67,7 +67,7 @@ sudo certbot --nginx -d blog.example.com
 好吧我还没把它放进博客页面里！但是我成功地给他发了一个子域名。并且惊喜地发现有一个插件能一键把FLOMO导出放进MEMOS，但是我正式转移到MEMOS大概要等MOEMEMO支持最新版了，现在的最新版因为API大更新不能用，遗憾。
 ## Dashboard
 在Slash、OneNav、Dashy货比三家之后选择了最后那个。Slash要钱，OneNav丑，Dashy只能说还好但是可自定义程度最高。部署很简单，按照官网说明来就好。我在一通折腾之后，搞出来一个还比较满意的界面，预计要再把别的一些（主要是画画参考用的）网址整合进去。
-![简约色彩](/img/dashyscreenshot.jpg)
+![简约色彩](https://imagehost.harushuura.vip/image/2024/05/30/6658038e87857.jpg)
 有点麻烦的事这个东西……他好像没有账号，导致随便什么人都可以改数据，不像SLASH能放出来。但是SLASH长得也报看，就算了。
 
 ## 骰子！！！！
