@@ -2,7 +2,7 @@ baseURL = 'https://haru-5qmd.vercel.app/'
 DefaultContentLanguage = "zh"
 languageCode = 'zh-cn'
 title = '春天与阿修罗'
-copyright = "食宇宙尘埃·或吐纳着空气和盐水"
+copyright = "since01/03/2024"
 theme = 'diary'
 hasCJKLanguage = true
 
@@ -23,7 +23,7 @@ hasCJKLanguage = true
 subtitle = "食宇宙尘埃·或吐纳着空气和盐水"
 
 # 评论功能
-enableTwikoo = false
+enableTwikoo = true
 twikooEnvId = "http://twikoo.harushuura.vip/"
 
 enableimgloop = true

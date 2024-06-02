@@ -1,7 +1,7 @@
-$color-accent: #3c0404;
+$color-accent: #1d0101;
 //$color-accent: #330000;
-$back-container-background: #ebebeb;
-$front-container-background: #ebebeb;
+$back-container-background: #f1f1f1;
+$front-container-background: #f3f3f3;
 
 @import '//assets/scss/custom.scss';
 @import "//layout/partials/links.scss";
@@ -1315,8 +1315,8 @@ font-weight: bold;
 
 //修改选中颜色
 ::selection {
-  color: #fff;
-  background: #2f0101;
+  color: #1b0000;
+  background: #d60c0c85;
 }
 
 

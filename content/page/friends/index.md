@@ -33,7 +33,7 @@ menu:
 
 
 ## Friends
-{{< friend name="夜航南飞" url="https://www.notion.so/39d7013ecdf844c4b948ef329a691a92?pvs=21" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d682b38.png" bio="“The world is beautiful. Let me come through it to you.”" >}}
+{{< friend name="夜航南飞" url="https://banshou-air.netlify.app" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d682b38.png" bio="“The world is beautiful. Let me come through it to you.”" >}}
 {{< friend name="一潭星动" url="https://jiangshanghan.art.blog/" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d55d578.png" bio="写点" >}}
 {{< friend name="白花恋诗" url="trails-of-isara.vercel.app/" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d48d23e.png" bio="把最棒的吊桥效应献给你" >}}
 {{< friend name="baer" url="https://writee.org/baer/" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d460c5e.png" bio="冰熊酒吧，欢迎光临。" >}}
