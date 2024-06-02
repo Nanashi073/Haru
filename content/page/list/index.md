@@ -89,7 +89,7 @@ menu:
 - [ ] 鲜花盛开的森林·忧国
 
 ### 真相壁炉：叙诡专题
-{{< progressbar percentage="77" >}}
+{{< progressbar percentage="88" >}}
 - [x] 杀戮之病
 - [x] 罗杰疑案
 - [x] 圣母
@@ -98,7 +98,7 @@ menu:
 - [x] 德尔塔的悲剧
 - [x] 剪刀男
 - [ ] 咚咚吊桥坠落
-- [ ] 长夜
+- [x] 长夜
 
 ### 真相壁炉：密室专题
 {{< progressbar percentage="17" >}}
