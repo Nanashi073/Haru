@@ -1,0 +1,14 @@
+<style>
+    .blur-text {
+        color: transparent;
+        text-shadow: 0px 0px 8px var(--card-text-color-main, rgba(0, 0, 0, 0.5)); /* 默认颜色为黑色 */
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    
+    .blur-text:hover {
+        color: inherit;
+        text-shadow: none;
+    }
+    </style>
+    
+    <span class="blur-text">{{ .Inner }}</span>

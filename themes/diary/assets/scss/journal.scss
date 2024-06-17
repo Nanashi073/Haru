@@ -1265,16 +1265,20 @@ blockquote.quote {
 
 
 //文本高斯模糊
+:root {
+  --card-text-color-main: rgba(0, 0, 0, 0.5); /* 示例颜色 */
+}
+
 .blur {
- color: transparent;
- text-shadow:0px 0px 8px rgba(0,0,0,0.5)
+  color: transparent;
+  text-shadow: 0px 0px 8px var(--card-text-color-main);
 }
 
 .blur:hover {
- color: transparent;
- text-shadow:0px 0px 0px rgba(0,0,0,1)
-
+  color: var(--card-text-color-main);
+  text-shadow: none;
 }
+
 
 
 //文本黑幕效果
@@ -1630,3 +1634,106 @@ $context-color-dark: #c0c0c0;
   .star.filled {
     color: #5f0404; /* 填充星星的颜色 */
   }
+
+  /* Basic styles for badges */
+.showcase-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 7px; /* Negative margin to counteract card margins */
+}
+
+.showcase {
+  border: 1px solid var(--text-color-light);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 7px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-background); /* Use light mode background color by default */
+  color: var(--card-text-color-main); /* Use light mode text color by default */
+  width: calc(31.6% - 0px);
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.showcase h3 {
+  margin-top: -20px;
+  text-align: center; /* Center align the text */
+  color: var(--card-text-color-main);
+  font-size: 10px;
+}
+
+.showcase > h4 {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--card-text-color-main);
+  font-size: 10px;
+}
+
+.showcase-images {
+  display: flex;
+  overflow: hidden;
+}
+
+.showcase-image {
+  max-width: 275px;
+  max-height: 100px; /* Set a reasonable max height for the images */
+  width: 100%;
+  height: 100%;
+  margin: 3px;
+  background-color: transparent; /* 设置图片背景色为透明 */
+  margin-bottom: 0px; /* 调整图片与其他内容之间的距离 */
+}
+
+/* Styles for the description */
+.description {
+  max-height: 100px; /* Limit initial height */
+  overflow: scroll;
+  margin-top: 7px;/* 调整描述部分与卡片顶部的距离 */
+  margin-right: 0px;
+  margin-left: 7px; 
+  line-height: 1.5; /* 调整行距 */
+  color: var(--card-text-color-main);
+  font-size: 10px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.description.visible {
+  max-height: none; /* Expand on interaction */
+}
+
+@media (max-width: 700px) {
+  .showcase {
+    width: calc(100% - 14px); /* Full width minus margins */
+  }
+  
+  .showcase h3, .showcase h4, .description {
+    font-size: 8px; /* Adjust font sizes for smaller screens */
+  }
+  
+  .description {
+    max-height: 80px; /* Reduce the initial max-height */
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .showcase {
+    width: calc(48.5% - 14px); /* Adjust width for medium screens */
+  }
+  
+  .showcase h3, .showcase h4, .description {
+    font-size: 9px; /* Adjust font sizes for medium screens */
+  }
+}
+
+@media (min-width: 900px) {
+  .showcase {
+    width: calc(31.6% - 0px);
+  }
+  
+  .showcase h3, .showcase h4, .description {
+    font-size: 10px;
+  }
+}
+/* badges -------- end */
