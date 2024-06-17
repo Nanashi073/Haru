@@ -9,9 +9,11 @@ date: 2024-06-17T12:58:29+08:00
 lastmod: 2024-06-17T12:58:29+08:00
 description: 
 tags:
--
+- 读书报告
+- 指点江山
+- 长期清单
 categories:
-- 
+- review
 image: 
 slug: review-2024-narrative-trick
 ---
