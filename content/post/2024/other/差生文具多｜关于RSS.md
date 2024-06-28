@@ -13,7 +13,7 @@ tags:
 categories:
 - others
 image: 
-slug: 
+slug: other-about-rss
 ---
 
 
