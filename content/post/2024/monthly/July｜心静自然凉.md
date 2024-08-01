@@ -4,12 +4,12 @@
 
 
 ---
-title: "July｜心静自然凉 "
+title: " July｜心静自然凉"
 date: 2024-08-01T11:05:08+08:00
 lastmod: 2024-08-01T11:05:08+08:00
 description: 
 tags:
--月记
+- 月记
 categories:
 - archive
 image: 
