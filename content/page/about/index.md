@@ -17,12 +17,12 @@ menu:
 也可以用*[RSS](/index.xml)*订阅本博客！
 {{< heatmap >}}
 ## 2024 Reading Challenge
-{{< progressbar percentage="65" >}}
+{{< progressbar percentage="72" >}}
 ## 2024 100 Sketches
-{{< progressbar percentage="19" >}}
+{{< progressbar percentage="45" >}}
 
 ## OC游戏进度
-{{< progressbar percentage="5" >}}
+{{< progressbar percentage="8" >}}
 
 ### 我在干什么
 在画画。
