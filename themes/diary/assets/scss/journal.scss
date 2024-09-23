@@ -1,7 +1,7 @@
-$color-accent: #1d0101;
+$color-accent: #1c1c1c;
 //$color-accent: #330000;
-$back-container-background: #f1f1f1;
-$front-container-background: #f3f3f3;
+$back-container-background: #ebebeb59;
+$front-container-background: #f8f8f8;
 
 @import '//assets/scss/custom.scss';
 @import "//layout/partials/links.scss";
@@ -25,16 +25,16 @@ $extra-container-pagination-width: 64px;
 $stream-container-max-width: 1620px;
 
 $nav-title-size: 25px;
-$nav-subtitle-size: 15px;
+$nav-subtitle-size: 12px;
 $nav-link-size: 20px;
 $nav-footer-size: 12px;
 $post-title-size: 22px;
-$post-subtitle-size: 14px;
-$post-summary-size: 14px;
-$post-body-size: 16px;
-$post-meta-size: 16px;
-$tag-category-title-size: 22px;
-$toc-size: 18px;
+$post-subtitle-size: 10px;
+$post-summary-size: 10px;
+$post-body-size: 19px;
+$post-meta-size: 14px;
+$tag-category-title-size: 25px;
+$toc-size: 20px;
 
 $dark-accent: darken($color-accent, 10%);
 $deep-dark-accent: darken($color-accent, 50%);
@@ -131,18 +131,18 @@ body, p, div, span {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Noto Serif SC', sans-serif; // 使用黑体
-  color: #4c0000; // 使用不同颜色
+  color: #084d75; // 使用不同颜色
   position: relative;
   padding-left: 1.5em; // 给#符号预留空间
 }
 
 h1 {
-  border-bottom: 2px solid #4c0000; // 下划线
+  border-bottom: 2px solid #0b4f76; // 下划线
   padding-bottom: 5px;
 }
 
 h2 {
-  border-bottom: 2px solid #4c0000; // 下划线
+  border-bottom: 2px solid #0a3e5c; // 下划线
   padding-bottom: 5px;
 }
 
@@ -150,7 +150,7 @@ h2 {
 h1::before, h2::before, h3::before, h4::before, h5::before {
   position: absolute;
   left: -1.5em; // 调整符号位置
-  color: #4c0000; // 符号的颜色
+  color: #0f537a; // 符号的颜色
   font-weight: bold; // 符号的加粗
 }
 
@@ -232,25 +232,25 @@ blockquote {
 }
 /* 为所有链接添加样式 */
 a {
-  color: #7e0808; /* 链接颜色 */
+  color: #0c467d; /* 链接颜色 */
   text-decoration: underline; /* 去掉下划线 */
 }
 
 a:hover {
-  color: #a30f07; /* 悬停时的颜色 */
+  color: #2d467d; /* 悬停时的颜色 */
   text-decoration: underline; /* 悬停时的下划线 */
 }
 
 /* 为特定类名的链接添加样式 */
 .custom-link {
-  color: #ff5722;
+  color: #226fff;
   font-weight: bold;
 }
 
 a {
   color: $color-accent;
   &:hover {
-    color: #631303($color-accent, 70%);
+    color: #031163($color-accent, 70%);
     text-underline-position: under;
   }
   @media screen and (max-width: $single-column-max-width) {
@@ -525,11 +525,13 @@ a {
     .nav-title {
       font-size: $nav-title-size;
       line-height: $nav-title-size * 1.4;
+      color:#05406d;
     }
     border-right: 2px solid transparent;
     .nav-subtitle {
       margin-top: 8px;
       font-size: $nav-subtitle-size;
+      color:#476a80;
     }
     &:hover {
       border-right: 2px solid
@@ -875,12 +877,12 @@ a {
         line-height: 1.5em;
         background: -moz-linear-gradient(
           top,
-          rgba(216, 216, 216, 0) 0%,
+          rgba(240, 240, 240, 0) 0%,
           rgba(0, 0, 0, 0.75) 100%
         ); /* FF3.6-15 */
         background: -webkit-linear-gradient(
           top,
-          rgba(220, 220, 220, 0) 0%,
+          rgba(255, 255, 255, 0) 0%,
           rgba(0, 0, 0, 0.75) 100%
         ); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(
@@ -1266,7 +1268,7 @@ blockquote.quote {
 
 //文本高斯模糊
 :root {
-  --card-text-color-main: rgba(0, 0, 0, 0.5); /* 示例颜色 */
+  --card-text-color-main: rgba(54, 56, 64, 0.5); /* 示例颜色 */
 }
 
 .blur {
@@ -1283,15 +1285,15 @@ blockquote.quote {
 
 //文本黑幕效果
 .shady {
- color:#260d0d;
+ color:#0b1e3c;
  font-weight: bold;
- box-shadow: 0px -20px 0px rgba(0,0,0,1) inset; 
+ box-shadow: 0px -20px 0px rgb(0, 0, 0) inset; 
  transition: all 0.3s ease;
 }
 .shady:hover{
 font-weight: bold;
  color:#FFF;
- box-shadow: 0px -20px 0px rgba(0,0,0,1) inset; 
+ box-shadow: 0px -20px 0px rgb(5, 1, 28) inset; 
 }
 
 
@@ -1319,8 +1321,8 @@ font-weight: bold;
 
 //修改选中颜色
 ::selection {
-  color: #1b0000;
-  background: #d60c0c85;
+  color: #02001b;
+  background: #5174ad85;
 }
 
 
@@ -1336,7 +1338,7 @@ font-weight: bold;
 
 //文本黑幕效果
 .shady {
-  color:#000;
+  color:#000000;
   font-weight: bold;
   box-shadow: 0px -20px 0px rgba(0,0,0,1) inset; 
   transition: all 0.3s ease;
@@ -1350,7 +1352,7 @@ font-weight: bold;
 
 //重点标记
 mark{
-  background: hsla(0, 73%, 42%, 0.696);
+  background: hsla(218, 73%, 42%, 0.696);
 }
 
 // 卡片样式
@@ -1359,7 +1361,7 @@ mark{
   margin: 20px 0;
   border-radius: 4px;
   word-break: break-all;
-  background: #cdccc678;
+  background: #c0cacd78;
   box-shadow: 0 6px 10px 0 #00000033;
   .content {
     line-height: 30px;
@@ -1367,7 +1369,7 @@ mark{
 }
 //星星评级
 i.star{
-  color: hsl(0, 100%, 49%); /*星星的颜色*/
+  color: hsl(208, 100%, 49%); /*星星的颜色*/
 }
 
 i.star-outline{
@@ -1388,12 +1390,12 @@ i.star svg, i.star-outline svg{
 .db-card-title {margin-bottom: 3px;font-size: 14px;color: var(--card-text-color-main);;}
 .db-card-title a{text-decoration: none!important}
 .db-card-abstract,.db-card-comment{font-size:13px;overflow: auto;max-height:10rem;color: var(--card-text-color-main);;}
-.db-card-cate{position: absolute;top:0;right:0;background:#b80404;padding:1px 8px;font-size:small;font-style:italic;border-radius:0 8px 0 8px;text-transform:capitalize;}
+.db-card-cate{position: absolute;top:0;right:0;background:#d1d4da;padding:1px 8px;font-size:small;font-style:italic;border-radius:0 8px 0 8px;text-transform:capitalize;}
 .db-card-post img{width: 100px!important;height: 150px!important;border-radius: 4px;-o-object-fit: cover;object-fit: cover;}
 .rating{margin: 0 0 5px;font-size:13px;line-height: 1;display: flex;align-items: center;}
-.rating .allstardark{position:relative;color: #b40c0c;height: 16px;width: 80px;background-size: auto 100%;margin-right: 8px;background-repeat: repeat;background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxwYXRoIGQ9Ik05MDguMSAzNTMuMWwtMjUzLjktMzYuOUw1NDAuNyA4Ni4xYy0zLjEtNi4zLTguMi0xMS40LTE0LjUtMTQuNS0xNS44LTcuOC0zNS0xLjMtNDIuOSAxNC41TDM2OS44IDMxNi4ybC0yNTMuOSAzNi45Yy03IDEtMTMuNCA0LjMtMTguMyA5LjMtMTIuMyAxMi43LTEyLjEgMzIuOS42IDQ1LjNsMTgzLjcgMTc5LjEtNDMuNCAyNTIuOWMtMS4yIDYuOS0uMSAxNC4xIDMuMiAyMC4zIDguMiAxNS42IDI3LjYgMjEuNyA0My4yIDEzLjRMNTEyIDc1NGwyMjcuMSAxMTkuNGM2LjIgMy4zIDEzLjQgNC40IDIwLjMgMy4yIDE3LjQtMyAyOS4xLTE5LjUgMjYuMS0zNi45bC00My40LTI1Mi45IDE4My43LTE3OS4xYzUtNC45IDguMy0xMS4zIDkuMy0xOC4zIDIuNy0xNy41LTkuNS0zMy43LTI3LTM2LjN6TTY2NC44IDU2MS42bDM2LjEgMjEwLjNMNTEyIDY3Mi43IDMyMy4xIDc3MmwzNi4xLTIxMC4zLTE1Mi44LTE0OUw0MTcuNiAzODIgNTEyIDE5MC43IDYwNi40IDM4MmwyMTEuMiAzMC43LTE1Mi44IDE0OC45eiIgZmlsbD0iI2Y5OWIwMSIvPjwvc3ZnPg==);
+.rating .allstardark{position:relative;color: #bec5cd;height: 16px;width: 80px;background-size: auto 100%;margin-right: 8px;background-repeat: repeat;background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxwYXRoIGQ9Ik05MDguMSAzNTMuMWwtMjUzLjktMzYuOUw1NDAuNyA4Ni4xYy0zLjEtNi4zLTguMi0xMS40LTE0LjUtMTQuNS0xNS44LTcuOC0zNS0xLjMtNDIuOSAxNC41TDM2OS44IDMxNi4ybC0yNTMuOSAzNi45Yy03IDEtMTMuNCA0LjMtMTguMyA5LjMtMTIuMyAxMi43LTEyLjEgMzIuOS42IDQ1LjNsMTgzLjcgMTc5LjEtNDMuNCAyNTIuOWMtMS4yIDYuOS0uMSAxNC4xIDMuMiAyMC4zIDguMiAxNS42IDI3LjYgMjEuNyA0My4yIDEzLjRMNTEyIDc1NGwyMjcuMSAxMTkuNGM2LjIgMy4zIDEzLjQgNC40IDIwLjMgMy4yIDE3LjQtMyAyOS4xLTE5LjUgMjYuMS0zNi45bC00My40LTI1Mi45IDE4My43LTE3OS4xYzUtNC45IDguMy0xMS4zIDkuMy0xOC4zIDIuNy0xNy41LTkuNS0zMy43LTI3LTM2LjN6TTY2NC44IDU2MS42bDM2LjEgMjEwLjNMNTEyIDY3Mi43IDMyMy4xIDc3MmwzNi4xLTIxMC4zLTE1Mi44LTE0OUw0MTcuNiAzODIgNTEyIDE5MC43IDYwNi40IDM4MmwyMTEuMiAzMC43LTE1Mi44IDE0OC45eiIgZmlsbD0iI2Y5OWIwMSIvPjwvc3ZnPg==);
 }
-.rating .allstarlight{position: absolute;left: 0;color: #cb0000ca;height:16px;overflow: hidden;background-size: auto 100%;background-repeat: repeat;background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxwYXRoIGQ9Ik05MDguMSAzNTMuMWwtMjUzLjktMzYuOUw1NDAuNyA4Ni4xYy0zLjEtNi4zLTguMi0xMS40LTE0LjUtMTQuNS0xNS44LTcuOC0zNS0xLjMtNDIuOSAxNC41TDM2OS44IDMxNi4ybC0yNTMuOSAzNi45Yy03IDEtMTMuNCA0LjMtMTguMyA5LjMtMTIuMyAxMi43LTEyLjEgMzIuOS42IDQ1LjNsMTgzLjcgMTc5LjEtNDMuNCAyNTIuOWMtMS4yIDYuOS0uMSAxNC4xIDMuMiAyMC4zIDguMiAxNS42IDI3LjYgMjEuNyA0My4yIDEzLjRMNTEyIDc1NGwyMjcuMSAxMTkuNGM2LjIgMy4zIDEzLjQgNC40IDIwLjMgMy4yIDE3LjQtMyAyOS4xLTE5LjUgMjYuMS0zNi45bC00My40LTI1Mi45IDE4My43LTE3OS4xYzUtNC45IDguMy0xMS4zIDkuMy0xOC4zIDIuNy0xNy41LTkuNS0zMy43LTI3LTM2LjN6IiBmaWxsPSIjZjk5YjAxIi8+PC9zdmc+);}
+.rating .allstarlight{position: absolute;left: 0;color: #c6ced7ca;height:16px;overflow: hidden;background-size: auto 100%;background-repeat: repeat;background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxwYXRoIGQ9Ik05MDguMSAzNTMuMWwtMjUzLjktMzYuOUw1NDAuNyA4Ni4xYy0zLjEtNi4zLTguMi0xMS40LTE0LjUtMTQuNS0xNS44LTcuOC0zNS0xLjMtNDIuOSAxNC41TDM2OS44IDMxNi4ybC0yNTMuOSAzNi45Yy03IDEtMTMuNCA0LjMtMTguMyA5LjMtMTIuMyAxMi43LTEyLjEgMzIuOS42IDQ1LjNsMTgzLjcgMTc5LjEtNDMuNCAyNTIuOWMtMS4yIDYuOS0uMSAxNC4xIDMuMiAyMC4zIDguMiAxNS42IDI3LjYgMjEuNyA0My4yIDEzLjRMNTEyIDc1NGwyMjcuMSAxMTkuNGM2LjIgMy4zIDEzLjQgNC40IDIwLjMgMy4yIDE3LjQtMyAyOS4xLTE5LjUgMjYuMS0zNi45bC00My40LTI1Mi45IDE4My43LTE3OS4xYzUtNC45IDguMy0xMS4zIDkuMy0xOC4zIDIuNy0xNy41LTkuNS0zMy43LTI3LTM2LjN6IiBmaWxsPSIjZjk5YjAxIi8+PC9zdmc+);}
 @media (max-width:550px) {
   .db-card{margin:0.8rem 1rem;}
   .db-card-comment{display: none;}
@@ -1422,20 +1424,20 @@ i.star svg, i.star-outline svg{
 
 // 友情链接样式CSS
 // 头像边框颜色
-$avatar-border-color: #870505;
-$avatar-border-color-dark: #C0C0C0;
+$avatar-border-color: #057e87;
+$avatar-border-color-dark: #c0c0c0;
 
 // style-card 背景色
 $friend-link-background-color: #cacaca10;
 $friend-link-background-color-dark: #69697141;
 
 // 友链 name 原始色
-$friend-link-color: #450606;
+$friend-link-color: #062645;
 $friend-link-color-dark: #ffffff;
 
 // 友链 name 气泡响应对比色
-$friend-link-hover-color: #ea4e2f;
-$friend-link-hover-color-dark: rgb(241, 213, 159);
+$friend-link-hover-color: #2fbbea;
+$friend-link-hover-color-dark: rgb(159, 223, 241);
 
 // bio 简介上下文
 $context-color: #210101;
@@ -1471,8 +1473,8 @@ $context-color-dark: #c0c0c0;
 
     // 卡片阴影
     -webkit-box-shadow: 0px 14px 32px 0px rgba(231, 224, 224, 0.15);
-    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0.7px 1px 6px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(157, 199, 212, 0.15);
+    box-shadow: 0.7px 1px 6px 0px rgba(4, 53, 117, 0.16);
 
     // 卡片背景色
     background: $friend-link-background-color;
@@ -1607,7 +1609,7 @@ $context-color-dark: #c0c0c0;
   
   .progress-bar {
     height: 100%;
-    background-color: #750909; /* 你可以根据需要更改颜色 */
+    background-color: #063c59; /* 你可以根据需要更改颜色 */
     border-radius: 25px 0 0 25px;
     position: relative; /* 添加 position: relative; */
   }
@@ -1632,7 +1634,7 @@ $context-color-dark: #c0c0c0;
   }
   
   .star.filled {
-    color: #5f0404; /* 填充星星的颜色 */
+    color: #083e7f; /* 填充星星的颜色 */
   }
 
   /* Basic styles for badges */
@@ -1648,7 +1650,7 @@ $context-color-dark: #c0c0c0;
   border-radius: 10px;
   padding: 10px;
   margin: 7px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(21, 157, 172, 0.1);
   background-color: var(--card-background); /* Use light mode background color by default */
   color: var(--card-text-color-main); /* Use light mode text color by default */
   width: calc(31.6% - 0px);

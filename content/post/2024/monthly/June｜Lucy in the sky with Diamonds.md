@@ -7,7 +7,7 @@
 title: " June｜Lucy in the sky with Diamonds"
 date: 2024-07-01T12:08:00+08:00
 lastmod: 2024-07-01T12:08:00+08:00
-description: 
+description: 六月刊
 tags:
 - 月记
 categories:
