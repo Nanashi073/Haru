@@ -410,6 +410,7 @@ a {
     .single-column-header-title {
       font-size: $single-column-nav-title-size;
       font-weight: bold;
+      color:#057e87;
     }
     .single-column-header-subtitle {
       font-size: $single-column-nav-subtitle-size;
@@ -525,7 +526,7 @@ a {
     .nav-title {
       font-size: $nav-title-size;
       line-height: $nav-title-size * 1.4;
-      color:#05406d;
+      color:#083659;
     }
     border-right: 2px solid transparent;
     .nav-subtitle {
@@ -804,6 +805,7 @@ a {
           background: rgba(0, 0, 0, 0.03);
           .post-item-title {
             text-decoration: underline;
+            color:#057e87;
             text-decoration-style: 0.5px solid $color-accent;
             text-underline-position: under;
           }
@@ -842,7 +844,7 @@ a {
   .post-list-container-shadow {
     @media screen and (max-width: $single-column-max-width) {
       // box-shadow: 0 -6px 8px -4px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0px 8px rgba(118, 119, 135, 0.1);
     }
   }
   .post-list-footer {
@@ -935,6 +937,7 @@ a {
       .post-title {
         font-size: $post-title-size;
         font-weight: 600;
+        color:#057e87;
         font-style: normal;
         line-height: 1.5em;
         .post-subtitle {
