@@ -19,10 +19,10 @@ menu:
 ## 2024 Reading Challenge
 {{< progressbar percentage="72" >}}
 ## 2024 100 Sketches
-{{< progressbar percentage="45" >}}
+{{< progressbar percentage="65" >}}
 
 ## OC游戏进度
-{{< progressbar percentage="8" >}}
+{{< progressbar percentage="9" >}}
 
 ### 我在干什么
 在画画。
@@ -32,7 +32,7 @@ menu:
 里面会写一些本人的日常，对一些书影音游和APP的测评，希望未来会有游戏进度更新和教程。
 
 ### 一个长期的博客todo
-~~- 加入相册功能（没加入，但是有了图床）~~
+
 - 跑团界面（遥遥无期）
 - 介绍游戏和OC的子博客（遥遥无期）
 
@@ -44,3 +44,4 @@ menu:
  {{< timeline date="15/05/2024" title="Memos功能上线" description="powered by Artitalks" tags=""  >}}
  {{< timeline date="30/05/2024" title="在Now界面加入了热力图" description="" tags=""  >}}
  {{< timeline date="01/06/2024" title="新主题上线！撒花！" description="" tags=""  >}}
+ {{< timeline date="09/10/2024" title="更换了博客配色和字号" description="" tags=""  >}}
