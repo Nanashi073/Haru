@@ -1,0 +1,18 @@
+{{ $dbUrl := .Get 0 }}
+{{ $dbApiUrl := "" }}
+
+{{ if ( findRE `^.*neodb\.social\/.*` $dbUrl ) }}
+    {{ $dbPath := replaceRE `.*neodb.social\/(.*\/.*)` "$1" $dbUrl }}
+    {{ $dbApiUrl = print "https://neodb.social/api/" $dbPath }}
+{{ else }}
+    {{ $dbApiUrl = print "https://neodb.social/api/catalog/fetch?url=" $dbUrl }}
+{{ end }}
+
+{{ with resources.GetRemote $dbApiUrl }}
+    {{ with .Err }}
+        {{ warnf "Failed to fetch neodb content, please check API validity: %s" . }}
+    {{ else }}
+        {{ $dbFetch := transform.Unmarshal . }}
+        <p><blockquote><a class="link" href="{{ $dbFetch.id }}" >{{ $dbFetch.title }} - NeoDB</a></blockquote></p>
+    {{ end }}
+{{ end }}

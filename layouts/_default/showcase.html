@@ -1,67 +1,23 @@
 {{ define "main" }}
-{{ $showcase := getJSON "static/showcase/showcase.json" }}
+  {{ $showcase := getJSON "static/showcase/showcase.json" }}
 
-<div id="showcase-container"></div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  var showcaseContainer = document.getElementById("showcase-container");
-
-  $.getJSON('/showcase/showcase.json', function(data) {
-    var showcaseHtml = ''; // Accumulate showcase HTML in this variable
-
-    $.each(data, function(index, showcase) {
-      showcaseHtml += `
-        <div class="showcase">
-          <div class="showcase-images">
-            <div class="swiper-container swiper-${index}">
-              <div class="swiper-wrapper">
-                ${showcase.images.map((image, imgIndex) => `
-                  <div class="swiper-slide">
-                    <a class="showcase-image-link" href="${image}" data-fancybox="group-${index}" data-caption="${showcase.title}">
-                      <img src="${image}" class="showcase-image" alt="Image">
-                    </a>
-                  </div>
-                `).join('')}
-              </div>
-              <div class="swiper-pagination"></div>
+  <div class="post">
+    <h2 class="post-title">{{ .Title | plainify }}</h2>
+    <div class="post-content showcase">
+      <div id="showcase">
+        {{ range $showcase.items }}
+          <div class="showcase-item" style="margin-bottom: 20px;">
+            <div class="showcase-image" style="text-align: center;">
+              <img loading="lazy" decoding="async" src="{{ .image }}" alt="{{ .title }}" style="display: block; width: auto; height: 200px; margin: 0 auto;">
+            </div>
+            <div class="showcase-info" style="border: 1px solid #ddd; padding: 10px; margin-top: 10px;">
+              <h3 class="showcase-title" style="font-size: 18px; margin-bottom: 5px;"><a href="{{ .link }}">{{ .title }}</a></h3>
+              <p class="showcase-platform" style="font-size: 14px; color: gray; margin-bottom: 5px;">{{ .platform }}</p>
+              <p class="showcase-note" style="font-size: 14px; line-height: 1.5;">{{ .note }}</p>
             </div>
           </div>
-          <h3>${showcase.title}</h3>
-          <h4>${showcase.subtitle}</h4>
-          <p class="description">${showcase.description.replace(/\n/g, '<br>')}</p>
-        </div>
-      `;
-    });
-
-    // After the loop, add the accumulated showcase HTML to showcaseContainer
-    showcaseContainer.innerHTML = showcaseHtml;
-
-    // Initialize Swiper for each showcase
-    $.each(data, function(index, showcase) {
-      var showcasewiper = new Swiper('.swiper-' + index, {
-        pagination: '.swiper-' + index + ' .swiper-pagination',
-        paginationClickable: true,
-        autoHeight: true,
-        keyboardControl: true,
-        mousewheelControl: true,
-        lazyLoading: true,
-        lazyLoadingInPrevNext: true,
-        loop: true,
-        initialSlide: 0,
-      });
-    });
-  }); // End of $.getJSON('/static/showcase/showcase.json')
-}); // End of document.addEventListener("DOMContentLoaded")
-</script>
-
-<!-- Include Swiper CSS and JS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-<!-- Include Fancybox CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-<!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Include Fancybox JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        {{ end }}
+      </div>
+    </div>
+  </div>
 {{ end }}

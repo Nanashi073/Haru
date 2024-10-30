@@ -1,26 +1,18 @@
-[
+{
+  "items": [
     {
-      "title": "Card 1",
-      "subtitle": "这个页面还在装修中……",
-      "description": "这个页面还在装修中……",
-      "images": [
-        "https://library.harushuura.vip/cover/3954"
-      ]
+      "title": "未麻的部屋",
+      "platform": "FILM",
+      "link": "https://movie.douban.com/subject/1395091/",
+      "image": "https://imagehost.harushuura.vip/image/2024/10/31/6722a917e6ddc.png",
+      "note": "爱与希望"
     },
     {
-      "title": "Card 2",
-      "subtitle": "Subtitle for Card 2",
-      "description": "这个页面还在装修中……",
-      "images": [
-        "https://library.harushuura.vip/cover/3954"
-      ]
-    },
-    {
-      "title": "Card 3",
-      "subtitle": "Subtitle for Card 3",
-      "description": "Description for Card 3",
-      "images": [
-        "https://library.harushuura.vip/cover/3954"
-      ]
+      "title": "摇曳露营",
+      "platform": "爱看",
+      "link": "https://example.com/another-product",
+      "image": "https://example.com/another-product-image.jpg",
+      "note": "Another product description."
     }
-]
+  ]
+}
