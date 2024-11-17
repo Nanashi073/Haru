@@ -1,23 +1,38 @@
 {{ define "main" }}
-  {{ $showcase := getJSON "static/showcase/showcase.json" }}
 
-  <div class="post">
-    <h2 class="post-title">{{ .Title | plainify }}</h2>
-    <div class="post-content showcase">
-      <div id="showcase">
-        {{ range $showcase.items }}
-          <div class="showcase-item" style="display: flex; align-items: stretch; margin-bottom: 20px;">
-            <div class="showcase-info" style="border: 1px solid #ddd; padding: 10px; height: 200px; margin-right: 20px; display: flex; flex-direction: column; justify-content: space-between;">
-              <h3 class="showcase-title" style="font-size: 18px; margin: 15px 0 0 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><a href="{{ .link }}">{{ .title | plainify }}</a></h3>
-              <p class="showcase-platform" style="font-size: 14px; color: gray; margin: 2px 0 0 0;">{{ .platform }}</p>
-              <p class="showcase-note" style="font-size: 14px; line-height: 1.5;">{{ .note }}</p>
-            </div>
-            <div class="showcase-image" style="text-align: center;">
-              <img loading="lazy" decoding="async" src="{{ .image }}" alt="{{ .title }}" style="display: block; width: auto; height: 200px;">
-            </div>
-          </div>
-        {{ end }}
-      </div>
+  <section class="showcase">
+    <div class="filter-bar">
+      <button data-filter="all">All</button>
+      <button data-filter="书">书</button>
+      <button data-filter="游">游</button>
+      <button data-filter="影">影</button>
+      <button data-filter="音">音</button>
+      <button data-filter="播">播</button>
     </div>
-  </div>
+    {{ .Content | emojify }}
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(".filter-bar button");
+      const items = document.querySelectorAll(".showcase-item");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.getAttribute("data-filter");
+
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+          items.forEach((item) => {
+            const itemTag = item.getAttribute("data-tags");
+
+            if (filter === "all" || itemTag === filter) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    });
+  </script>
 {{ end }}

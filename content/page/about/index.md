@@ -17,9 +17,9 @@ menu:
 也可以用*[RSS](/index.xml)*订阅本博客！
 {{< heatmap >}}
 ## 2024 Reading Challenge
-{{< progressbar percentage="72" >}}
+{{< progressbar percentage="89" >}}
 ## 2024 100 Sketches
-{{< progressbar percentage="65" >}}
+{{< progressbar percentage="100" >}}
 
 ## OC游戏进度
 {{< progressbar percentage="9" >}}

@@ -1,0 +1,11 @@
+<div class="showcase-item" data-tags="{{ .Get "tags" }}">
+    <div class="poster">
+        <img src="{{ .Get "poster" | safeURL }}" alt="{{ .Get "title" }}" />
+        <div class="overlay">
+            <p style="font-weight: bold;">{{ .Get "title" }}</p> <!-- Make title bold -->
+            <p><strong>by </strong>{{ .Get "creator" }}</p>
+            <p><strong>评价：</strong>{{ .Get "rating" }}</p>
+            <p>{{ .Get "description" }}</p>
+        </div>
+    </div>
+</div>

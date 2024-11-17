@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/layouts/shortcodes/applemusic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/shortcodes/showcase-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/page/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/about/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/page/showcase/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/showcase/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/2024/other/生活小妙招｜梨家今天的饭_EP1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/2024/other/生活小妙招｜梨家今天的饭_EP1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/_default/showcase.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/showcase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/diary/assets/scss/journal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/diary/assets/scss/journal.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,21 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Nanashi073"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nanashi073&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Nanashi073/Haru.git",
-    "accountId": "9dc8b622-51b7-4391-847c-fb26229c327f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nanashi073/Haru.git&quot;,
+    &quot;accountId&quot;: &quot;9dc8b622-51b7-4391-847c-fb26229c327f&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2oAqnUig438xaNsUTFYNc6GT8dA" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -40,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Hugo.未命名.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -51,6 +60,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="未命名" type="HUGO_RUN_CONFIGURATION" factoryName="Hugo configuration factory">
+      <option name="hugo.plugin.arguments" value="-D" />
+      <option name="hugo.plugin.run.server" value="run" />
+      <option name="hugo.plugin.custom.project.dir" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,10 +84,22 @@
       <option name="presentableId" value="Default" />
       <updated>1730322894886</updated>
       <workItem from="1730322895960" duration="3787000" />
+      <workItem from="1731872384511" duration="4720000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
