@@ -1754,24 +1754,18 @@ $context-color-dark: #c0c0c0;
   margin: 0 auto;      /* Center the container horizontally */
   padding: 0 15px;     /* Add padding if you want spacing inside */
 }
-.showcase-grid {
-  display: flex;
-  flex-wrap: nowrap; /* Prevents items from wrapping to the next line */
-  gap: 15px; /* Space between showcase items */
-  justify-content: flex-start; /* Align items to the left */
-  overflow-x: auto; /* Allows horizontal scrolling if items overflow */
-}
+/* Showcase grid layout - now with flex and no wrap */
+
 /* Showcase item styling */
 .showcase-item {
   flex: 0 0 auto;  /* Prevent flex-grow/shrink and keep item at its natural size */
   width: 195px;    /* Set the width of each item */
   position: relative;
-  height: 275px;
+  height: 275px;   /* Set the height of each item */
   overflow: hidden;
   border-radius: 5px;
-  display: inline-block; /* Ensures items are displayed side by side */
+  display: inline-block;  /* Ensures items are displayed side by side */
 }
-
 .showcase-item img {
   width: 100%;
   height: 100%;
@@ -1829,4 +1823,12 @@ $context-color-dark: #c0c0c0;
     justify-content: center; /* Center the buttons on mobile */
     padding-left: 0; /* Remove the left padding for mobile */
   }
+}
+/* Showcase grid layout */
+.showcase-grid {
+  display: flex;
+  flex-wrap: wrap;  /* Prevent items from wrapping to the next line */
+  gap: 15px;         /* Space between showcase items */
+  justify-content: flex-start;  /* Align items to the left */
+  overflow-x: auto;
 }
