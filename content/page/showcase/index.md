@@ -24,7 +24,7 @@ layout: "showcase"
 {{< showcase-item title="Fate Stay Night" creator="菌类" poster="https://assets-prd.ignimgs.com/2022/05/16/fatestaynight-1652732865727.jpg" rating="蘑菇就这么毁了我的二次元生活" tags="游"  >}}
 {{< showcase-item title="Currently Reading" creator="" poster="" rating="每周必听，图书馆的英语角" tags="播"  >}}
 {{< showcase-item title="密教模拟器" creator="Weather Factory" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yYXdvW-XCwQ8g87zNHXyyZWi0Nd0rY7ArK26E9rKF7TQ8wm-55ByuSBOcEMCrNLBYLdq" rating="道成肉红身" tags="游"  >}}
-{{< showcase-item title="蝶の毒 華の鎖" creator="丸木文华" poster="" rating="我不想说这个词但是好像真是日乙天花板了" tags="游"  >}}
+{{< showcase-item title="蝶の毒 華の鎖" creator="丸木文华" poster="https://upload.wikimedia.org/wikipedia/zh/thumb/7/79/Chounodoku_Hananokusari_Coverimage.png/250px-Chounodoku_Hananokusari_Coverimage.png" rating="我不想说这个词但是好像真是日乙天花板了" tags="游"  >}}
 {{< showcase-item title="Perfect Blue" creator="今敏" poster="" rating="配合爱抖露食用更佳" tags="影"  >}}
 {{< showcase-item title="贤者时间" creator="" poster="" rating="动物森友会音频版" tags="播"  >}}
 
