@@ -45,3 +45,5 @@ menu:
  {{< timeline date="30/05/2024" title="在Now界面加入了热力图" description="" tags=""  >}}
  {{< timeline date="01/06/2024" title="新主题上线！撒花！" description="" tags=""  >}}
  {{< timeline date="09/10/2024" title="更换了博客配色和字号" description="" tags=""  >}}
+ {{< timeline date="17/11/2024" title="装修了展柜页面" description="" tags=""  >}}
+ {{< timeline date="01/12/2024" title="修改neodb卡片样式显示个人打分" description="" tags=""  >}}

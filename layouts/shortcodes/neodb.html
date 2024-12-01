@@ -1,43 +1,29 @@
 {{ $dbUrl := .Get 0 }}
-{{ $dbApiUrl := "" }}
+{{ $dbApiUrl := "https://neodb.social/api/" }}
+{{ $dbType := "" }}
+{{ $itemRating := .Get 1 }}
 
 {{ if ( findRE `^.*neodb\.social\/.*` $dbUrl ) }}
-    {{ $dbPath := replaceRE `.*neodb.social\/(.*\/.*)` "$1" $dbUrl }}
-    {{ $dbApiUrl = print "https://neodb.social/api/" $dbPath }}
+    {{ $dbType = replaceRE `.*neodb.social\/(.*\/.*)` "$1" $dbUrl }}
 {{ else }}
-    {{ $dbApiUrl = print "https://neodb.social/api/catalog/fetch?url=" $dbUrl }}
+    {{ $dbType = $dbUrl }}
+    {{ $dbApiUrl = "https://neodb.social/api/catalog/fetch?url=" }}
 {{ end }}
 
-{{ with resources.GetRemote $dbApiUrl }}
-    {{ with .Err }}
-        {{ if hugo.IsServer }}
-            {{ warnf "Failed to fetch neodb content, Please check if NeoDB is reachable: %s" . }}
-            <p style="text-align: center;"><small>远程获取内容失败，请检查 NeoDB 是否可达。</small></p>
-        {{ else }}
-            {{ errorf "Failed to fetch neodb content, Please check if NeoDB is reachable: %s" . }}
-        {{ end }}
-    {{ else }}
-        {{ $dbFetch := transform.Unmarshal . }}
-        {{ $itemRating := 0 }}{{ with $dbFetch.rating }}{{ $itemRating = . }}{{ end }}
-        <div class="db-card">
-            <div class="db-card-subject">
-                <div class="db-card-post"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="{{ $dbFetch.cover_image_url }}"></div>
-                <div class="db-card-content">
-                    <div class="db-card-title"><a href="{{ $dbUrl }}" class="cute" target="_blank" rel="noreferrer">{{ $dbFetch.title }}</a></div>
-                    <div class="rating">
-                        {{ if $dbFetch.rating }}
-                            <span class="allstardark">
-                                    <span class="allstarlight" style="width:{{mul 10 $itemRating }}%"></span>
-                                </span>
-                            <span class="rating_nums">{{ $itemRating }}</span>
-                        {{ else }}
-                            <span class="rating_nums" style="color:#737373;">评分人数不足</span>
-                        {{ end }}
-                    </div>
-                    <div class="db-card-abstract">{{ $dbFetch.brief }}</div>
-                </div>
-                <div class="db-card-cate">{{ $dbFetch.category }}</div>
+{{ $dbFetch := getJSON $dbApiUrl $dbType }}
+
+{{ if $dbFetch }}
+    <div class="db-card">
+        <div class="db-card-subject">
+            <div class="db-card-post"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="{{ $dbFetch.cover_image_url }}"></div>
+            <div class="db-card-content">
+                <div class="db-card-title"><a href="{{ $dbUrl }}" class="cute" target="_blank" rel="noreferrer">{{ $dbFetch.title }}</a></div>
+                <div class="rating"><span class="rating_nums">个人打分：</span><span class="allstardark"><span class="allstarlight" style="width:{{ $itemRating }}0%"></span></span></div>
+                <div class="db-card-abstract">{{ $dbFetch.brief }}</div>
             </div>
+            <div class="db-card-cate">{{ $dbFetch.category }}</div>
         </div>
-    {{ end }}
-{{ end }}
+    </div>
+{{else}}
+    <p style="text-align: center;"><small>远程获取内容失败，请检查 API 有效性。</small></p>
+{{end}}

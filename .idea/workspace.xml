@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="展柜和更新博客">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/page/showcase/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/showcase/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/2024/monthly/十月刊（上）｜人是铁饭是钢.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/2024/monthly/十月刊（上）｜人是铁饭是钢.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/shortcodes/neodb.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/shortcodes/neodb.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,7 @@
   &quot;keyToString&quot;: {
     &quot;Hugo.未命名.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -64,7 +66,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
       </set>
     </attachedChunks>
   </component>
@@ -80,6 +82,8 @@
       <workItem from="1731872384511" duration="6557000" />
       <workItem from="1731880761966" duration="1786000" />
       <workItem from="1731955456751" duration="919000" />
+      <workItem from="1732997065277" duration="664000" />
+      <workItem from="1733081666157" duration="872000" />
     </task>
     <task id="LOCAL-00001" summary="展柜和更新博客">
       <option name="closed" value="true" />
@@ -113,7 +117,31 @@
       <option name="project" value="LOCAL" />
       <updated>1731882508642</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1732997259974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732997259975</updated>
+    </task>
+    <task id="LOCAL-00006" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1732997638516</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732997638516</updated>
+    </task>
+    <task id="LOCAL-00007" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1732997720167</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732997720167</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
