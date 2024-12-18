@@ -17,7 +17,7 @@ menu:
 也可以用*[RSS](/index.xml)*订阅本博客！
 {{< heatmap >}}
 ## 2024 Reading Challenge
-{{< progressbar percentage="89" >}}
+{{< progressbar percentage="100" >}}
 ## 2024 100 Sketches
 {{< progressbar percentage="100" >}}
 
