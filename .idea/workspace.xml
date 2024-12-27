@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="展柜和更新博客">
-      <change afterPath="$PROJECT_DIR$/layouts/shortcodes/tweet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/post/2024/monthly/十月刊（上）｜人是铁饭是钢.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/2024/monthly/十月刊（上）｜人是铁饭是钢.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +85,8 @@
       <workItem from="1733085893988" duration="161000" />
       <workItem from="1733767432258" duration="342000" />
       <workItem from="1733865147213" duration="115000" />
+      <workItem from="1734522366411" duration="1745000" />
+      <workItem from="1735334035219" duration="382000" />
     </task>
     <task id="LOCAL-00001" summary="展柜和更新博客">
       <option name="closed" value="true" />
@@ -184,7 +184,31 @@
       <option name="project" value="LOCAL" />
       <updated>1733086029434</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1734523304727</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1734523304727</updated>
+    </task>
+    <task id="LOCAL-00014" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1734523339618</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734523339618</updated>
+    </task>
+    <task id="LOCAL-00015" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1734523498367</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1734523498367</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
