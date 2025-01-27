@@ -15,21 +15,21 @@ menu:
 欢迎来*[我的长毛象](https://bgme.bid/@HennZaiTennshou)*找我玩。
 
 也可以用*[RSS](/index.xml)*订阅本博客！
+
+**请不要**把我的博文无授权**转载或收录**到其他地方。
+
 {{< heatmap >}}
-## 2024 Reading Challenge
-{{< progressbar percentage="100" >}}
-## 2024 100 Sketches
-{{< progressbar percentage="100" >}}
 
-## OC游戏进度
-{{< progressbar percentage="9" >}}
+## 2025 100DAYS Practice
+{{< progressbar percentage="30" >}}
 
-## 我在干什么
-在画画。
-如果没在画画，请叫我去画画。
+## 大游戏进度
+{{< progressbar percentage="15" >}}
+
+[商店页已上线！走过路过请点个心愿单吧。](https://store.steampowered.com/app/3444580/_/)
 
 ## 关于这个博客
-里面会写一些本人的日常，对一些书影音游和APP的测评，希望未来会有游戏进度更新和教程。
+博主是一名普通的同人女，爱好是画画和给OC拉磨。里面会写一些本人的日常，对一些书影音游和APP的测评，大游戏进度的更新，希望未来会有一些笔记。
 
 
 ## 博客时间线

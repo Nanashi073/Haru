@@ -39,6 +39,9 @@ menu:
 {{< friend name="蝴蝶曾在此处" url="https://write.c7.io/tyou/" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d63bc1a.jpeg" bio="Strength can be built." >}}
 {{< friend name="匣" url="https://lunasa.icu/" avatar="https://lunasa.icu/images/logo.png" bio="还没有写" >}}
 {{< friend name="第三夏尔" url="https://thirdshire.com" avatar="https://thirdshire.com/blackcat_avatar.jpg" bio="认真生活，积极摸鱼" >}}
+{{< friend name="再會，謝謝所有的魚" url="https://gregueria.icu/" avatar="https://gregueria.icu/tuxicon2.png" bio="您首页的奶牛猫图片转发大使" >}}
+{{< friend name="小球飞鱼" url="https://mantyke.icu/" avatar="https://mantyke.icu/images/logo.png" bio="我们会一起遇见鲸鱼吗？" >}}
+{{< friend name="枕石" url="https://zhen-shi.github.io/" avatar="https://raw.githubusercontent.com/zhen-shi/zhen-shi.github.io/refs/heads/master/static/img/avatar.png" bio="鲸饮未吞海，剑气已横秋。" >}}
 ## 请和我交换友链！
 ```
 Name: 春天与阿修罗
