@@ -21,12 +21,18 @@ menu:
 {{< heatmap >}}
 
 ## 2025 100DAYS Practice
+
 {{< progressbar percentage="30" >}}
 
+
 ## 大游戏进度
+
 {{< progressbar percentage="15" >}}
 
+
+
 [商店页已上线！走过路过请点个心愿单吧。](https://store.steampowered.com/app/3444580/_/)
+
 
 ## 关于这个博客
 博主是一名普通的同人女，爱好是画画和给OC拉磨。里面会写一些本人的日常，对一些书影音游和APP的测评，大游戏进度的更新，希望未来会有一些笔记。
