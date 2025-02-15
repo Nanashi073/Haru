@@ -2,7 +2,7 @@ baseURL = 'https://harushuura.vip'
 DefaultContentLanguage = "zh"
 languageCode = 'zh-cn'
 title = '春天与阿修罗'
-copyright = "since01/03/2024"
+copyright = "春天与阿修罗 谢绝无断转载分发 since01/03/2024"
 theme = 'diary'
 hasCJKLanguage = true
 
