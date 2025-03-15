@@ -27,9 +27,10 @@
 
 <!-- metadata -->
 
-{{ if .Site.GoogleAnalytics }}
-{{ template "_internal/google_analytics.html" . }}
-{{ end }}
+    {{ if .Site.GoogleAnalytics }}
+        <script>...</script> <!-- Google Analytics script -->
+    {{ end }}
+
 
 <!-- https://clarity.microsoft.com for detail -->
 {{ if .Site.Params.Clarity }}
