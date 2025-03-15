@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="展柜和更新博客">
-      <change afterPath="$PROJECT_DIR$/themes/diary/layouts/_default/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/page/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/about/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/page/friends/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/friends/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/diary/assets/scss/journal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/diary/assets/scss/journal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/diary/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/diary/layouts/_default/baseof.html" afterDir="false" />
-    </list>
+    <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="展柜和更新博客" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +96,7 @@
       <workItem from="1739624552513" duration="100000" />
       <workItem from="1739624948137" duration="215000" />
       <workItem from="1740786479666" duration="339000" />
-      <workItem from="1742070942166" duration="3974000" />
+      <workItem from="1742070942166" duration="4401000" />
     </task>
     <task id="LOCAL-00001" summary="展柜和更新博客">
       <option name="closed" value="true" />
@@ -314,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740786813744</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1742075488494</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1742075488494</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
