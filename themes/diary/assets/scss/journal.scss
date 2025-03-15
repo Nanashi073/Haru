@@ -1,7 +1,7 @@
 $color-accent: #1c1c1c;
 //$color-accent: #330000;
 $back-container-background: #ebebeb59;
-$front-container-background: #f8f8f8;
+$front-container-background: rgba(235, 235, 235, 0);
 
 @import '//assets/scss/custom.scss';
 @import "//layout/partials/links.scss";
@@ -19,9 +19,9 @@ body {
 };
 
 
-$side-container-width: 18%; //280px;
-$extra-container-width: 25%;
-$extra-container-pagination-width: 64px;
+$side-container-width: 15%; //280px;
+$extra-container-width: 20%;
+$extra-container-pagination-width: 100px;
 $stream-container-max-width: 1620px;
 
 $nav-title-size: 25px;
@@ -29,7 +29,7 @@ $nav-subtitle-size: 12px;
 $nav-link-size: 20px;
 $nav-footer-size: 12px;
 $post-title-size: 22px;
-$post-subtitle-size: 10px;
+$post-subtitle-size: 14px;
 $post-summary-size: 10px;
 $post-body-size: 19px;
 $post-meta-size: 14px;
@@ -57,7 +57,7 @@ $single-column-post-summary-size: 16px;
 $single-column-post-body-size: 16px;
 $single-column-post-meta-size: 14px;
 $single-column-tag-category-title-size: 14px;
-$single-column-toc-size: 17px;
+$single-column-toc-size: 20px;
 
 $h1: 30px;
 $h-diff: 3px;
@@ -72,6 +72,9 @@ html {
 
 body {
   background: $back-container-background;
+  background-image:
+          linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
   padding: 0;
   margin: 0;
   font-family: Noto Serif SC;
@@ -80,6 +83,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
   color: $color-text;
 }
+
 
 * {
   color: $deep-dark-accent;
@@ -431,7 +435,7 @@ a {
     z-index: 1800;
     transition: all 0.3s ease-in-out;
     .drawer-content {
-      background: white;
+      background: $back-container-background;
       height: 100%;
       width: 100%;
       padding: 50px 0 80px 0;
@@ -1045,7 +1049,6 @@ a {
     padding: 40px 20px 40px 20px;
   }
 }
-
 .toc {
   float: right;
   border-radius: 5px;
@@ -1056,10 +1059,10 @@ a {
   max-width: 270px;
   max-height: 80vh;
   overflow: auto;
-  background: rgba($color-accent, 0.005);
+  background: $back-container-background; /* 增加透明度 */
   &,
   * {
-    font-size: $toc-size;
+    font-size: 15px;
   }
   ul {
     list-style: none;
@@ -1072,19 +1075,35 @@ a {
   }
   .toc-active {
     color: darken($color-accent, 40%) !important;
+    font-weight: bold; /* 加粗当前项 */
   }
+
+  /* 目录项悬停效果 */
+  ul li a {
+    color: #333; /* 默认文字颜色 */
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+  }
+
+  ul li a:hover {
+    color: darken($color-accent, 20%);
+    padding-left: 10px;
+  }
+
   @media screen and (max-width: $single-column-max-width) {
     line-height: 2em;
     float: none;
     margin-top: 30px;
     margin-left: 0;
     margin-right: 0;
-    &,
-    * {
-      /*font-size: $single-column-toc-size;*/
+    .toc {
+      width: 100%; /* 宽度适应屏幕 */
     }
     .toc-content {
       padding: 10px;
+    }
+    ul {
+      padding-left: 10px;
     }
   }
 }
@@ -1832,3 +1851,4 @@ $context-color-dark: #c0c0c0;
   justify-content: flex-start;  /* Align items to the left */
   overflow-x: auto;
 }
+

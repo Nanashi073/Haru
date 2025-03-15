@@ -36,22 +36,13 @@ customCSS = ["//assets/scss/custom.scss"]
 
 
 
-[[menu.main]]
-url = "/categories/review"
-name = "Review｜随记"
-weight = 3
-[[menu.main]]
-url = "/categories/others"
-name = "Others｜杂记"
-weight = 2
+
+
 [[menu.main]]
 url = "/tags"
 name = "Tags｜标签"
 weight = 6
-[[menu.main]]
-url = "/categories/archive"
-name = "Archive｜日记"
-weight = 1
+
 
 
 

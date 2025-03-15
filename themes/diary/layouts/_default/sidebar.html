@@ -1,0 +1,8 @@
+<div class="tag-cloud">
+    <h3>标签</h3>
+    <ul>
+        {{ range .Site.Taxonomies.tags }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+        {{ end }}
+    </ul>
+</div>
