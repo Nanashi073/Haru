@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="展柜和更新博客" />
+    <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="主题">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/diary/assets/scss/journal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/diary/assets/scss/journal.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +99,7 @@
       <workItem from="1739624552513" duration="100000" />
       <workItem from="1739624948137" duration="215000" />
       <workItem from="1740786479666" duration="339000" />
-      <workItem from="1742070942166" duration="4401000" />
+      <workItem from="1742070942166" duration="5143000" />
     </task>
     <task id="LOCAL-00001" summary="展柜和更新博客">
       <option name="closed" value="true" />
@@ -314,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742075488494</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1742075857176</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1742075857176</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +344,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="展柜和更新博客" />
-    <option name="LAST_COMMIT_MESSAGE" value="展柜和更新博客" />
+    <MESSAGE value="主题" />
+    <option name="LAST_COMMIT_MESSAGE" value="主题" />
   </component>
 </project>
