@@ -44,6 +44,7 @@ menu:
 {{< friend name="枕石" url="https://zhen-shi.github.io/" avatar="https://raw.githubusercontent.com/zhen-shi/zhen-shi.github.io/refs/heads/master/static/img/avatar.png" bio="鲸饮未吞海，剑气已横秋。" >}}
 {{< friend name="水气掠过" url="https://dilutepillow.github.io/" avatar="https://dilutepillow.github.io/images/logo.png" bio="晚饭后，一起散步吧。" >}}
 {{< friend name="嘰嘰乞乞" url="https://www.gigigatgat.ca/" avatar="https://www.gigigatgat.ca/img/logo.png" bio="但願我靈魂沒有生鏽" >}}
+{{< friend name="昼梦日和" url="https://nanako-blog.web.app/" avatar="https://stelpolva.moe/proxy/avatar.webp?url=https%3A%2F%2Fres.stelpolva.moe%2Fstpv%2F985bb002-3454-4574-a32c-0e7fbfa147ff.png&avatar=1" bio="梦是现实的延续，现实是梦的终结" >}}
 
 ## 请和我交换友链！
 ```
