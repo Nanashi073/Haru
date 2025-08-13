@@ -47,6 +47,8 @@ menu:
 {{< friend name="昼梦日和" url="https://nanako-blog.web.app/" avatar="https://stelpolva.moe/proxy/avatar.webp?url=https%3A%2F%2Fres.stelpolva.moe%2Fstpv%2F985bb002-3454-4574-a32c-0e7fbfa147ff.png&avatar=1" bio="梦是现实的延续，现实是梦的终结" >}}
 {{< friend name="A Purrception" url="https://tortie.me/" avatar="https://tortie.me/img/tortie_huf462a842a5049d4291ff826c5ee25b3f_301965_300x0_resize_q75_box.jpg" bio="谨慎观察(=‘ｘ‘=)" >}}
 {{< friend name="ENCOM一号机" url="https://alanone.top/" avatar="https://media.alanone.top/avatar.jpg" bio="1,000 lonely stars | Hiding in the cold" >}}
+{{< friend name="鸥鹭风云" url="https://ccnn1258.top/" avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXevb0XE9QHA1q1NZD26qIo0HG_yK8jijryP-IBdEIMYHOHq2gDzq2AoAIhbsfYGopEB8&usqp=CAU" bio="一段不被羽毛所书写的鸟类世界大战史" >}}
+{{< friend name="天堂错误文件" url="https://naturaleki.one/" avatar="https://img.naturaleki.one/ekione/one.png" bio="Across the street, cross one’s heart." >}}
 
 ## 请和我交换友链！
 ```
