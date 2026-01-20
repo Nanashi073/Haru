@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="展柜和更新博客">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/post/2025/other/2025｜幻想比生活更加真实.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/post/2025/other/2025｜幻想比生活更加真实.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,15 +122,7 @@
       <workItem from="1759206752720" duration="1391000" />
       <workItem from="1759231965425" duration="33000" />
       <workItem from="1761885047531" duration="669000" />
-      <workItem from="1768890373324" duration="309000" />
-    </task>
-    <task id="LOCAL-00010" summary="展柜和更新博客">
-      <option name="closed" value="true" />
-      <created>1733085608671</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1733085608671</updated>
+      <workItem from="1768890373324" duration="626000" />
     </task>
     <task id="LOCAL-00011" summary="展柜和更新博客">
       <option name="closed" value="true" />
@@ -516,7 +508,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761885081960</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1768890712367</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1768890712367</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
