@@ -3,7 +3,7 @@ DefaultContentLanguage = "zh"
 languageCode = 'zh-cn'
 title = '春天与阿修罗'
 copyright = "春天与阿修罗 谢绝无断转载分发 since01/03/2024"
-theme = 'diary'
+theme = 'rusty-typewriter'
 hasCJKLanguage = true
 
 [markup]
@@ -33,15 +33,13 @@ twikooEnvId = "https://comment.harushuura.vip/"
 enableimgloop = true
 customCSS = ["//assets/scss/custom.scss"]
 
+[[menus.main]]
+name = 'Posts｜博文'
+pageRef = '/post'
+weight = 1
 
 
 
-
-
-[[menu.main]]
-url = "/tags"
-name = "Tags｜标签"
-weight = 6
 
 
 

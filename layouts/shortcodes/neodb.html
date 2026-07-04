@@ -10,7 +10,20 @@
     {{ $dbApiUrl = "https://neodb.social/api/catalog/fetch?url=" }}
 {{ end }}
 
-{{ $dbFetch := getJSON $dbApiUrl $dbType }}
+{{ $fullUrl := print $dbApiUrl $dbType }}
+{{ $dbFetch := "" }}
+
+{{ $skipNetwork := true }}
+
+{{ if not $skipNetwork }}
+    {{ $opts := dict "timeout" 3000 }}
+    {{ $response := resources.GetRemote $fullUrl $opts }}
+    {{ with $response }}
+        {{ if not .Err }}
+            {{ $dbFetch = .Content | transform.Unmarshal }}
+        {{ end }}
+    {{ end }}
+{{ end }}
 
 {{ if $dbFetch }}
     <div class="db-card">
@@ -24,6 +37,11 @@
             <div class="db-card-cate">{{ $dbFetch.category }}</div>
         </div>
     </div>
-{{else}}
-    <p style="text-align: center;"><small>远程获取内容失败，请检查 API 有效性。</small></p>
-{{end}}
+{{ else }}
+    <div class="db-card" style="border: 1px dashed #ccc; padding: 12px; margin: 10px 0; border-radius: 4px; background: rgba(0,0,0,0.02);">
+        <p style="margin: 0; font-size: 0.9em; color: #666;">
+            📖 <a href="{{ $dbUrl }}" target="_blank" style="text-decoration: underline; font-weight: bold;">点击查看豆瓣/NeoDB条目原链接</a>
+            <span style="font-size: 0.85em; color: #999; margin-left: 10px;">(本地预览已启用离线保护)</span>
+        </p>
+    </div>
+{{ end }}

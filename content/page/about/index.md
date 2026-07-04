@@ -18,9 +18,6 @@ menu:
 
 **请不要**把我的博文无授权**转载或收录**到其他地方。
 
-{{< heatmap >}}
-
-
 
 ## 甜某工作室，小作坊，大制作！
 
@@ -51,4 +48,5 @@ menu:
  {{< timeline date="09/10/2024" title="更换了博客配色和字号" description="" tags=""  >}}
  {{< timeline date="17/11/2024" title="装修了展柜页面" description="" tags=""  >}}
  {{< timeline date="01/12/2024" title="修改neodb卡片样式显示个人打分" description="" tags=""  >}}
- {{< timeline date="03/15/2025" title="修改背景与目录样式；修改了ABOUT界面；增加了友链" description="" tags=""  >}}
+ {{< timeline date="03/15/2025" title="修改背景与目录样式；修改了ABOUT界面；增加了友链" description="" tags=""  >}}\
+ {{< timeline date="04/07/2026" title="更改了主题为Rusty Typewriter" description="" tags=""  >}}

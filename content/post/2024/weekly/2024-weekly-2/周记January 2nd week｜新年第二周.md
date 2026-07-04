@@ -4,7 +4,7 @@
 
 title: "January 2nd week｜新年第二周"
 date: 2024-01-14T03:02:52+08:00
-lastmod: 2024–01-14T03:02:52+08:00
+lastmod: 2024-01-14T03:02:52+08:00
 description: 摸鱼的一周
 tags:
 - weekly review 
