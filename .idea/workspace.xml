@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="展柜和更新博客">
+      <change afterPath="$PROJECT_DIR$/hugo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,15 +132,7 @@
       <workItem from="1783171339180" duration="1642000" />
       <workItem from="1783173006510" duration="4712000" />
       <workItem from="1783179125753" duration="389000" />
-      <workItem from="1783226133559" duration="1663000" />
-    </task>
-    <task id="LOCAL-00026" summary="展柜和更新博客">
-      <option name="closed" value="true" />
-      <created>1740786813744</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1740786813744</updated>
+      <workItem from="1783226133559" duration="1997000" />
     </task>
     <task id="LOCAL-00027" summary="展柜和更新博客">
       <option name="closed" value="true" />
@@ -524,7 +518,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783179473036</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1783229665222</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1783229665222</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
