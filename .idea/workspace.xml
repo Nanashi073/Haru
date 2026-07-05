@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="展柜和更新博客">
-      <change afterPath="$PROJECT_DIR$/i18n/zh.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/font.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/font.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/page/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/about/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/page/artitalk/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/artitalk/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/page/friends/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/friends/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hugo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/hugo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +57,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/rusty-typewriter/i18n" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="未命名" type="HUGO_RUN_CONFIGURATION" factoryName="Hugo configuration factory">
       <option name="hugo.plugin.arguments" value="-D" />
@@ -136,7 +135,7 @@
       <workItem from="1783171339180" duration="1642000" />
       <workItem from="1783173006510" duration="4712000" />
       <workItem from="1783179125753" duration="389000" />
-      <workItem from="1783226133559" duration="4784000" />
+      <workItem from="1783226133559" duration="5111000" />
     </task>
     <task id="LOCAL-00028" summary="展柜和更新博客">
       <option name="closed" value="true" />
