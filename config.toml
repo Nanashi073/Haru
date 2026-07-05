@@ -1,3 +1,5 @@
+[build]
+hugoVersion = "0.124.0" # 💡 强行指定 Vercel 使用高版本的 Hugo，这样它就认识 break 了
 baseURL = 'https://harushuura.vip'
 DefaultContentLanguage = "zh"
 languageCode = 'zh-cn'
