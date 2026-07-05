@@ -1,5 +1,5 @@
 ---
-title: "Friends｜友链"
+title: "友链"
 
 description: 
 slug: "links"
@@ -9,7 +9,7 @@ license: false
 toc: false
 menu: 
     main:
-        name: Friends｜友链
+        name: 友链
         weight: -90
         params:
             icon: friends

@@ -1,30 +1,20 @@
-
-
+/* 1. 引入线上备用的思源宋体（防止本地字体加载失败时变成大黑体） */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap");
 
-
-/* merriweather-regular - latin */
+/* 2. 注册你的本地本命：朝华字体 */
 @font-face {
-  font-family: 'Noto Serif SC';
+  font-family: 'zhaohuaA';
   font-style: normal;
   font-weight: 400;
-  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap"),
-     url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-     url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* merriweather-italic - latin */
-@font-face {
-  font-family: 'Noto Serif SC';
-  font-style: italic;
-  font-weight: 400;
-  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap");
-       
+  /* ⚠️ 请务必检查：如果你的字体后缀是 .ttf，这里就写 .ttf；如果是 .woff2 就改成 .woff2 */
+  src: url('/font/zhaohuaA.ttf') format('truetype');
 }
 
+/* 3. 让全站正文和代码块彻底换上朝华字体 */
 body {
-  font-family: 'Noto Serif SC', sans-serif;
+  font-family: 'zhaohuaB', 'Noto Serif SC', serif;
 }
 
-code {
-  font-family: 'Noto Serif SC', monospace;
+code, pre {
+  font-family: 'zhaohuaA', 'Noto Serif SC', monospace;
 }

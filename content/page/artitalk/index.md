@@ -1,5 +1,5 @@
 ---
-title: Memos｜说说
+title: Memos
 menu:
     main: 
         weight: -50

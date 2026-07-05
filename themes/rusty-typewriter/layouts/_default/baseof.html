@@ -4,23 +4,35 @@
   {{ partial "head.html" . }}
 </head>
 <body class="notransition">
-  <div id="container">
-    <header id="main-header">
-      {{- partial "header.html" . -}}
-    </header>
-    <div class="flex grow">
-      <div id="main-pane">
-        <main id="main-content">
-          {{- block "main" . -}}{{- end -}}
-        </main>
-        <footer id="main-footer">
-          {{- partial "footer.html" . -}}
-        </footer>
-      </div>
-      {{- if (and (default true .Params.rtwt.sidePane) site.Params.rtwt.sidePane) -}}
-        {{- block "side" . -}}{{- end -}}
-      {{- end -}}
+<div id="container">
+  <header id="main-header">
+    {{- partial "header.html" . -}}
+  </header>
+  <div class="flex grow">
+    <!-- 1. 让 main-pane 只纯粹包裹内容 -->
+    <div id="main-pane">
+      <main id="main-content">
+        {{- block "main" . -}}{{- end -}}
+      </main>
     </div>
+    {{- if (and (default true .Params.rtwt.sidePane) site.Params.rtwt.sidePane) -}}
+      {{- block "side" . -}}{{- end -}}
+    {{- end -}}
   </div>
+
+  <!-- 2. 🌟 核心改动：把 footer 提到和 flex 同级、在 container 的最底部！ -->
+  <!-- 这样它就彻底脱离了 main-pane 的 overflow: auto 裁剪魔咒，绝对会乖乖显示出来！ -->
+  <footer id="main-footer" style="text-align: center; padding: 2rem 0; font-size: 0.9rem; color: var(--dim-color); border-top: 1px var(--dim-color) dashed; margin-top: 5rem; width: 100%;">
+    <div class="copyright">
+      春天与阿修罗 谢绝无断转载分发
+
+      since01/03/2024
+    </div>
+    <div class="powered-by" style="margin-top: 0.5rem; font-size: 0.8rem; opacity: var(--dim-opacity);">
+      &copy; 2026 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> & <a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a>
+    </div>
+  </footer>
+
+</div>
 </body>
 </html>

@@ -2,10 +2,11 @@
   <a href="#">{{ i18n "scroll_top" }}</a>
   <div class="footer-copyright">
     <div class="dim">© {{ now.Year }} {{ .Site.Params.author.name }}</div>
-    <div>
-      {{- $ThemeAnchor := .Site.Params.links.theme | printf "<a href=\"%s\" target=\"_blank\">Rusty Typewriter</a>" -}}
-      {{- $HugoAnchor := .Site.Params.links.hugo | printf "<a href=\"%s\" target=\"_blank\">Hugo</a>" -}}
-      {{- i18n "footer" (dict "ThemeAnchor" $ThemeAnchor "HugoAnchor" $HugoAnchor) | safeHTML -}}
+    <div style="margin-top: 0.3rem;">
+      春天与阿修罗 谢绝无断转载分发 since01/03/2024
+    </div>
+    <div style="font-size: 0.85em; opacity: var(--dim-opacity); margin-top: 0.3rem;">
+      Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> & <a href="https://vercel.com" target="_blank">Vercel</a>
     </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 ---
-title: About｜我是谁
+title: 关于我
 description: 
 aliases:
   - about-us

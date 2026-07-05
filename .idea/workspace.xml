@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e96bb6-6cdd-4bf1-bc89-dfc390098c43" name="更改" comment="展柜和更新博客">
-      <change afterPath="$PROJECT_DIR$/hugo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/i18n/zh.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/font.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/font.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/page/about/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/about/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/page/artitalk/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/artitalk/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/page/friends/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/page/friends/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hugo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/hugo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/nanashi/Documents/Blog/Haru/themes/rusty-typewriter/i18n",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -132,15 +136,7 @@
       <workItem from="1783171339180" duration="1642000" />
       <workItem from="1783173006510" duration="4712000" />
       <workItem from="1783179125753" duration="389000" />
-      <workItem from="1783226133559" duration="1997000" />
-    </task>
-    <task id="LOCAL-00027" summary="展柜和更新博客">
-      <option name="closed" value="true" />
-      <created>1742075488494</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1742075488494</updated>
+      <workItem from="1783226133559" duration="4784000" />
     </task>
     <task id="LOCAL-00028" summary="展柜和更新博客">
       <option name="closed" value="true" />
@@ -526,7 +522,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783229665222</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="展柜和更新博客">
+      <option name="closed" value="true" />
+      <created>1783229872088</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1783229872088</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

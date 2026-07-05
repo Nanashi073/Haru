@@ -1,47 +1,53 @@
-
 baseURL = 'https://harushuura.vip'
-DefaultContentLanguage = "zh"
-languageCode = 'zh-cn'
 title = '春天与阿修罗'
-copyright = "春天与阿修罗 谢绝无断转载分发 since01/03/2024"
 theme = 'rusty-typewriter'
 hasCJKLanguage = true
 
+# 🌟 修复现代 Hugo 的弃用警告，统一多语言标识为小写 zh
+locale = 'zh'
+DefaultContentLanguage = 'zh'
+
+# 🌟 统一全局版权信息（原厂页脚或自定义都可以读取它）
+copyright = "春天与阿修罗 谢绝无断转载分发 since01/03/2024"
+
 [markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "perldoc"
-    tabWidth = 4
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "perldoc"
+tabWidth = 4
+
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
 
-
+# 🌟 将全局参数统一收拢在同一个大 [params] 区域下，严防层级错位
 [params]
 subtitle = "食宇宙尘埃·或吐纳着空气和盐水"
+copyright = "春天与阿修罗 谢绝无断转载分发 since01/03/2024"
 
 # 评论功能
 enableTwikoo = true
 twikooEnvId = "https://comment.harushuura.vip/"
 
-
 enableimgloop = true
 customCSS = ["//assets/scss/custom.scss"]
 
+# 🌟 正确嵌套的作者信息
+[params.author]
+name = "春天与阿修罗"
+
+# 🌟 正确嵌套的原厂页脚跳转链接
+[params.links]
+theme = "https://github.com/scrummable/rusty-typewriter"
+hugo = "https://gohugo.io"
+
 [[menus.main]]
-name = 'Posts｜博文'
+name = '博文'
 pageRef = '/post'
 weight = 1
-
-
-
-
-
-
-

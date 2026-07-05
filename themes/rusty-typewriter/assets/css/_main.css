@@ -268,3 +268,31 @@ pre:has(code) {
   text-align: center !important;
   border-radius: 0 !important;
 }
+
+/* ==========================================================================
+   📌 文章标题增强样式：自定义颜色、下划线、以及自动前缀 #
+   ========================================================================== */
+
+/* 1. 统一调整标题颜色，并为下划线和 # 号做定位准备 */
+section h1, section h2, section h3, section h4, section h5, section h6 {
+  color: var(--primary-color); /* 🎨 将标题颜色更改为主体绿色，你也可以写死成特定颜色如 #c75a5a */
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* 2. 给 H1 和 H2 标题下方加上复古优雅的下划线 */
+section h1, section h2 {
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--dim-color); /* 📏 淡淡的下划线，和侧边栏/分割线风格统一 */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* 3. 通过 CSS 伪元素，在标题前面自动注入对应数量的 # */
+section h1::before { content: "# ";       color: var(--dim-color); opacity: var(--dim-opacity); font-weight: normal; margin-right: 0.5rem; }
+section h2::before { content: "## ";      color: var(--dim-color); opacity: var(--dim-opacity); font-weight: normal; margin-right: 0.5rem; }
+section h3::before { content: "### ";     color: var(--dim-color); opacity: var(--dim-opacity); font-weight: normal; margin-right: 0.5rem; }
+section h4::before { content: "#### ";    color: var(--dim-color); opacity: var(--dim-opacity); font-weight: normal; margin-right: 0.5rem; }
+section h5::before { content: "##### ";   color: var(--dim-color); opacity: var(--dim-opacity); font-weight: normal; margin-right: 0.5rem; }
+section h6::before { content: "###### ";  color: var(--dim-color); opacity: var(--dim-opacity); font-weight: normal; margin-right: 0.5rem; }

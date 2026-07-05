@@ -9,7 +9,7 @@ title = '春天与阿修罗'
   searchPath = 'search'
  [params.rtwt.home]
   showBio = true
-  showAuthorImg = true
+  showAuthorImg = false
   sidePaneTags = true
   showFeatured = true
   showRecent = true
