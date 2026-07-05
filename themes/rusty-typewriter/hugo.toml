@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
-locale = 'en-US'
-title = 'My New Hugo Site'
+baseURL = 'https://harushuura.vip'
+locale = 'zh-cn'
+title = '春天与阿修罗'
 
 [rusty_typewriter]
  [params.rtwt]
