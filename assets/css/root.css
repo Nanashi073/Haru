@@ -32,12 +32,15 @@
 }
 
 :root[color-scheme^='dark'] {
-  --body-text-color: #f0efea;
-  --body-background-color: #222;
+  /* 与浅色模式同色相、提高亮度：绿色主色 → 浅绿，暗红分割线 → 柔和玫红 */
+  --body-text-color: #e6e3da;
+  --body-background-color: #1f1e1c;
 
-  --primary-color: #0b4e26;
+  --primary-color: #7cc49b;
   --selection-color: #7d4141;
+  --dim-color: rgba(214, 140, 130, 0.75);
+  --quote-text-color: #a09d96;
+  --code-background-color: #1d2b19;
 
-  --dim-opacity: 50%;
+  --dim-opacity: 60%;
 }
-

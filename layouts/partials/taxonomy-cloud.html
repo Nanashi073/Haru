@@ -1,0 +1,17 @@
+{{- /* 博文页顶部的分类 / 标签列表，沿用主题首页侧栏标签云的样式（.taxonomy-list + .tag） */ -}}
+<div class="taxonomy-cloud">
+  {{- range $name, $label := dict "categories" "分类" "tags" "标签" }}
+    {{- with index site.Taxonomies $name }}
+    <div class="taxonomy-cloud-group">
+      <h3>{{ $label }}</h3>
+      <ul class="taxonomy-list">
+        {{- range .ByCount }}
+        <li>
+          <a class="tag" href="{{ .Page.RelPermalink }}">#{{ .Page.Title }}&nbsp;<span class="text-sm dim">{{ .Count }}</span></a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+  {{- end }}
+</div>

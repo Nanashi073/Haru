@@ -43,6 +43,17 @@ hugo = "https://gohugo.io"
 [params.rtwt.home]
 showAuthorImg = false
 
+# 生成搜索索引 /searchindex.json（主题的搜索页靠它工作）
+[outputFormats]
+[outputFormats.SearchIndex]
+mediaType = "application/json"
+baseName = "searchindex"
+isPlainText = true
+notAlternative = true
+
+[outputs]
+home = ["HTML", "RSS", "SearchIndex"]
+
 [[menus.main]]
 name = '博文'
 pageRef = '/post'

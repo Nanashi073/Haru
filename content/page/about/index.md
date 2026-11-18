@@ -26,7 +26,7 @@ menu:
 <iframe src="https://store.steampowered.com/widget/3444590/?t=%E8%AF%B7%E6%B3%A8%E6%84%8F%EF%BC%8C%E6%9C%AC%E6%B8%B8%E6%88%8F%E5%86%85%E5%90%AB%E4%B8%80%E4%BA%9B%E4%B8%80%E4%BA%9B%E4%BA%BA%E7%9C%8B%E9%81%BF%E9%9B%B7%E4%B8%80%E4%BA%9B%E4%BA%BA%E7%9C%8B%E8%8F%9C%E5%8D%95%E7%9A%84%E5%86%85%E5%AE%B9%EF%BC%9A%E4%B9%B1%E4%BC%A6%EF%BC%8C%E7%8C%8E%E5%A5%87%EF%BC%8C%E4%BA%BA%E5%A4%96%EF%BC%8C%E8%A1%80%E8%85%A5%E6%9A%B4%E5%8A%9B%E6%AD%BB%E4%BA%A1%EF%BC%8C%E7%BE%8E%E6%94%BB%E5%B8%85%E5%8F%97%EF%BC%8CPUA%EF%BC%8C%E4%B8%9C%E4%BA%9A%E5%AE%B6%E5%BA%AD%E7%AD%89%E5%86%85%E5%AE%B9%E3%80%82%E8%AF%B7%E8%B0%A8%E6%85%8E%E8%BF%9B%E5%85%A5%EF%BC%81" frameborder="0" width="100%" height="190"></iframe>
 
 我们的小游戏：**把竹马放进冰箱吧**
-<iframe src="https://itch.io/embed/3698566" width="100%" height="190" frameborder="0"><a href="https://sweetsomestudio.itch.io/to-put-your-childhood-sweetheart-into-a-refrigerator">[Extended] To Put Your Childhood Sweetheart Into A Refrigerator by SweetSome Studio</a></iframe>
+<iframe src="https://itch.io/embed/3698566" width="100%" height="167" frameborder="0"><a href="https://sweetsomestudio.itch.io/to-put-your-childhood-sweetheart-into-a-refrigerator">[Extended] To Put Your Childhood Sweetheart Into A Refrigerator by SweetSome Studio</a></iframe>
 
 我们的中游戏：**陇春志异：宰牲篇**
 <iframe width="100%" height="167" frameborder="0" src="https://itch.io/embed/3794196"><a href="https://sweetsomestudio.itch.io/strange-tales-from-longchun-sacrifice">Strange Tales from Longchun: Sacrifice《陇春志异：宰牲篇》 by SweetSome Studio</a></iframe>
@@ -42,11 +42,11 @@ menu:
  {{< timeline date="31/03/2024" title="正式上线" description="" tags=""  >}}
  {{< timeline date="01/04/2024" title="第一次更新" description="RSS，域名，友链" tags=""  >}}
  {{< timeline date="30/04/2024" title="第二次更新" description="一堆短代码，About，Now，评论区" tags=""  >}}
- {{< timeline date="15/05/2024" title="Memos功能上线" description="powered by Artitalks" tags=""  >}}
+ {{< timeline date="15/05/2024" title="Memos功能上线" description="Powered by Artitalks" tags=""  >}}
  {{< timeline date="30/05/2024" title="在Now界面加入了热力图" description="" tags=""  >}}
  {{< timeline date="01/06/2024" title="新主题上线！撒花！" description="" tags=""  >}}
  {{< timeline date="09/10/2024" title="更换了博客配色和字号" description="" tags=""  >}}
  {{< timeline date="17/11/2024" title="装修了展柜页面" description="" tags=""  >}}
- {{< timeline date="01/12/2024" title="修改neodb卡片样式显示个人打分" description="" tags=""  >}}
- {{< timeline date="03/15/2025" title="修改背景与目录样式；修改了ABOUT界面；增加了友链" description="" tags=""  >}}\
+ {{< timeline date="01/12/2024" title="修改Neodb卡片样式显示个人打分" description="" tags=""  >}}
+ {{< timeline date="03/15/2025" title="修改背景与目录样式；修改了ABOUT界面；增加了友链" description="" tags=""  >}}
  {{< timeline date="04/07/2026" title="更改了主题为Rusty Typewriter" description="" tags=""  >}}

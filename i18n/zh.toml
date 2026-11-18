@@ -18,9 +18,9 @@ featured_posts = "Featured Posts"
 recent_posts = "Recent Posts"
 
 # Search
-js_required = "It's necessary to enable Javascript"
-search_loading = "Loading..."
-search_placeholder = "Search..."
+js_required = "搜索需要开启 JavaScript"
+search_loading = "加载中…"
+search_placeholder = "搜索文章…"
 
 # SidePane for home
 see_all = "🌟查看更多"

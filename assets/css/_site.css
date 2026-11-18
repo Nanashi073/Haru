@@ -1,66 +1,78 @@
+/* ==========================================================================
+   友链卡片
+   - .friend-list 两列网格（手机一列），第一张占满两栏
+   - 配色全部用主题变量：边框、头像描边用暗红（--dim-color），名字和悬停用绿色（--primary-color），
+     深色模式自动跟着变
+   ========================================================================== */
+.friend-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 1.5rem 0;
+}
+@media (max-width: 600px) {
+  .friend-list { grid-template-columns: 1fr; }
+}
+.friend-list > .friend-link:first-child { grid-column: 1 / -1; }
 
-/* 友链卡片基础排版 */
 .friend-link {
   text-decoration: none !important;
   color: inherit !important;
-  display: inline-block;
-  width: 48%; /* 一行排两个卡片，如果想一行一个可以改成 100% */
-  margin: 1%;
-  box-sizing: border-box;
+  display: block;
+  min-width: 0;
 }
-
 .friend-link-div {
+  height: 100%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding: 12px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.5);
-  transition: all 0.3s ease;
+  padding: 12px 14px;
+  border: 1px solid var(--dim-color);
+  border-left: 3px solid var(--dim-color);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--primary-color) 4%, transparent);
+  transition: border-color 0.2s, background-color 0.2s, transform 0.2s;
 }
-
-.friend-link-div:hover {
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+.friend-link:hover .friend-link-div {
+  border-color: var(--primary-color);
+  background: color-mix(in srgb, var(--primary-color) 10%, transparent);
   transform: translateY(-2px);
 }
 
-/* 头像控制（防止头像撑得巨大） */
+/* 头像：圆形，暗红描边，悬停变绿 */
 .friend-link-avatar {
-  width: 55px;
-  height: 55px;
-  margin-right: 15px;
+  width: 52px;
+  height: 52px;
+  margin-right: 14px;
   flex-shrink: 0;
 }
-
-.friend-avatar {
+main#main-content img.friend-avatar {
   width: 100%;
   height: 100%;
-  border-radius: 50% !important; /* 让头像变成好看的圆形 */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2px;
+  border: 1.5px solid var(--dim-color);
+  border-radius: 50%;
   object-fit: cover;
-  margin: 0 !important; /* 消除主题默认的 img 边距 */
+  transition: border-color 0.2s;
 }
+.friend-link:hover img.friend-avatar { border-color: var(--primary-color); }
 
-/* 文字信息排版 */
-.friend-link-info {
-  overflow: hidden;
-}
-
+.friend-link-info { overflow: hidden; min-width: 0; }
 .friend-name {
-  font-weight: bold;
-  font-style: normal;
   display: block;
-  font-size: 1.1em;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
+  font-size: 1.05em;
+  font-weight: bold;
+  color: var(--primary-color);
 }
-
 .friend-bio {
   font-size: 0.85em;
-  color: #666;
-  margin: 0;
+  color: var(--quote-text-color);
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; /* 简介过长时自动变省略号 */
+  text-overflow: ellipsis; /* 简介过长时显示省略号 */
 }
 
 /* 🛠️ 强行将头像区域重塑为 Banner 横幅 */
@@ -126,3 +138,59 @@ footer#main-footer .powered-by {
   font-size: 0.8rem;
   opacity: var(--dim-opacity);
 }
+
+/* ==========================================================================
+   首页「查看全部博文」按钮
+   ========================================================================== */
+.view-all {
+  text-align: center;
+  margin: 1.5rem 0 1rem;
+}
+.view-all-button { font-size: 1rem; }
+
+/* ==========================================================================
+   博文页顶部的分类 / 标签
+   ========================================================================== */
+.taxonomy-cloud { margin-bottom: 3rem; } /* 与下方第一个年份留出空行 */
+.taxonomy-cloud-group h3 {
+  margin: 1.2rem 0 0.6rem;
+  font-size: 1.25rem;
+}
+.taxonomy-cloud .taxonomy-list {
+  margin: 0;
+  gap: 0.6rem 0.5rem; /* 行间距 / 列间距 */
+}
+.taxonomy-cloud .tag {
+  margin: 0;
+  padding: 0.25rem 0.8rem;
+  line-height: 1.4;
+  display: inline-block;
+}
+
+/* 博文列表的年份：上方留空，让每一年和上一年最后一篇分开 */
+.list-group-key { margin-top: 2.5rem; }
+.taxonomy-cloud + .list-group-key,
+h1 + .list-group-key { margin-top: 0; }
+
+
+/* ==========================================================================
+   搜索框：主题用 --dim-color 当背景，在深色模式下是一大块玫红，改成中性的半透明底色
+   ========================================================================== */
+.search-bar {
+  background-color: color-mix(in srgb, var(--body-text-color) 8%, transparent);
+  border: 1px solid var(--dim-color);
+}
+
+/* 搜索框输入文字和占位符：用博客字体，占位符颜色跟随正文、调淡 */
+.search-bar > input {
+  font-family: var(--font-family-main);
+  font-size: 1rem;
+}
+.search-bar > input::placeholder {
+  color: var(--body-text-color);
+  opacity: 0.55;
+}
+
+/* 页眉：图标之间、文字菜单与图标之间的间距与菜单项一致（菜单项左右各 .5rem） */
+.nav-right > a > svg { margin: 5px 0.5rem 0; }
+

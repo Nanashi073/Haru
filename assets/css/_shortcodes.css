@@ -196,3 +196,14 @@ section .db-card-title a { text-decoration: none; }
   align-items: center;
 }
 main#main-content .swiper-slide img { margin: 0; }
+
+/* ---------- 深色模式：timeline、tweet 短代码里写死的浅色配色 ---------- */
+[color-scheme=dark] .timeline__time { color: var(--body-text-color); }
+[color-scheme=dark] .timeline__split-line { background-color: var(--dim-color); }
+[color-scheme=dark] .timeline__description { color: var(--quote-text-color); }
+[color-scheme=dark] .tweet-card {
+  background-color: color-mix(in srgb, var(--body-text-color) 6%, var(--body-background-color));
+  border-color: color-mix(in srgb, var(--body-text-color) 15%, transparent);
+}
+[color-scheme=dark] .tweet-content { color: var(--body-text-color); }
+[color-scheme=dark] .tweet-footer { color: var(--quote-text-color); }

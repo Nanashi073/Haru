@@ -1,0 +1,23 @@
+{{- /* 覆盖主题 single.html：没有日期时不显示日期 */ -}}
+{{- define "main" -}}
+  <div class="single-header">
+    {{- partial "components/breadcrumbs.html" . -}}
+    <h1>{{- partial "title.html" . -}}</h1>
+    {{- /* 没填日期的页面（关于、友链）不显示日期，否则会显示成「1年1月1日」 */ -}}
+    {{- if not .Date.IsZero }}
+    {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" -}}
+    {{- $dateHuman := .Date | time.Format ":date_long" -}}
+    <time class="dim" datetime="{{- $dateMachine -}}">{{- $dateHuman -}}</time>
+    {{- end }}
+    {{- partial "components/tags.html" . -}}
+  </div>
+  <section class="page-section">
+    {{- .Content -}}
+  </section>
+{{- end -}}
+
+{{- define "side" -}}
+  <aside id="side-pane" class="{{- cond site.Params.rtwt.side.single.sidePaneSticky "side-sticky" "" -}}">
+    {{- partial "side/single.html" . -}} 
+  </aside>
+{{- end -}}

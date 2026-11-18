@@ -31,6 +31,7 @@ menu:
 
 
 
+<div class="friend-list">
 {{< friend name="夜航南飞" url="https://banshou-air.netlify.app" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d682b38.png" bio="“The world is beautiful. Let me come through it to you.”" >}}
 {{< friend name="白花恋诗" url="https://trails-of-isara.vercel.app/" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d48d23e.png" bio="把最棒的吊桥效应献给你" >}}
 {{< friend name="baer" url="https://writee.org/baer/" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d460c5e.png" bio="冰熊酒吧，欢迎光临。" >}}
@@ -45,5 +46,6 @@ menu:
 {{< friend name="ENCOM一号机" url="https://alanone.top/" avatar="https://media.alanone.top/avatar.jpg" bio="1,000 lonely stars | Hiding in the cold" >}}
 {{< friend name="鸥鹭风云" url="https://ccnn1258.top/" avatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXevb0XE9QHA1q1NZD26qIo0HG_yK8jijryP-IBdEIMYHOHq2gDzq2AoAIhbsfYGopEB8&usqp=CAU" bio="一段不被羽毛所书写的鸟类世界大战史" >}}
 {{< friend name="天堂错误文件" url="https://naturaleki.one/" avatar="https://img.naturaleki.one/ekione/one.png" bio="Across the street, cross one’s heart." >}}
+</div>
 
 

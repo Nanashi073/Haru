@@ -1,0 +1,25 @@
+{{- /*
+  覆盖主题的 head/css.html，只改了拼接顺序。
+  resources.Match 会把站点自己的 assets 排在主题之前，导致 _site.css / _shortcodes.css
+  里的覆盖规则被主题同优先级的规则盖掉。这里把它们挪到 bundle 最后。
+*/ -}}
+{{- $siteFiles := slice "_site.css" "_shortcodes.css" -}}
+{{- $themeCSS := slice -}}
+{{- $siteCSS := slice -}}
+{{- range resources.Match "css/_*.css" -}}
+  {{- if in $siteFiles (path.Base .Name) -}}
+    {{- $siteCSS = $siteCSS | append . -}}
+  {{- else -}}
+    {{- $themeCSS = $themeCSS | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $bundle := $themeCSS | append $siteCSS | resources.Concat "css/bundle.css" -}}
+{{- range (resources.Match "css/[!_]*.css" | append $bundle) }}
+  {{- if eq hugo.Environment "development" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{- end }}
+  {{- end }}
+{{- end }}
