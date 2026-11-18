@@ -34,7 +34,7 @@ menu:
 
 <div class="friend-list">
 {{< friend name="夜航南飞" url="https://banshou-air.netlify.app" avatar="https://banshou-air.netlify.app/img/logo.png" bio="“The world is beautiful. Let me come through it to you.”" >}}
-{{< friend name="白花恋诗" url="https://trails-of-isara.vercel.app/" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d48d23e.png" bio="把最棒的吊桥效应献给你" >}}
+{{< friend name="白花恋诗" url="https://trails-of-isara.vercel.app/" avatar="https://trails-of-isara.vercel.app/img/avatar_hu48f64c8d86fa41173b12f4da09770394_14255_300x0_resize_box_3.png" bio="把最棒的吊桥效应献给你" >}}
 {{< friend name="baer" url="https://writee.org/baer/" avatar="https://imagehost.harushuura.vip/image/2024/06/01/665ae8d460c5e.png" bio="冰熊酒吧，欢迎光临。" >}}
 {{< friend name="第三夏尔" url="https://thirdshire.com" avatar="https://thirdshire.com/blackcat_avatar.jpg" bio="认真生活，积极摸鱼" >}}
 {{< friend name="再會，謝謝所有的魚" url="https://gregueria.icu/" avatar="https://gregueria.icu/tuxicon2.png" bio="您首页的奶牛猫图片转发大使" >}}
