@@ -1,12 +1,12 @@
 
 
 ---
-title: "越折腾生产力越低｜VPS入门其一 "
+title: "越折腾生产力越低｜VPS入门其一"
 date: 2024-05-20T11:54:18+08:00
 lastmod: 2024-05-20T11:54:18+08:00
 description: 肯定有二！
 tags:
-- 越折腾生产力越低
+- 差生文具多
 - VPS
 categories:
 - others

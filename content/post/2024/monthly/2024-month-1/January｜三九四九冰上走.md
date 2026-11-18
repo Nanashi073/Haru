@@ -4,8 +4,7 @@ date: 2024-01-31T03:02:52+08:00
 lastmod: 2024-01-31T03:02:52+08:00
 description: 为什么这么冷
 tags:
-  - monthly review 
-  - 日常
+  - 月刊
 categories:
   - archive
 image: 

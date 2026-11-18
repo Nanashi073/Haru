@@ -1,0 +1,43 @@
+/* 覆盖主题的 root.css：字体与配色变量
+   jinghua / zhaohuaA 的 @font-face 在 fonts.css（由 scripts/build_fonts.py 生成，按需加载的 woff2 分片） */
+
+:root {
+  --font-family-main: "jinghua", "Noto Serif SC", sans-serif;
+
+  /* 👇 重点：把错误拼写和正确拼写全写上，双重保险，彻底消灭控制台红色惊叹号！ */
+  --font-weigth-main: 500;
+  --font-weight-main: 500;
+
+  --font-family-content: "jinghua", "Noto Serif SC", serif;
+  --font-weight-content: 500;
+
+  --font-family-summary: "zhaohuaA", "Noto Serif SC", serif;
+  --font-weight-summary: 500;
+
+  --dim-color: rgba(104, 10, 10, 0.84);
+  --hover-dim-color: #fff;
+  --quote-text-color: #888;
+  --code-background-color: #113704;
+  --code-text-color: #f0efea;
+}
+
+:root[color-scheme^='light'] {
+  --body-text-color: #222;
+  --body-background-color: #f0efea;
+
+  --primary-color: #0d8548;
+  --selection-color: #dda19b;
+
+  --dim-opacity: 65%;
+}
+
+:root[color-scheme^='dark'] {
+  --body-text-color: #f0efea;
+  --body-background-color: #222;
+
+  --primary-color: #0b4e26;
+  --selection-color: #7d4141;
+
+  --dim-opacity: 50%;
+}
+

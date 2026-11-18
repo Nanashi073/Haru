@@ -6,7 +6,7 @@ date: 2024-05-31T08:56:26+08:00
 lastmod: 2024-05-31T10:23:26+08:00
 description: 试过了是真的
 tags:
-- 月记
+- 月刊
 categories:
 - archive
 image: 

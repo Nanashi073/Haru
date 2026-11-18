@@ -1,48 +1,18 @@
-/* 1. 引入线上备用的思源宋体 */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght=200..900&display=swap");
+/* variables in root element */
 
-/* 2. 注册朝华字体 */
-@font-face {
-  font-family: 'zhaohuaA';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/font/zhaohuaA.ttf') format('truetype');
-}
-
-/* 3. 注册京华字体 */
-@font-face {
-  font-family: 'jinghua';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/font/jinghua.ttf') format('truetype');
-}
-
-/* 4. 注册你新加的 zhaohuaB（以防万一未来调用） */
-@font-face {
-  font-family: 'zhaohuaB';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/font/zhaohuaB.ttf') format('truetype');
-}
-
-/* 5. 【核心手术】纠正拼写断层 */
 :root {
-  --font-family-main: "jinghua", "Noto Serif SC", sans-serif;
-
-  /* 👇 重点：把错误拼写和正确拼写全写上，双重保险，彻底消灭控制台红色惊叹号！ */
+  --font-family-main: "Bricolage Grotesque", sans-serif;
   --font-weigth-main: 500;
-  --font-weight-main: 500;
-
-  --font-family-content: "jinghua", "Noto Serif SC", serif;
+  --font-family-content: "Bricolage Grotesque", serif;
   --font-weight-content: 500;
-
-  --font-family-summary: "zhaohuaA", "Noto Serif SC", serif;
+  --font-family-summary: "Bricolage Grotesque", serif;
   --font-weight-summary: 500;
 
-  --dim-color: rgba(104, 10, 10, 0.84);
+  --dim-color: #88888844;
   --hover-dim-color: #fff;
+
   --quote-text-color: #888;
-  --code-background-color: #113704;
+  --code-background-color: #333030;
   --code-text-color: #f0efea;
 }
 
@@ -50,7 +20,7 @@
   --body-text-color: #222;
   --body-background-color: #f0efea;
 
-  --primary-color: #0d8548;
+  --primary-color: #cd5c5c;
   --selection-color: #dda19b;
 
   --dim-opacity: 65%;
@@ -60,7 +30,7 @@
   --body-text-color: #f0efea;
   --body-background-color: #222;
 
-  --primary-color: #0b4e26;
+  --primary-color: #cd5c5c;
   --selection-color: #7d4141;
 
   --dim-opacity: 50%;

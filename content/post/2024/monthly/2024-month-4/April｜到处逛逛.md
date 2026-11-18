@@ -7,10 +7,9 @@ date: 2024-04-30T03:02:52+08:00
 lastmod: 2024-04-30T16:05:52+08:00
 description: 一个月竟旅游了两次
 tags:
-- monthly review 
-- 日常
+- 月刊
 categories:
-- Archive
+- archive
 image: 
 slug: 2024-monthly-review-04
 ---

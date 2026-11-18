@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+
+{{- template "_internal/opengraph.html" . -}}
+{{- template "_internal/twitter_cards.html" . -}}
+
+{{- partialCached "head/css.html" . -}}
+{{- partialCached "head/js.html" . -}}
+
+{{- /* 已去掉主题自带的 Google Fonts（Spectral / Bricolage Grotesque）：字体变量在 assets/css/root.css 里换成了 jinghua / zhaohuaA */ -}}

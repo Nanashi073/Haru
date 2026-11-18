@@ -1,47 +1,45 @@
-{{ $dbUrl := .Get 0 }}
-{{ $dbApiUrl := "https://neodb.social/api/" }}
-{{ $dbType := "" }}
-{{ $itemRating := .Get 1 }}
+{{- /*
+  NeoDB / 豆瓣书影音卡片
 
-{{ if ( findRE `^.*neodb\.social\/.*` $dbUrl ) }}
-    {{ $dbType = replaceRE `.*neodb.social\/(.*\/.*)` "$1" $dbUrl }}
-{{ else }}
-    {{ $dbType = $dbUrl }}
-    {{ $dbApiUrl = "https://neodb.social/api/catalog/fetch?url=" }}
-{{ end }}
+  用法：
+    {{< neodb "链接" >}}          不打分
+    {{< neodb "链接" "7" >}}      打分：第二个参数是 0–10 分，显示在卡片标题下面，
+                                  5 颗星、奇数分显示半颗（7 分 = 3.5 颗）
+  链接可以是豆瓣（book/movie/music/www.douban.com）、NeoDB 或 Goodreads 的条目地址。
+  注意两个参数都要用引号，中间用空格隔开，不能写成 rating="7"。
 
-{{ $fullUrl := print $dbApiUrl $dbType }}
-{{ $dbFetch := "" }}
-
-{{ $skipNetwork := true }}
-
-{{ if not $skipNetwork }}
-    {{ $opts := dict "timeout" 3000 }}
-    {{ $response := resources.GetRemote $fullUrl $opts }}
-    {{ with $response }}
-        {{ if not .Err }}
-            {{ $dbFetch = .Content | transform.Unmarshal }}
-        {{ end }}
-    {{ end }}
-{{ end }}
-
-{{ if $dbFetch }}
-    <div class="db-card">
-        <div class="db-card-subject">
-            <div class="db-card-post"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="{{ $dbFetch.cover_image_url }}"></div>
-            <div class="db-card-content">
-                <div class="db-card-title"><a href="{{ $dbUrl }}" class="cute" target="_blank" rel="noreferrer">{{ $dbFetch.title }}</a></div>
-                <div class="rating"><span class="rating_nums">个人打分：</span><span class="allstardark"><span class="allstarlight" style="width:{{ $itemRating }}0%"></span></span></div>
-                <div class="db-card-abstract">{{ $dbFetch.brief }}</div>
-            </div>
-            <div class="db-card-cate">{{ $dbFetch.category }}</div>
-        </div>
+  条目信息（标题、封面、简介、分类）来自 data/neodb.json，构建时不联网。
+  新文章用了新链接后，在仓库根目录跑一次：
+    python scripts/fetch_neodb.py
+  再一起提交 data/neodb.json。数据里没有的条目会显示为原链接（打分照常显示）。
+*/ -}}
+{{- $url := .Get 0 -}}
+{{- $rating := .Get 1 -}}
+{{- with index hugo.Data.neodb $url -}}
+<div class="db-card">
+  <div class="db-card-subject">
+    {{- with .cover }}
+    <div class="db-card-post"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="{{ . }}" alt=""></div>
+    {{- end }}
+    <div class="db-card-content">
+      <div class="db-card-title"><a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a></div>
+      {{- with $rating }}
+      <div class="db-card-rating">{{ partial "star-rating.html" . }}</div>
+      {{- end }}
+      {{- with .brief }}
+      <div class="db-card-abstract">{{ . }}</div>
+      {{- end }}
     </div>
-{{ else }}
-    <div class="db-card" style="border: 1px dashed #ccc; padding: 12px; margin: 10px 0; border-radius: 4px; background: rgba(0,0,0,0.02);">
-        <p style="margin: 0; font-size: 0.9em; color: #666;">
-            📖 <a href="{{ $dbUrl }}" target="_blank" style="text-decoration: underline; font-weight: bold;">点击查看豆瓣/NeoDB条目原链接</a>
-            <span style="font-size: 0.85em; color: #999; margin-left: 10px;">(本地预览已启用离线保护)</span>
-        </p>
-    </div>
-{{ end }}
+    {{- with .category }}
+    <div class="db-card-cate">{{ . }}</div>
+    {{- end }}
+  </div>
+</div>
+{{- else -}}
+<div class="db-card db-card-fallback">
+  📖 <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">点击查看豆瓣/NeoDB条目原链接</a>
+  {{- with $rating }}
+  <div class="db-card-rating">{{ partial "star-rating.html" . }}</div>
+  {{- end }}
+</div>
+{{- end -}}

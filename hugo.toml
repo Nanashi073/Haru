@@ -3,11 +3,11 @@ title = '春天与阿修罗'
 theme = 'rusty-typewriter'
 hasCJKLanguage = true
 
-# 🌟 修复现代 Hugo 的弃用警告，统一多语言标识为小写 zh
+# Hugo ≥ 0.158 用 locale 取代 languageCode；本地和 Vercel 都需要 ≥ 0.158
 locale = 'zh'
 DefaultContentLanguage = 'zh'
 
-# 🌟 统一全局版权信息（原厂页脚或自定义都可以读取它）
+# 页脚版权文字（layouts/partials/footer.html 读取 site.Copyright）
 copyright = "春天与阿修罗 谢绝无断转载分发 since01/03/2024"
 
 [markup]
@@ -26,26 +26,22 @@ tabWidth = 4
 [markup.goldmark.renderer]
 unsafe = true
 
-# 🌟 将全局参数统一收拢在同一个大 [params] 区域下，严防层级错位
 [params]
 subtitle = "食宇宙尘埃·或吐纳着空气和盐水"
-copyright = "春天与阿修罗 谢绝无断转载分发 since01/03/2024"
 
-# 评论功能
-enableTwikoo = true
-twikooEnvId = "https://comment.harushuura.vip/"
-
+# imgloop 短代码开关
 enableimgloop = true
-customCSS = ["//assets/scss/custom.scss"]
 
-# 🌟 正确嵌套的作者信息
 [params.author]
 name = "春天与阿修罗"
 
-# 🌟 正确嵌套的原厂页脚跳转链接
 [params.links]
-theme = "https://github.com/scrummable/rusty-typewriter"
+theme = "https://github.com/math-queiroz/rusty-typewriter"
 hugo = "https://gohugo.io"
+
+# 覆盖主题默认值（主题的其余默认见 themes/rusty-typewriter/hugo.toml）
+[params.rtwt.home]
+showAuthorImg = false
 
 [[menus.main]]
 name = '博文'

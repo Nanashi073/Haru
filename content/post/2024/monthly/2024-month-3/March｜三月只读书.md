@@ -6,8 +6,7 @@ date: 2024-03-31T03:02:52+08:00
 lastmod: 2024-04-29T16:05:52+08:00
 description: 月末抓紧看书
 tags:
-- monthly review 
-- 日常
+- 月刊
 categories:
 - archive
 image: 

@@ -4,12 +4,12 @@
 
 
 ---
-title: " July｜心静自然凉"
+title: "July｜心静自然凉"
 date: 2024-08-01T11:05:08+08:00
 lastmod: 2024-08-01T11:05:08+08:00
 description: 七月刊
 tags:
-- 月记
+- 月刊
 categories:
 - archive
 image: 
@@ -64,21 +64,18 @@ slug: monthly-review-07
 这个月和宝宝一起把空之境界的系列剧场版都看完了。看完感觉……08年的UFO和TM好穷啊。但是13年的未来福音就骤然富了。
 
 ## 第一章：俯瞰风景
-{{< neodb "https://movie.douban.com/subject/2354897/" >}} 
-{{< star_rating rating="7" >}}
+{{< neodb "https://movie.douban.com/subject/2354897/" "7" >}} 
 
 很神秘，最早的这一篇居然是正篇八章里（除了痛觉残留）制作质量最高的，难道是投资人一开始更好糊弄？不过我看其实八章都是08年左右一口气出完的，更可能的是投资是一次性给的，然后钱越来越少……
 
 虽然故事云里雾里，但是氛围还不错，最主要是是式姐很帅，还能同时吃到志贵代餐（对不起）很开心。以及，这一篇的ED也是最好听的，虽然kalifina唱的都很好听，还是oblivious最经典。
 ## 第二章：杀人考察（前）
-{{< neodb "https://movie.douban.com/subject/2354900/" >}} 
-{{< star_rating rating="7" >}}
+{{< neodb "https://movie.douban.com/subject/2354900/" "7" >}} 
 
 氛围最喜欢的一篇，集菌菇类精华之大成：阴湿的90年代，猎奇杀人，啥也不知道的男主角，感觉坏得出水的女主角。虽然很可惜杀人考察后一揭盅，杀人的果然不是式（大家都知道了）。或许还是因为空境其实比月姬早，年轻的蘑菇还是不好意思让主角杀人的，月姬的时候就放飞自我了。而且小说/电影受众的承受能力，确实比黄油的低。FSN改的三版动画，都删掉了不少萌萌宅男哥接受不了的内容。
 
 ## 第三章：痛觉残留
-{{< neodb "https://movie.douban.com/subject/2354908/" >}} 
-{{< star_rating rating="8" >}}
+{{< neodb "https://movie.douban.com/subject/2354908/" "8" >}} 
 
 其实也就……剧情就……呃………………
 
@@ -86,40 +83,33 @@ slug: monthly-review-07
 
 还是推荐大家都来看看天下第一的藤乃，CV还是能登，嘿嘿嘿。
 ## 第四章：伽蓝之洞
-{{< neodb "https://movie.douban.com/subject/3077701/" >}} 
-{{< star_rating rating="6" >}}
+{{< neodb "https://movie.douban.com/subject/3077701/" "6" >}} 
 
 就那样吧。算是个前传？没死人……不好意思，因为太短了，没什么意思。
 ## 第五章：矛盾螺旋
-{{< neodb "https://movie.douban.com/subject/3187790/" >}} 
-{{< star_rating rating="5" >}}
+{{< neodb "https://movie.douban.com/subject/3187790/" "5" >}} 
 
 好长的一章，同时感觉到了TM的穷困，经费都烧给藤乃炸大桥了。剧情还好，没有我想的那么复杂诶，我原本以为这是平行世界的设定，结果不是。而且那个发型神似士郎的角色有点多余。
 ## 第六章：忘却录音
-{{< neodb "https://movie.douban.com/subject/3369765/" >}} 
-{{< star_rating rating="5" >}}
+{{< neodb "https://movie.douban.com/subject/3369765/" "5" >}} 
 
 我记得当年宅男哥都好喜欢鲜花，为了那个wink要死要活。剧情就还是那样，主要是制作真的一般，真的没钱，前面这三章都是如果重置一下画面，我会觉得好很多很多。
 ## 第七章：杀人考察（后）
-{{< neodb "https://movie.douban.com/subject/3399553/" >}} 
-{{< star_rating rating="6" >}}
+{{< neodb "https://movie.douban.com/subject/3399553/" "6" >}} 
 
 我 就 知 道！
 
 剧情没啥意外的，肯定不是式杀的，如果换到现在根本没必要这样做误导。主要是最后煽情的时候，一原到底是谁啊，为什么要在人脸上拉渐变？拖出去切成生骨肉喂猫。
 ## 终章：空之境界
-{{< neodb "https://movie.douban.com/subject/5296286/" >}} 
-{{< star_rating rating="4" >}}
+{{< neodb "https://movie.douban.com/subject/5296286/" "4" >}} 
 
 看出来TM真的没钱了，半个小时的低画质哲学探讨。但是坂本真绫的这个声线太好听了，作为抓可以给满分。
 ## 未来福音
-{{< neodb "https://movie.douban.com/subject/11499092/" >}} 
-{{< star_rating rating="8" >}}
+{{< neodb "https://movie.douban.com/subject/11499092/" "8" >}} 
 
 挺好看，剧情有意思，而且制作陡然精良了很多，这个时候ufo就换主美了吧？这个画风真的好眼熟，ubw就是这样的。最后本作女主没有进入男主后宫，而是变成了女同，可喜可贺。
 ## 未来福音 Extra Chorus
-{{< neodb "https://movie.douban.com/subject/24861238/" >}} 
-{{< star_rating rating="9" >}}
+{{< neodb "https://movie.douban.com/subject/24861238/" "9" >}} 
 
 为了藤乃的名场面可以给10星，反复看了好几次，真是一段值得播放给全世界的充满希望的影像。
 # 游戏制作报告

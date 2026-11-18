@@ -1,12 +1,12 @@
 
 ---
-title: " 越折腾生产力越低｜重回Calflow的怀抱"
+title: "越折腾生产力越低｜重回Calflow的怀抱"
 date: 2025-03-24T22:25:59+08:00
 lastmod: 2025-03-24T22:25:59+08:00
 description: 少折腾吧！
 tags:
-- 越折腾生产力越低
-- 永远需要一个新的ToDoAPP
+- 差生文具多
+- 永远需要一个新的ToDo软件
 categories:
 - others
 image: 

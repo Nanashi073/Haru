@@ -7,8 +7,7 @@ date: 2024-01-14T03:02:52+08:00
 lastmod: 2024-01-14T03:02:52+08:00
 description: 摸鱼的一周
 tags:
-- weekly review 
-- 日常
+- 周记
 categories:
 - archive
 image: 

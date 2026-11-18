@@ -9,9 +9,8 @@ lastmod: 2024-05-15T20:10:48+08:00
 description: 我猜肯定会有二。
 tags:
 - 差生文具多
-- 越折腾生产力越低
 categories:
-- Others
+- others
 image: 
 slug: other-obsidian-note-1
 ---

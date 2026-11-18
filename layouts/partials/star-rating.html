@@ -1,0 +1,18 @@
+{{- /*
+  星级评分，neodb 和 star_rating 两个短代码共用。
+  传入 0–10 的分数，显示为 5 颗星，每 2 分一颗，奇数分显示半颗（7 分 = 3.5 颗）。
+  样式见 assets/css/_shortcodes.css 的 .star-rating
+*/ -}}
+{{- $rating := int . -}}
+<span class="star-rating" role="img" aria-label="{{ $rating }}/10">
+  {{- range seq 1 5 -}}
+    {{- $full := mul . 2 -}}
+    {{- if le $full $rating -}}
+      <span class="star filled">★</span>
+    {{- else if eq (sub $full 1) $rating -}}
+      <span class="star half">★</span>
+    {{- else -}}
+      <span class="star">★</span>
+    {{- end -}}
+  {{- end -}}
+</span>

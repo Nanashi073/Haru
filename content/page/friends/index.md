@@ -3,7 +3,6 @@ title: "友链"
 
 description: 
 slug: "links"
-layout: links
 comments: true
 license: false
 toc: false

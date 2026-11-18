@@ -1,4 +1,15 @@
-public
-resources
+# Hugo 构建产物
+public/
+resources/
+.hugo_build.lock
+
+# 部署 / 环境
 .vercel
 .env*
+
+# 系统与编辑器
+.DS_Store
+.idea/
+
+# Python
+__pycache__/

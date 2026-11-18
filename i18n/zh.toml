@@ -1,5 +1,36 @@
-[scroll_top]
-other = "回到顶部 ↑"
+# 覆盖 rusty-typewriter 主题的文案（主题本身没有中文翻译）
 
-[footer]
-other = "由 Theme .ThemeAnchor 和 .HugoAnchor 强力驱动"
+# Root
+theme_light = "Light Theme"
+theme_dark = "Dark Theme"
+
+# Not found (404)
+not_found_title = "Whoops, page not found!"
+not_found_desc = "Not all who wander are lost, but there's nothing left to explore here"
+not_found_home_link = "Go Home"
+
+# Footer
+scroll_top = "回到顶部 ↑"
+footer = "由 Theme .ThemeAnchor 和 .HugoAnchor 强力驱动"
+
+# Home
+featured_posts = "Featured Posts"
+recent_posts = "Recent Posts"
+
+# Search
+js_required = "It's necessary to enable Javascript"
+search_loading = "Loading..."
+search_placeholder = "Search..."
+
+# SidePane for home
+see_all = "🌟查看更多"
+
+# Page
+breadcrumb_home = "Home"
+
+# SidePane for single pages
+details_words = "words"
+details_read_time = "minutes read"
+side_table_of_contents = "Table Of Contents"
+side_attachments = "Attachments"
+side_related = "Related"

@@ -5,8 +5,7 @@ date: 2024-01-28T03:02:52+08:00
 lastmod: 2024-01-28T03:02:52+08:00
 description: 生病了
 tags:
-- weekly review 
-- 日常
+- 周记
 categories:
 - archive
 image: 

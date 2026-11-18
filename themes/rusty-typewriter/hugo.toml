@@ -1,6 +1,6 @@
-baseURL = 'https://harushuura.vip'
-locale = 'zh-cn'
-title = '春天与阿修罗'
+baseURL = 'https://example.org/'
+locale = 'en-US'
+title = 'My New Hugo Site'
 
 [rusty_typewriter]
  [params.rtwt]
@@ -9,7 +9,7 @@ title = '春天与阿修罗'
   searchPath = 'search'
  [params.rtwt.home]
   showBio = true
-  showAuthorImg = false
+  showAuthorImg = true
   sidePaneTags = true
   showFeatured = true
   showRecent = true

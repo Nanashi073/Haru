@@ -5,8 +5,7 @@ date: 2024-02-29T03:02:52+08:00
 lastmod: 2024-02-29T03:02:52+08:00
 description: 什么都没干
 tags:
-- monthly review 
-- 日常
+- 月刊
 categories:
 - archive
 image: 

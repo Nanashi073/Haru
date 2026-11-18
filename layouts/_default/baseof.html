@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}" dir="{{ or site.Language.Direction `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="notransition">
+<div id="container">
+  <header id="main-header">
+    {{- partial "header.html" . -}}
+  </header>
+  <div class="flex grow">
+    <div id="main-pane">
+      <main id="main-content">
+        {{- block "main" . -}}{{- end -}}
+      </main>
+    </div>
+    {{- if (and (default true .Params.rtwt.sidePane) site.Params.rtwt.sidePane) -}}
+      {{- block "side" . -}}{{- end -}}
+    {{- end -}}
+  </div>
+
+  {{/* 页脚放在 #container 底部、和 .flex 同级，避免被 #main-pane 的 overflow 裁掉 */}}
+  <footer id="main-footer">
+    {{- partial "footer.html" . -}}
+  </footer>
+</div>
+</body>
+</html>

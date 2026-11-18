@@ -1,10 +1,7 @@
-<div class="star-rating">
-  {{ $rating := .Get "rating" }}
-  {{ range seq 1 10 }}
-    {{ if le . $rating }}
-      <span class="star filled">★</span>
-    {{ else }}
-      <span class="star">☆</span>
-    {{ end }}
-  {{ end }}
-</div>
+{{- /*
+  独立的星级评分（餐厅、网文等没有 NeoDB 卡片的地方用）。
+  用法：{{< star_rating rating="7" >}}
+  rating 为 0–10 分，显示为 5 颗星，奇数分显示半颗（7 分 = 3.5 颗）。
+  有 NeoDB 卡片的条目请直接把分数写进卡片：{{< neodb "链接" "7" >}}
+*/ -}}
+{{- partial "star-rating.html" (.Get "rating") -}}
