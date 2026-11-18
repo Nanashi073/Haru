@@ -2,9 +2,10 @@
 title: 关于我
 description: 
 aliases:
-  - about-us
-  - about-hugo
-  - contact
+  - /page/about/
+  - /page/about-us/
+  - /page/about-hugo/
+  - /page/contact/
 
 menu:
     main: 
@@ -39,14 +40,16 @@ menu:
 
 ## 博客时间线
 
- {{< timeline date="31/03/2024" title="正式上线" description="" tags=""  >}}
- {{< timeline date="01/04/2024" title="第一次更新" description="RSS，域名，友链" tags=""  >}}
- {{< timeline date="30/04/2024" title="第二次更新" description="一堆短代码，About，Now，评论区" tags=""  >}}
- {{< timeline date="15/05/2024" title="Memos功能上线" description="Powered by Artitalks" tags=""  >}}
- {{< timeline date="30/05/2024" title="在Now界面加入了热力图" description="" tags=""  >}}
- {{< timeline date="01/06/2024" title="新主题上线！撒花！" description="" tags=""  >}}
- {{< timeline date="09/10/2024" title="更换了博客配色和字号" description="" tags=""  >}}
- {{< timeline date="17/11/2024" title="装修了展柜页面" description="" tags=""  >}}
- {{< timeline date="01/12/2024" title="修改Neodb卡片样式显示个人打分" description="" tags=""  >}}
- {{< timeline date="03/15/2025" title="修改背景与目录样式；修改了ABOUT界面；增加了友链" description="" tags=""  >}}
- {{< timeline date="04/07/2026" title="更改了主题为Rusty Typewriter" description="" tags=""  >}}
+<div class="timeline">
+{{< timeline date="2024/03/31" title="正式上线" description="" tags=""  >}}
+{{< timeline date="2024/04/01" title="第一次更新" description="RSS，域名，友链" tags=""  >}}
+{{< timeline date="2024/04/30" title="第二次更新" description="一堆短代码，About，Now，评论区" tags=""  >}}
+{{< timeline date="2024/05/15" title="Memos功能上线" description="Powered by Artitalks" tags=""  >}}
+{{< timeline date="2024/05/30" title="在Now界面加入了热力图" description="" tags=""  >}}
+{{< timeline date="2024/06/01" title="新主题上线！撒花！" description="" tags=""  >}}
+{{< timeline date="2024/10/09" title="更换了博客配色和字号" description="" tags=""  >}}
+{{< timeline date="2024/11/17" title="装修了展柜页面" description="" tags=""  >}}
+{{< timeline date="2024/12/01" title="修改Neodb卡片样式显示个人打分" description="" tags=""  >}}
+{{< timeline date="2025/03/15" title="修改背景与目录样式；修改了ABOUT界面；增加了友链" description="" tags=""  >}}
+{{< timeline date="2026/07/04" title="更改了主题为Rusty Typewriter" description="" tags=""  >}}
+</div>

@@ -197,13 +197,86 @@ section .db-card-title a { text-decoration: none; }
 }
 main#main-content .swiper-slide img { margin: 0; }
 
-/* ---------- 深色模式：timeline、tweet 短代码里写死的浅色配色 ---------- */
-[color-scheme=dark] .timeline__time { color: var(--body-text-color); }
-[color-scheme=dark] .timeline__split-line { background-color: var(--dim-color); }
-[color-scheme=dark] .timeline__description { color: var(--quote-text-color); }
+/* ---------- 深色模式：tweet 短代码里写死的浅色配色 ---------- */
 [color-scheme=dark] .tweet-card {
   background-color: color-mix(in srgb, var(--body-text-color) 6%, var(--body-background-color));
   border-color: color-mix(in srgb, var(--body-text-color) 15%, transparent);
 }
 [color-scheme=dark] .tweet-content { color: var(--body-text-color); }
 [color-scheme=dark] .tweet-footer { color: var(--quote-text-color); }
+
+/* ---------- timeline：关于页的博客时间轴 ----------
+   左列日期，右列内容；竖线用暗红（--dim-color），节点用绿色（--primary-color），最新一条实心 */
+.timeline { margin: 1.5rem 0 1rem; }
+.timeline__item {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  column-gap: 2rem; /* 日期到竖轴的距离 */
+}
+.timeline__date {
+  padding-top: 0.2rem;
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--quote-text-color);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.timeline__body {
+  position: relative;
+  padding: 0 0 1.4rem 2rem; /* 竖轴到内容的距离 */
+  border-left: 2px solid var(--dim-color);
+}
+/* 最后一条：竖轴只画到圆点为止，不再往下延伸 */
+.timeline__item:last-child .timeline__body {
+  padding-bottom: 0.2rem;
+  border-left-color: transparent;
+}
+.timeline__item:last-child .timeline__body::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 2px;
+  height: 0.6rem;
+  background: var(--dim-color);
+}
+.timeline__body::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 0.45rem;
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  background: var(--body-background-color);
+  z-index: 1;
+}
+.timeline__item:last-child .timeline__body::before { background: var(--primary-color); }
+.timeline__item:hover .timeline__body::before { background: var(--primary-color); }
+.timeline__title {
+  font-weight: bold;
+  line-height: 1.5;
+}
+.timeline__desc {
+  margin-top: 0.15rem;
+  font-size: 0.9rem;
+  color: var(--quote-text-color);
+}
+.timeline__tag {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0 0.5rem;
+  border: 1px solid var(--dim-color);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: var(--quote-text-color);
+  vertical-align: middle;
+}
+@media (max-width: 500px) {
+  .timeline__item { grid-template-columns: 5.2rem minmax(0, 1fr); column-gap: 1.2rem; }
+  .timeline__date { font-size: 0.75rem; }
+  .timeline__body { padding-left: 1.4rem; }
+}

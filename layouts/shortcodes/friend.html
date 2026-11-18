@@ -1,7 +1,7 @@
 {{- /*
   友链卡片。用法：
     {{< friend name="名字" url="https://..." avatar="头像地址" bio="一句话简介" >}}
-  多个卡片要放在 <div class="friend-list"> ... </div> 里（见 content/page/friends/index.md），
+  多个卡片要放在 <div class="friend-list"> ... </div> 里（见 content/friends/index.md），
   中间不要空行，这样 Markdown 不会给它们套上 <p>，两列布局才正常。
 */ -}}
 {{- $name := .Get "name" | default (.Get 0) -}}
