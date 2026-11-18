@@ -43,6 +43,11 @@ hugo = "https://gohugo.io"
 [params.rtwt.home]
 showAuthorImg = false
 
+# 博文网址：/post/发布年份/slug/，没写 slug 时用文件名
+# （文件放在 content/post/年份/分类/ 下，文件夹不影响网址）
+[permalinks]
+post = "/post/:year/:slugorcontentbasename/"
+
 # 生成搜索索引 /searchindex.json（主题的搜索页靠它工作）
 [outputFormats]
 [outputFormats.SearchIndex]
