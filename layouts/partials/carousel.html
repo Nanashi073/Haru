@@ -1,0 +1,70 @@
+{{- /*
+  首页轮播头图。数据在 data/carousel.yaml，样式在 assets/css/_site.css，脚本在 assets/js/_carousel.js。
+  没有脚本时也能看到第一张，左右按钮和自动轮播需要脚本。
+*/ -}}
+{{- with hugo.Data.carousel }}
+{{- $items := .items }}
+{{- if $items }}
+<section class="carousel" aria-roledescription="carousel" aria-label="精选" data-interval="{{ .interval | default 5000 }}">
+  <div class="carousel-track">
+    {{- range $i, $it := $items }}
+    {{- $external := hasPrefix $it.link "http" }}
+    <div class="carousel-slide{{ if eq $i 0 }} is-active{{ end }}{{ if $it.hide_title }} no-title{{ end }}" role="group" aria-roledescription="slide"
+         aria-label="{{ add $i 1 }} / {{ len $items }}"{{ if ne $i 0 }} aria-hidden="true"{{ end }}>
+      {{- if $it.link }}
+      <a class="carousel-link" href="{{ $it.link }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}{{ if ne $i 0 }} tabindex="-1"{{ end }}>
+      {{- else }}
+      <div class="carousel-link">
+      {{- end }}
+        {{- with $it.image }}
+        {{- /* 只写文件名：从 assets/images/carousel/ 读取原图，构建时自动压缩成 1600px / 800px 的 WebP；
+               写完整网址或以 / 开头的路径：原样使用 */ -}}
+        {{- $src := . }}{{ $srcset := "" }}
+        {{- if not (or (hasPrefix . "http") (hasPrefix . "/")) }}
+          {{- with resources.Get (printf "images/carousel/%s" .) }}
+            {{- $big := .Resize "1600x webp q80" }}
+            {{- $small := .Resize "800x webp q80" }}
+            {{- $src = $big.RelPermalink }}
+            {{- $srcset = printf "%s 800w, %s 1600w" $small.RelPermalink $big.RelPermalink }}
+          {{- else }}
+            {{- errorf "carousel: 找不到 assets/images/carousel/%s" . }}
+          {{- end }}
+        {{- end }}
+        <img class="carousel-image" src="{{ $src }}"{{ with $srcset }} srcset="{{ . }}" sizes="(max-width: 900px) 100vw, 800px"{{ end }}
+             alt="{{ $it.title }}"{{ with $it.position }} style="object-position: {{ . }}"{{ end }} {{ if ne $i 0 }}loading="lazy" {{ end }}decoding="async">
+        {{- else }}
+        <div class="carousel-image carousel-placeholder" aria-hidden="true"></div>
+        {{- end }}
+        <div class="carousel-caption">
+          {{- with $it.label }}<span class="carousel-label">{{ . }}</span>{{ end }}
+          {{- if $it.hide_title }}
+          <span class="carousel-sr">{{ $it.title }}</span>
+          {{- else }}
+          <div class="carousel-title">{{ $it.title }}</div>
+          {{- with $it.subtitle }}<div class="carousel-subtitle">{{ . }}</div>{{ end }}
+          {{- end }}
+        </div>
+      {{- if $it.link }}
+      </a>
+      {{- else }}
+      </div>
+      {{- end }}
+    </div>
+    {{- end }}
+    {{- if gt (len $items) 1 }}
+    <button class="carousel-arrow carousel-prev" type="button" aria-label="上一张">‹</button>
+    <button class="carousel-arrow carousel-next" type="button" aria-label="下一张">›</button>
+    {{- end }}
+    {{- if gt (len $items) 1 }}
+    <div class="carousel-dots" role="tablist">
+      {{- range $i, $it := $items }}
+      <button class="carousel-dot{{ if eq $i 0 }} is-active{{ end }}" type="button" role="tab"
+              aria-label="第 {{ add $i 1 }} 张：{{ $it.title }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"></button>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+
+</section>
+{{- end }}
+{{- end }}

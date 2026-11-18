@@ -1,0 +1,41 @@
+# 首页轮播头图（layouts/partials/carousel.html 读取）
+#
+# 每一张：
+#   title     标题（必填）
+#   subtitle  一句话介绍（可选）
+#   image     图片：原图放进 assets/images/carousel/，这里只写文件名（如 taisho.png），
+#             构建时会自动压缩成 WebP，不用自己缩图；也可以写完整网址
+#             轮播框是 16:9，16:9 的图完整显示，更宽或更窄的图会裁掉一点边；留空时显示纯色占位
+#   hide_title  图片里已经有标题时写 true，不再叠加标题文字，只留左上角小标签（可选）
+#   position  裁切时保留哪一部分（可选），如 "center 30%"（偏上）、"center bottom"（底部）、"left center"
+#   link      点击后打开的网址（可选，外部链接会在新标签页打开）
+#   label     左上角的小标签（可选），如「游戏」「个站」
+#
+# 顺序就是轮播顺序；interval 是自动切换的间隔（毫秒）
+
+interval: 5000
+
+items:
+  - title: 大正浪漫剧场
+    subtitle: ""
+    label: 游戏
+    image: taisho.png
+    link: https://store.steampowered.com/app/3444580/
+
+  - title: 陇春志异：宰牲篇
+    subtitle: ""
+    label: 游戏
+    image: longchun.png
+    link: https://sweetsomestudio.itch.io/strange-tales-from-longchun-sacrifice
+
+  - title: 把竹马放进冰箱吧
+    subtitle: ""
+    label: 游戏
+    image: fringe.png
+    link: https://sweetsomestudio.itch.io/to-put-your-childhood-sweetheart-into-a-refrigerator
+
+  - title: （WIP）
+    subtitle: ""
+    label: 个站
+    image: ""
+    link: "https://norika-art.carrd.co/"

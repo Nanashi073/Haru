@@ -1,7 +1,8 @@
 {{- /* 覆盖主题首页：去掉侧栏（搜索框和标签云），搜索改到右上角图标；最近博文下方加「查看全部博文」 */ -}}
 {{- define "main" -}}
   {{- .Content -}}
-  {{- partial "home/greetings.html" -}}
+  {{- /* 主题的问候语区块没有内容（只留下一片空白），换成轮播头图 */ -}}
+  {{- partial "carousel.html" . -}}
 
   {{- $indexablePages := where site.RegularPages "Params.indexable" "ne" false -}}
 
