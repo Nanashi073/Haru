@@ -17,7 +17,7 @@ interval: 5000
 
 items:
   - title: 大正浪漫剧场
-    subtitle: ""
+    subtitle: "Demo 已上线！"
     label: 游戏
     image: taisho.png
     link: https://store.steampowered.com/app/3444580/
