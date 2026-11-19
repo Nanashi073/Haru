@@ -1,0 +1,186 @@
+/* ==========================================================================
+   展馆页（layouts/_default/museum.html）
+   分类按钮沿用标签云（.taxonomy-list + .tag），年份标题沿用博文列表（.list-group-key）
+   ========================================================================== */
+
+.museum-desc { margin: 0.3rem 0 0; }
+
+/* ---------- 筛选 ---------- */
+.museum-filters { margin: 1.5rem 0 1rem; }
+
+.museum-cats {
+  margin: 0;
+  gap: 0.6rem 0.5rem;
+}
+.museum-cats .tag {
+  margin: 0;
+  padding: 0.25rem 0.8rem;
+  line-height: 1.4;
+  font: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+.museum-cats .tag:hover { color: var(--primary-color); }
+.museum-cats .tag.active {
+  color: var(--body-background-color);
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.museum-cats .tag.active .dim { color: inherit; opacity: 0.75; }
+
+/* 年份：比分类低调，只有文字和下划线 */
+.museum-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
+  margin-top: 1rem;
+}
+.museum-years button {
+  padding: 0;
+  font: inherit;
+  font-size: 0.95rem;
+  color: inherit;
+  opacity: var(--dim-opacity);
+  background: none;
+  border: 0;
+  border-bottom: 1.5px solid transparent;
+  cursor: pointer;
+}
+.museum-years button:hover { color: var(--primary-color); opacity: 1; }
+.museum-years button.active {
+  color: var(--primary-color);
+  border-bottom-color: currentColor;
+  opacity: 1;
+}
+
+/* ---------- 按年份分组 ---------- */
+.museum-year { margin-top: 2.5rem; }
+.museum-year[hidden],
+.museum-item[hidden] { display: none; }
+
+.museum-year-title { margin-bottom: 1rem; }
+.museum-year-count {
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+}
+.museum-year-count::before { content: "· "; }
+
+.museum-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+  gap: 1.1rem 0.8rem;
+}
+@media (max-width: 600px) {
+  .museum-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9rem 0.6rem;
+  }
+}
+
+.museum-item {
+  display: block;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.museum-cover {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--body-text-color) 8%, transparent);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+/* 音乐专辑封面基本是正方形 */
+.museum-item[data-cat="music"] .museum-cover { aspect-ratio: 1; }
+
+/* 主题给正文图片加了上下边距，这里绝对定位铺满封面框 */
+.museum-cover img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0 !important;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.museum-item:hover .museum-cover img { transform: scale(1.04); }
+
+/* 没有封面时显示标题 */
+.museum-cover-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: var(--dim-opacity);
+}
+
+/* 「其他」里的小标签：播客 / 演出 */
+.museum-badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 0 5px;
+  font-size: 11px;
+  line-height: 1.6;
+  border-radius: 4px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* 悬停（手机上点按）显示评分和短评 */
+.museum-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4px;
+  padding: 8px;
+  color: #f0efea;
+  background: rgba(20, 20, 18, 0.85);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.museum-item:hover .museum-overlay,
+.museum-item:focus-visible .museum-overlay { opacity: 1; }
+.museum-overlay p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 星星：--rating 是 0–5（可以是半星） */
+.museum-stars {
+  --star-size: 13px;
+  flex-shrink: 0;
+  width: calc(var(--star-size) * 5);
+  height: var(--star-size);
+  background: linear-gradient(90deg, #f5c04a calc(var(--rating) / 5 * 100%), rgba(255, 255, 255, 0.3) 0);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E") 0 0 / var(--star-size) var(--star-size) repeat-x;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E") 0 0 / var(--star-size) var(--star-size) repeat-x;
+}
+
+.museum-title {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.museum-item:hover .museum-title { color: var(--primary-color); }
+.museum-date { font-size: 0.75rem; }
+
+.museum-empty { margin-top: 2rem; }

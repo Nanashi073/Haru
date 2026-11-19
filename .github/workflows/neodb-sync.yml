@@ -1,0 +1,53 @@
+# 定时同步 NeoDB「已看完」书架到 data/neodb_shelf.json（展馆页面用）。
+# 数据有变化就提交到 master，Vercel 会自动重新部署；没变化就什么都不做。
+#
+# 需要先在 GitHub 仓库 Settings → Secrets and variables → Actions 里添加：
+#   NEODB_TOKEN = NeoDB 的 API token
+# 也可以在 Actions 页面点 "Run workflow" 手动同步一次。
+name: NeoDB 同步
+
+on:
+  schedule:
+    - cron: "0 20 * * *" # 每天北京时间凌晨 4 点
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: neodb-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 详情缓存跨次保留，只请求新增或过期（7 天）的条目
+      - uses: actions/cache@v4
+        with:
+          path: scripts/.neodb-cache.json
+          key: neodb-cache-${{ github.run_id }}
+          restore-keys: neodb-cache-
+
+      - name: 同步
+        env:
+          NEODB_TOKEN: ${{ secrets.NEODB_TOKEN }}
+        run: python scripts/neodb_sync.py
+
+      - name: 有变化就提交
+        run: |
+          if git diff --quiet -- data/neodb_shelf.json; then
+            echo "数据没有变化"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/neodb_shelf.json
+          git commit -m "同步 NeoDB 数据"
+          git push

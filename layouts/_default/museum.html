@@ -1,0 +1,85 @@
+{{- /*
+  展馆页（content/museum/index.md）：NeoDB「已看完」的全部条目。
+  - 数据来自 data/neodb_shelf.json，由 scripts/neodb_sync.py 同步（GitHub Action 每天自动跑一次）；
+  - 分类和年份可以组合筛选，筛选状态写在网址 # 后面，可以直接分享，
+    例如 /museum/#book-2025、/museum/#movie、/museum/#2024；
+  - 样式在 assets/css/_museum.css，筛选脚本在 assets/js/_museum.js。
+*/ -}}
+{{- define "main" -}}
+{{- $items := hugo.Data.neodb_shelf | default slice -}}
+{{- $cats := slice
+  (dict "key" "book" "name" "书籍")
+  (dict "key" "movie" "name" "电影")
+  (dict "key" "tv" "name" "剧集")
+  (dict "key" "game" "name" "游戏")
+  (dict "key" "music" "name" "音乐")
+  (dict "key" "other" "name" "其他")
+-}}
+{{- /* 年份列表（数据已按日期倒序） */ -}}
+{{- $years := slice -}}
+{{- range $items -}}
+  {{- $y := substr .date 0 4 -}}
+  {{- if and $y (not (in $years $y)) }}{{ $years = $years | append $y }}{{ end -}}
+{{- end -}}
+
+<div class="single-header">
+  {{- partial "components/breadcrumbs.html" . -}}
+  <h1>{{- partial "title.html" . -}}</h1>
+  {{- with .Description }}<p class="dim museum-desc">{{ . }}</p>{{ end }}
+</div>
+
+<section class="museum" data-museum>
+  {{- if $items }}
+  <div class="museum-filters">
+    <ul class="taxonomy-list museum-cats" role="group" aria-label="分类">
+      <li><button type="button" class="tag active" data-cat="all">全部&nbsp;<span class="dim">{{ len $items }}</span></button></li>
+      {{- range $cats }}
+        {{- $n := len (where $items "category" .key) }}
+        {{- if $n }}
+      <li><button type="button" class="tag" data-cat="{{ .key }}">{{ .name }}&nbsp;<span class="dim">{{ $n }}</span></button></li>
+        {{- end }}
+      {{- end }}
+    </ul>
+    <div class="museum-years" role="group" aria-label="年份">
+      <button type="button" class="active" data-year="all">所有年份</button>
+      {{- range $years }}<button type="button" data-year="{{ . }}">{{ . }}</button>{{ end }}
+    </div>
+  </div>
+
+  {{- range $years }}
+    {{- $y := . }}
+    {{- $list := where $items "date" "like" (printf "^%s" $y) }}
+  <section class="museum-year" data-year="{{ $y }}">
+    <div class="list-group-key museum-year-title">{{ $y }}<span class="museum-year-count dim">{{ len $list }}</span></div>
+    <div class="museum-grid">
+      {{- range $list }}
+      <a class="museum-item" data-cat="{{ .category }}" href="{{ .url }}" target="_blank" rel="noopener">
+        <div class="museum-cover">
+          {{- with .cover }}
+          <img src="{{ . }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+          {{- else }}
+          <span class="museum-cover-empty">{{ .title }}</span>
+          {{- end }}
+          {{- with .subtype }}<span class="museum-badge">{{ . }}</span>{{ end }}
+          {{- if or .rating .comment }}
+          <div class="museum-overlay">
+            {{- with .rating }}<span class="museum-stars" style="--rating: {{ . }}" role="img" aria-label="评分 {{ . }}/5"></span>{{ end }}
+            {{- with .comment }}<p>{{ . }}</p>{{ end }}
+          </div>
+          {{- end }}
+        </div>
+        <div class="museum-title" title="{{ .title }}">{{ .title }}</div>
+        <div class="museum-date dim">{{ substr .date 5 2 }}/{{ substr .date 8 2 }}</div>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+  <p class="museum-empty dim" hidden>这一年这个分类下没有记录。</p>
+  {{- else }}
+  <p class="museum-empty dim">还没有同步 NeoDB 数据（运行 scripts/neodb_sync.py 生成 data/neodb_shelf.json）。</p>
+  {{- end }}
+</section>
+{{- end -}}
+
+{{- define "side" -}}{{- end -}}

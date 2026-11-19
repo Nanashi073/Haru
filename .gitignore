@@ -13,3 +13,6 @@ resources/
 
 # Python
 __pycache__/
+
+# NeoDB 同步脚本的本地缓存
+scripts/.neodb-cache.json

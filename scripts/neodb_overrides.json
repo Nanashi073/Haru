@@ -1,0 +1,4 @@
+{
+  "_说明": "按 NeoDB 条目网址手动修正展馆数据。可用字段：cover（换封面）、title（改标题）、comment（改短评）、category（改分类：book 书籍 / movie 电影 / tv 剧集 / game 游戏 / music 音乐 / other 其他）、hide（true 时不显示）。改完重新运行 neodb_sync.py。",
+  "items": {}
+}
