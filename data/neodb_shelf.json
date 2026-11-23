@@ -2,6 +2,16 @@
  {
   "category": "book",
   "subtype": "",
+  "title": "ダクダデイラ",
+  "url": "https://neodb.social/book/35ZCUBqfMURXEfdkuu4wFz",
+  "cover": "https://neodb.social/m/item/doubanbook/2026/08/06/38ce1f93-60cc-489a-9d0e-5391aa7b4def.jpg",
+  "date": "2026-11-22",
+  "rating": 4.5,
+  "comment": "太好看了，快点出下一册吧饼屋蛾你千万别歇着啊！能感觉出来作者很爱上网，把多姿多彩的zng语c得栩栩如生，对怪物和仪式的设计也很有巧思，还通过各种细节营造了非常好的真实感，学习！最后还是web版比较好读，电子书版那个小字太反人类了……"
+ },
+ {
+  "category": "book",
+  "subtype": "",
   "title": "漩涡",
   "url": "https://neodb.social/book/5lANiYL13l93laUJz0a2jQ",
   "cover": "https://neodb.social/m/book/2021/09/16f883ee57-6ad7-4a5d-8743-8248ecaddd7e.jpg",
@@ -1222,9 +1232,9 @@
  {
   "category": "tv",
   "subtype": "",
-  "title": "西部世界 第三季",
+  "title": "西部世界 第一季",
   "url": "https://neodb.social/tv/season/0ivAyxLbnqxncmEsostveD",
-  "cover": "https://neodb.social/m/item/bangumi/2026/11/14/3da3f5dd-b916-4a39-b974-15036481275c.jpg",
+  "cover": "https://neodb.social/m/item/doubanmovie/2026/11/22/da8e02f1-95ca-48b9-81e7-d660ea7fdc07.webp",
   "date": "2024-09-02",
   "rating": 4.0,
   "comment": ""
