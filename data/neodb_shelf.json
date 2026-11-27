@@ -1,5 +1,25 @@
 [
  {
+  "category": "book",
+  "subtype": "",
+  "title": "谁来决定吃什么",
+  "url": "https://neodb.social/book/2Xeg3MEJw5b6MvZVlRh8xr",
+  "cover": "https://neodb.social/m/item/doubanbook/2025/06/04/8c816468-b0e8-4d7c-ab20-5803ac9c89b2.jpg",
+  "date": "2026-11-26",
+  "rating": 4.0,
+  "comment": "还蛮清新朴素的散文集。看完了感觉，好羡慕这种能享受做饭享受食物的生活……我也喜欢好吃的，但是经常没有精力自己做饭。而且北方确实好吃的少，因为时令菜太有限了，即使物流发达，也和本地的没法比"
+ },
+ {
+  "category": "book",
+  "subtype": "",
+  "title": "玻璃长颈鹿",
+  "url": "https://neodb.social/book/3R6JoNXHhukOXh9BEeF6pD",
+  "cover": "https://neodb.social/m/item/doubanbook/2024/02/05/add19927-669a-45a1-b740-0c18853860da.jpg",
+  "date": "2026-11-26",
+  "rating": 2.5,
+  "comment": "氛围我还挺喜欢的，是一种阴雨天隔着雾蒙蒙的玻璃往外看的感觉。但是把这个主题写的实在是太轻飘飘了，我不能接受……"
+ },
+ {
   "category": "tv",
   "subtype": "",
   "title": "生命奇观 第一季",
